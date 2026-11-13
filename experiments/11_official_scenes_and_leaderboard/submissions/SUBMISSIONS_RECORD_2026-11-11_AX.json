@@ -1,0 +1,15 @@
+{
+ "tag": "AX",
+ "family": "residual_ppo",
+ "policy": "SB26-AX public Residual PPO (alexchilton) unchanged (frozen; notebook 3c3713c4)",
+ "kernel": "asteriospanoras/sb26-cmp-resppo",
+ "kernel_version": 1,
+ "notebook_sha256": "3c3713c4d54ee31f46b5c5b3b9b6c746c8e1d81aba15d17f0b602dd51b404040",
+ "submission_id": "58250728",
+ "submitted": "2026-11-11 21:13:52.843000",
+ "status_at_record": "SubmissionStatus.PENDING",
+ "approval": "authors 2026-11-11 ~21:15 EET: '\u0395\u03c7\u03bf\u03c5\u03bc\u03b5 2 \u03c5\u03c0\u03bf\u03b2\u03bf\u03bb\u03b5\u03c2 \u03ba\u03b1\u03b9 \u03bc\u03b5\u03c4\u03b1 \u03ba\u03b1\u03bd\u03bf\u03c5\u03bc\u03b5 \u03ba\u03b1\u03b9 \u03b1\u03c5\u03c1\u03b9\u03bf \u03b1\u03bd \u03c7\u03c1\u03b5\u03b9\u03b1\u03b6\u03b5\u03c4\u03b1\u03b9' (after the plan: parity first, prediction registered before submitting); parity PASS (5 lines incl. the pressure-override path); prediction PREDICTION_AX_LB_v1 registered 22:58:31 (unchanged within 0.5 %)",
+ "parity": "official_adapter/dry_ax/PARITY_AX.txt",
+ "prediction": "official_adapter/ax_official/PREDICTION_AX_LB_v1.md",
+ "controller": "public Residual PPO of alexchilton (Apache-2.0), checkpoint fa2_all_from_s3_8m@7004160, skynet.pt sha 8b1b4d0a"
+}

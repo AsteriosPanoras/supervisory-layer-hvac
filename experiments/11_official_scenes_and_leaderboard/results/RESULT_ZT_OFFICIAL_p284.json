@@ -1,0 +1,59 @@
+{
+ "note": "official training scenes; corrected tracker (KRE-v2), as the paper's K07 official-scene stage; 8640 steps",
+ "pooled_gain_pct": -0.07407769641254447,
+ "per_scene": {
+  "building_train_1/denver_7": {
+   "gain_pct": 0.0,
+   "ZB_share_comfort": 0.008532288481626243,
+   "ZB_share_energy": 0.4336031684202897,
+   "ZB_share_carbon": 0.5578645430980841,
+   "learned_starts": 0,
+   "pressure_override_steps": 0
+  },
+  "building_train_1/fairbanks_1": {
+   "gain_pct": -0.38500364402085374,
+   "ZB_share_comfort": 0.017898874282926667,
+   "ZB_share_energy": 0.2962003453594852,
+   "ZB_share_carbon": 0.6859007803575882,
+   "learned_starts": 4,
+   "pressure_override_steps": 0
+  },
+  "building_train_1/phoenix_5": {
+   "gain_pct": 0.6098003168730659,
+   "ZB_share_comfort": 0.11172034916570402,
+   "ZB_share_energy": 0.7218992647932058,
+   "ZB_share_carbon": 0.1663803860410902,
+   "learned_starts": 0,
+   "pressure_override_steps": 1097
+  },
+  "building_train_1/singapore_8": {
+   "gain_pct": 0.0,
+   "ZB_share_comfort": 0.05554575125327085,
+   "ZB_share_energy": 0.7554079155237068,
+   "ZB_share_carbon": 0.18904633322302233,
+   "learned_starts": 0,
+   "pressure_override_steps": 0
+  },
+  "building_train_2/fairbanks_2": {
+   "gain_pct": 0.0,
+   "ZB_share_comfort": 0.03530479384901812,
+   "ZB_share_energy": 0.2959756866750646,
+   "ZB_share_carbon": 0.6687195194759172,
+   "learned_starts": 0,
+   "pressure_override_steps": 0
+  },
+  "building_train_4/phoenix_8": {
+   "gain_pct": 0.0,
+   "ZB_share_comfort": 0.00882551387190884,
+   "ZB_share_energy": 0.5470502349522655,
+   "ZB_share_carbon": 0.4441242511758257,
+   "learned_starts": 0,
+   "pressure_override_steps": 0
+  }
+ },
+ "pooled_ZB_shares": {
+  "comfort": 0.040650203623705874,
+  "energy": 0.4286930338420232,
+  "carbon": 0.530656762534271
+ }
+}

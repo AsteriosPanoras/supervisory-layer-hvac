@@ -1,0 +1,121 @@
+{
+ "note": "post hoc, exploratory; no signal chosen or tuned",
+ "architectures": {
+  "building_52200": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 30.33026631505508,
+   "gain_week1_pct": 7.130857022822045,
+   "gain_days8_30_pct": 5.835061066477564,
+   "gain_pct": 6.053038591804194
+  },
+  "building_52201": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 0.9555296921331777,
+   "gain_week1_pct": 0.3665215128118904,
+   "gain_days8_30_pct": 2.0152274486489263,
+   "gain_pct": 1.7259370135165208
+  },
+  "building_52203": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 12.321276002984334,
+   "gain_week1_pct": 3.5294115831139172,
+   "gain_days8_30_pct": 4.343412140360236,
+   "gain_pct": 4.175516295183379
+  },
+  "building_52205": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 63.69240684584854,
+   "gain_week1_pct": 10.379447438120494,
+   "gain_days8_30_pct": 2.911337082187415,
+   "gain_pct": 4.466874629866147
+  },
+  "building_52206": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 2.4981460484247044,
+   "gain_week1_pct": 0.060567717097281815,
+   "gain_days8_30_pct": 0.4045965070391122,
+   "gain_pct": 0.33216738149227654
+  },
+  "building_52207": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 30.68263450892756,
+   "gain_week1_pct": 10.592296336239393,
+   "gain_days8_30_pct": 6.984476451324584,
+   "gain_pct": 7.766493478482916
+  },
+  "building_52208": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 19.87192502931471,
+   "gain_week1_pct": 10.551309024713563,
+   "gain_days8_30_pct": 5.6748735605945955,
+   "gain_pct": 6.7793050721891674
+  },
+  "building_52209": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 4.749130829899956,
+   "gain_week1_pct": -0.05092051504815842,
+   "gain_days8_30_pct": -1.7041593784101083,
+   "gain_pct": -1.3542859775051541
+  },
+  "building_52211": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 3.953375515960052,
+   "gain_week1_pct": -2.4141517867493523,
+   "gain_days8_30_pct": -0.9751943808840258,
+   "gain_pct": -1.1508366799372505
+  },
+  "building_52212": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 8.252358358854746,
+   "gain_week1_pct": 1.7877525183505383,
+   "gain_days8_30_pct": 2.115740442653702,
+   "gain_pct": 2.05574997634288
+  },
+  "building_52300": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 19.37527628339287,
+   "gain_week1_pct": 10.4754915748694,
+   "gain_days8_30_pct": 5.455720292409727,
+   "gain_pct": 6.519009603758086
+  },
+  "building_52301": {
+   "windows": 3,
+   "first_week_comfort_share_pct": 3.185328075298376,
+   "gain_week1_pct": -0.09609156449890133,
+   "gain_days8_30_pct": 3.4032347990521683,
+   "gain_pct": 2.528667719772315
+  }
+ },
+ "a_low_first_week_share": {
+  "flagged": [
+   "building_52201",
+   "building_52206",
+   "building_52211",
+   "building_52301"
+  ],
+  "losers_flagged": [
+   "building_52211"
+  ],
+  "winners_flagged": [
+   "building_52201",
+   "building_52206",
+   "building_52301"
+  ],
+  "gain_given_up_by_winners_flagged_pct_points": 5.823058754740207
+ },
+ "b_negative_first_week_gain": {
+  "flagged": [
+   "building_52209",
+   "building_52211",
+   "building_52301"
+  ],
+  "losers_flagged": [
+   "building_52209",
+   "building_52211"
+  ],
+  "winners_flagged": [
+   "building_52301"
+  ],
+  "gain_given_up_by_winners_flagged_pct_points": 3.4032347990521683
+ }
+}

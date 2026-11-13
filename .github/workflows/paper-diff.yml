@@ -1,0 +1,31 @@
+name: paper-diff
+on:
+  pull_request:
+    paths: ["paper/**"]
+jobs:
+  diff:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Change report (sections, numbers, citations)
+        run: python tools/paper_changes.py "origin/${{ github.base_ref }}" HEAD --out changes.md
+      - name: PDF of the changes (latexdiff)
+        continue-on-error: true
+        run: |
+          sudo apt-get update && sudo apt-get install -y latexdiff
+          curl --proto '=https' --tlsv1.2 -fsSL https://drop-sh.fullyjustified.net | sh
+          mkdir -p old && for f in main.tex appendices.tex; do git show "origin/${{ github.base_ref }}:paper/$f" > old/$f; done
+          cp -r paper/figures paper/neurips_2026.sty paper/refs.bib old/ 2>/dev/null || true
+          latexdiff --flatten old/main.tex paper/main.tex > paper/diff.tex
+          cd paper && ../tectonic diff.tex
+      - uses: actions/upload-artifact@v4
+        with:
+          name: paper-changes
+          path: |
+            changes.md
+            paper/diff.pdf

@@ -1,0 +1,503 @@
+{
+ "S": "G30",
+ "GO_in_development": true,
+ "integrity": {
+  "runs": 66,
+  "ok": 66,
+  "illegal": 0,
+  "not_ok": []
+ },
+ "primary": {
+  "contrast": "G30 - B on held-out composite",
+  "per_architecture": {
+   "building_52001": -0.03189103634901369,
+   "building_52003": -0.062214035954336055,
+   "building_52006": -0.041590701893458926,
+   "building_52009": -0.027064654197648585
+  },
+  "mean_over_architectures": -0.040690107098614314,
+  "bootstrap_over_architectures_95": [
+   -0.054633286053005464,
+   -0.029477845273331138
+  ],
+  "architectures_better": 4,
+  "n_architectures": 4,
+  "cells_better": 8,
+  "n_cells": 8,
+  "pooled": -0.046478683079887895,
+  "worst_architecture": [
+   "building_52009",
+   -0.027064654197648585
+  ],
+  "by_strip": {
+   "minneapolis_1": -0.03336870777489187,
+   "minneapolis_5": -0.05351924416978476
+  },
+  "loss_split_mean_diff": {
+   "energy": -0.00011111837315279144,
+   "carbon": -0.00023527141942577602,
+   "comfort": -0.0008464933869479541
+  },
+  "adverse_cells_gt0.5pct": []
+ },
+ "secondary": {
+  "composite: G30 - B": {
+   "per_architecture": {
+    "building_52001": -0.03189103634901369,
+    "building_52003": -0.062214035954336055,
+    "building_52006": -0.041590701893458926,
+    "building_52009": -0.027064654197648585
+   },
+   "mean_over_architectures": -0.040690107098614314,
+   "bootstrap_over_architectures_95": [
+    -0.054633286053005464,
+    -0.029477845273331138
+   ],
+   "architectures_better": 4,
+   "n_architectures": 4,
+   "cells_better": 8,
+   "n_cells": 8,
+   "pooled": -0.046478683079887895,
+   "worst_architecture": [
+    "building_52009",
+    -0.027064654197648585
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.03336870777489187,
+    "minneapolis_5": -0.05351924416978476
+   },
+   "loss_split_mean_diff": {
+    "energy": -0.00011111837315279144,
+    "carbon": -0.00023527141942577602,
+    "comfort": -0.0008464933869479541
+   },
+   "adverse_cells_gt0.5pct": []
+  },
+  "composite: MG - B": {
+   "per_architecture": {
+    "building_52001": 0.01059255379703794,
+    "building_52003": 0.028308304315227684,
+    "building_52006": -0.045093032942627786,
+    "building_52009": -0.02869085384892267
+   },
+   "mean_over_architectures": -0.008720757169821208,
+   "bootstrap_over_architectures_95": [
+    -0.03689194339577523,
+    0.019450429056132812
+   ],
+   "architectures_better": 2,
+   "n_architectures": 4,
+   "cells_better": 3,
+   "n_cells": 8,
+   "pooled": 0.008592105255303961,
+   "worst_architecture": [
+    "building_52003",
+    0.028308304315227684
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.012933116907150877,
+    "minneapolis_5": 0.0008244226691758172
+   },
+   "loss_split_mean_diff": {
+    "energy": -4.269587034424333e-05,
+    "carbon": -0.00019999255424214905,
+    "comfort": 0.00046320623787253365
+   },
+   "adverse_cells_gt0.5pct": [
+    [
+     "building_52001",
+     "minneapolis_1",
+     0.98
+    ],
+    [
+     "building_52001",
+     "minneapolis_5",
+     1.39
+    ],
+    [
+     "building_52003",
+     "minneapolis_1",
+     4.05
+    ]
+   ]
+  },
+  "composite: MGG30 - B": {
+   "per_architecture": {
+    "building_52001": -0.02876290664175918,
+    "building_52003": -0.031056358770234604,
+    "building_52006": -0.03722261063067156,
+    "building_52009": -0.02559139294297985
+   },
+   "mean_over_architectures": -0.0306583172464113,
+   "bootstrap_over_architectures_95": [
+    -0.035107684633443464,
+    -0.02695763439979354
+   ],
+   "architectures_better": 4,
+   "n_architectures": 4,
+   "cells_better": 7,
+   "n_cells": 8,
+   "pooled": -0.03026199178599298,
+   "worst_architecture": [
+    "building_52009",
+    -0.02559139294297985
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.03336870777489187,
+    "minneapolis_5": -0.020416957341567454
+   },
+   "loss_split_mean_diff": {
+    "energy": -0.0001435454059837745,
+    "carbon": -0.00026385317414522145,
+    "comfort": -0.0003692805032325846
+   },
+   "adverse_cells_gt0.5pct": []
+  },
+  "composite: G30 - MG": {
+   "per_architecture": {
+    "building_52001": -0.04203829722120034,
+    "building_52003": -0.0880303503236265,
+    "building_52006": 0.0036677196522731936,
+    "building_52009": 0.0016742348795109052
+   },
+   "mean_over_architectures": -0.031181673253260683,
+   "bootstrap_over_architectures_95": [
+    -0.06560420402284214,
+    0.0026709772658920494
+   ],
+   "architectures_better": 2,
+   "n_architectures": 4,
+   "cells_better": 6,
+   "n_cells": 8,
+   "pooled": -0.05460164525207323,
+   "worst_architecture": [
+    "building_52006",
+    0.0036677196522731936
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.01950783288897115,
+    "minneapolis_5": -0.054024932103626494
+   },
+   "loss_split_mean_diff": {
+    "energy": -6.842250280854811e-05,
+    "carbon": -3.527886518362697e-05,
+    "comfort": -0.001309699624820488
+   },
+   "adverse_cells_gt0.5pct": [
+    [
+     "building_52006",
+     "minneapolis_1",
+     1.7
+    ],
+    [
+     "building_52009",
+     "minneapolis_5",
+     1.01
+    ]
+   ]
+  },
+  "composite: G30 - MGG30": {
+   "per_architecture": {
+    "building_52001": -0.003220768367112603,
+    "building_52003": -0.03215633588818101,
+    "building_52006": -0.0045369690969255805,
+    "building_52009": -0.0015119542705173128
+   },
+   "mean_over_architectures": -0.010356506905684126,
+   "bootstrap_over_architectures_95": [
+    -0.024922444007913908,
+    -0.0022682079771193797
+   ],
+   "architectures_better": 4,
+   "n_architectures": 4,
+   "cells_better": 4,
+   "n_cells": 8,
+   "pooled": -0.01672275517359756,
+   "worst_architecture": [
+    "building_52009",
+    -0.0015119542705173128
+   ],
+   "by_strip": {
+    "minneapolis_1": 0.0,
+    "minneapolis_5": -0.034871644348551195
+   },
+   "loss_split_mean_diff": {
+    "energy": 3.242703283098307e-05,
+    "carbon": 2.8581754719445457e-05,
+    "comfort": -0.00047721288371536957
+   },
+   "adverse_cells_gt0.5pct": []
+  },
+  "ood: G30 - B": {
+   "per_architecture": {
+    "building_52102": -0.02218867908967681,
+    "building_52108": -0.14886963276390774
+   },
+   "mean_over_architectures": -0.08552915592679228,
+   "bootstrap_over_architectures_95": [
+    -0.14886963276390774,
+    -0.02218867908967681
+   ],
+   "architectures_better": 2,
+   "n_architectures": 2,
+   "cells_better": 4,
+   "n_cells": 4,
+   "pooled": -0.049779302907495104,
+   "worst_architecture": [
+    "building_52102",
+    -0.02218867908967681
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.02548874837237708,
+    "minneapolis_5": -0.15208795196934527
+   },
+   "loss_split_mean_diff": {
+    "energy": -0.00017952498076089234,
+    "carbon": -0.00030177122348625803,
+    "comfort": -0.0010211128233467259
+   },
+   "adverse_cells_gt0.5pct": []
+  },
+  "ood: MG - B": {
+   "per_architecture": {
+    "building_52102": 0.07127873328535128,
+    "building_52108": -0.007914448424896414
+   },
+   "mean_over_architectures": 0.031682142430227433,
+   "bootstrap_over_architectures_95": [
+    -0.007914448424896414,
+    0.07127873328535128
+   ],
+   "architectures_better": 1,
+   "n_architectures": 2,
+   "cells_better": 2,
+   "n_cells": 4,
+   "pooled": 0.05403076330935619,
+   "worst_architecture": [
+    "building_52102",
+    0.07127873328535128
+   ],
+   "by_strip": {
+    "minneapolis_1": 0.026655973210791772,
+    "minneapolis_5": 0.003976944712409114
+   },
+   "loss_split_mean_diff": {
+    "energy": 0.00032585791229698463,
+    "carbon": 0.00021317645391060727,
+    "comfort": 0.0010916896630468631
+   },
+   "adverse_cells_gt0.5pct": [
+    [
+     "building_52102",
+     "minneapolis_1",
+     8.13
+    ],
+    [
+     "building_52108",
+     "minneapolis_5",
+     1.29
+    ]
+   ]
+  },
+  "ood: MGG30 - B": {
+   "per_architecture": {
+    "building_52102": -0.022867757755180684,
+    "building_52108": -0.07428529155539143
+   },
+   "mean_over_architectures": -0.04857652465528606,
+   "bootstrap_over_architectures_95": [
+    -0.07428529155539143,
+    -0.022867757755180684
+   ],
+   "architectures_better": 2,
+   "n_architectures": 2,
+   "cells_better": 4,
+   "n_cells": 4,
+   "pooled": -0.034066298590054056,
+   "worst_architecture": [
+    "building_52102",
+    -0.022867757755180684
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.026161947856912227,
+    "minneapolis_5": -0.07396869296825515
+   },
+   "loss_split_mean_diff": {
+    "energy": -0.00022368404793105456,
+    "carbon": -0.00034393696047270797,
+    "comfort": -0.00046054757399395453
+   },
+   "adverse_cells_gt0.5pct": []
+  },
+  "ood: G30 - MG": {
+   "per_architecture": {
+    "building_52102": -0.08724845315316432,
+    "building_52108": -0.14207966653200532
+   },
+   "mean_over_architectures": -0.11466405984258482,
+   "bootstrap_over_architectures_95": [
+    -0.14207966653200532,
+    -0.08724845315316432
+   ],
+   "architectures_better": 2,
+   "n_architectures": 2,
+   "cells_better": 4,
+   "n_cells": 4,
+   "pooled": -0.098488649316949,
+   "worst_architecture": [
+    "building_52102",
+    -0.08724845315316432
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.04833545643419984,
+    "minneapolis_5": -0.1543233067081159
+   },
+   "loss_split_mean_diff": {
+    "energy": -0.000505382893057877,
+    "carbon": -0.0005149476773968654,
+    "comfort": -0.002112802486393589
+   },
+   "adverse_cells_gt0.5pct": []
+  },
+  "ood: G30 - MGG30": {
+   "per_architecture": {
+    "building_52102": 0.0006949710961781097,
+    "building_52108": -0.08056946759961636
+   },
+   "mean_over_architectures": -0.039937248251719126,
+   "bootstrap_over_architectures_95": [
+    -0.08056946759961636,
+    0.0006949710961781097
+   ],
+   "architectures_better": 1,
+   "n_architectures": 2,
+   "cells_better": 2,
+   "n_cells": 4,
+   "pooled": -0.01626716646753834,
+   "worst_architecture": [
+    "building_52102",
+    0.0006949710961781097
+   ],
+   "by_strip": {
+    "minneapolis_1": 0.0006884880615206646,
+    "minneapolis_5": -0.08853854117881615
+   },
+   "loss_split_mean_diff": {
+    "energy": 4.415906717016222e-05,
+    "carbon": 4.2165736986449936e-05,
+    "comfort": -0.0005605652493527714
+   },
+   "adverse_cells_gt0.5pct": []
+  },
+  "within_family: G30 - B": {
+   "per_architecture": {
+    "b2_40154": -0.02464775490936233,
+    "b2_40155": -0.0633788872950507,
+    "b2_48031": -0.039249044794024024
+   },
+   "mean_over_architectures": -0.042425228999479016,
+   "bootstrap_over_architectures_95": [
+    -0.0633788872950507,
+    -0.02464775490936233
+   ],
+   "architectures_better": 3,
+   "n_architectures": 3,
+   "cells_better": 6,
+   "n_cells": 6,
+   "pooled": -0.037747124004466226,
+   "worst_architecture": [
+    "b2_40154",
+    -0.02464775490936233
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.04722770979535196,
+    "minneapolis_5": -0.0057469674275999845
+   },
+   "loss_split_mean_diff": {
+    "energy": -0.00021097660402440857,
+    "carbon": -0.0003532758537257168,
+    "comfort": -0.00021767317731077613
+   },
+   "adverse_cells_gt0.5pct": []
+  },
+  "within_family: MG - B": {
+   "per_architecture": {
+    "b2_40154": 0.008111741061549882,
+    "b2_40155": -0.05640903722551449,
+    "b2_48031": -0.008051776323424353
+   },
+   "mean_over_architectures": -0.018783024162462986,
+   "bootstrap_over_architectures_95": [
+    -0.05640903722551449,
+    0.008111741061549882
+   ],
+   "architectures_better": 2,
+   "n_architectures": 3,
+   "cells_better": 5,
+   "n_cells": 6,
+   "pooled": -0.01107167315940949,
+   "worst_architecture": [
+    "b2_40154",
+    0.008111741061549882
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.01944018935803493,
+    "minneapolis_5": -0.01861068568790658
+   },
+   "loss_split_mean_diff": {
+    "energy": -4.372716062130928e-05,
+    "carbon": -0.0001808236697819761,
+    "comfort": -4.797104916739622e-06
+   },
+   "adverse_cells_gt0.5pct": [
+    [
+     "b2_40154",
+     "minneapolis_1",
+     1.18
+    ]
+   ]
+  },
+  "within_family: G30 - MG": {
+   "per_architecture": {
+    "b2_40154": -0.03249589766350325,
+    "b2_40155": -0.007386516345008753,
+    "b2_48031": -0.03145050086885548
+   },
+   "mean_over_architectures": -0.023777638292455827,
+   "bootstrap_over_architectures_95": [
+    -0.03249589766350325,
+    -0.007386516345008753
+   ],
+   "architectures_better": 3,
+   "n_architectures": 3,
+   "cells_better": 4,
+   "n_cells": 6,
+   "pooled": -0.02697409925578631,
+   "worst_architecture": [
+    "b2_40155",
+    -0.007386516345008753
+   ],
+   "by_strip": {
+    "minneapolis_1": -0.027948481127370695,
+    "minneapolis_5": 0.013237768391920923
+   },
+   "loss_split_mean_diff": {
+    "energy": -0.00016724944340309927,
+    "carbon": -0.00017245218394374077,
+    "comfort": -0.0002128760723940365
+   },
+   "adverse_cells_gt0.5pct": [
+    [
+     "b2_40154",
+     "minneapolis_5",
+     2.96
+    ],
+    [
+     "b2_40155",
+     "minneapolis_5",
+     1.22
+    ]
+   ]
+  }
+ }
+}

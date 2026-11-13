@@ -1,0 +1,8 @@
+{
+ "KP": 0.1,
+ "KI": 0.005,
+ "HOLD_STEPS": 288,
+ "NIGHT_COOL_CEILING": false,
+ "EXTREME_WATER_MAX": false,
+ "EXTREME_HEAT_DAMPER": 1.0
+}

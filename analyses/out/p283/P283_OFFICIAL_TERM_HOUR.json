@@ -1,0 +1,229 @@
+{
+ "note": "read-only; official training scenes; shares of the weighted loss pooled over each controller's scenes",
+ "controllers": {
+  "K07-G30": {
+   "scenes": [
+    "building_train_1/phoenix_5",
+    "building_train_4/phoenix_8",
+    "building_train_2/fairbanks_2",
+    "building_train_1/singapore_8",
+    "building_train_1/fairbanks_1",
+    "building_train_1/denver_7"
+   ],
+   "n": 6,
+   "by_term": {
+    "comfort": 0.03241719129560681,
+    "energy": 0.4268171792162009,
+    "carbon": 0.5407656294881922
+   },
+   "by_occupancy": {
+    "occupied": 0.5623496757994222,
+    "unoccupied": 0.43765032420057787
+   },
+   "energy_split": {
+    "electricity": 0.5831309168350082,
+    "gas": 0.4168690831649918
+   },
+   "top_cells": [
+    {
+     "term": "carbon",
+     "occupancy": "unoccupied",
+     "hours": "night 00-06",
+     "share": 0.17136144024184866
+    },
+    {
+     "term": "energy",
+     "occupancy": "occupied",
+     "hours": "day 09-17",
+     "share": 0.15621938704024346
+    },
+    {
+     "term": "carbon",
+     "occupancy": "occupied",
+     "hours": "day 09-17",
+     "share": 0.1535464680238838
+    },
+    {
+     "term": "energy",
+     "occupancy": "unoccupied",
+     "hours": "night 00-06",
+     "share": 0.0985423326622421
+    },
+    {
+     "term": "carbon",
+     "occupancy": "occupied",
+     "hours": "morning 06-09",
+     "share": 0.09095300132331667
+    },
+    {
+     "term": "energy",
+     "occupancy": "occupied",
+     "hours": "morning 06-09",
+     "share": 0.06321010377830971
+    },
+    {
+     "term": "carbon",
+     "occupancy": "unoccupied",
+     "hours": "day 09-17",
+     "share": 0.04022542622875289
+    },
+    {
+     "term": "carbon",
+     "occupancy": "unoccupied",
+     "hours": "evening 17-24",
+     "share": 0.035865866776926436
+    }
+   ]
+  },
+  "ResPPO": {
+   "scenes": [
+    "building_train_1/denver_7",
+    "building_train_1/fairbanks_1",
+    "building_train_4/phoenix_8",
+    "building_train_1/singapore_8",
+    "building_train_1/phoenix_5",
+    "building_train_2/fairbanks_2"
+   ],
+   "n": 6,
+   "by_term": {
+    "comfort": 0.025163729700997815,
+    "energy": 0.434628463932233,
+    "carbon": 0.5402078063667691
+   },
+   "by_occupancy": {
+    "occupied": 0.6553780421955978,
+    "unoccupied": 0.3446219578044021
+   },
+   "energy_split": {
+    "electricity": 0.5962753012586982,
+    "gas": 0.4037246987413019
+   },
+   "top_cells": [
+    {
+     "term": "carbon",
+     "occupancy": "unoccupied",
+     "hours": "night 00-06",
+     "share": 0.17732842230816162
+    },
+    {
+     "term": "energy",
+     "occupancy": "occupied",
+     "hours": "day 09-17",
+     "share": 0.17240954337109113
+    },
+    {
+     "term": "carbon",
+     "occupancy": "occupied",
+     "hours": "day 09-17",
+     "share": 0.17133910391601692
+    },
+    {
+     "term": "carbon",
+     "occupancy": "occupied",
+     "hours": "morning 06-09",
+     "share": 0.11178623427515033
+    },
+    {
+     "term": "energy",
+     "occupancy": "unoccupied",
+     "hours": "night 00-06",
+     "share": 0.1080891534138666
+    },
+    {
+     "term": "energy",
+     "occupancy": "occupied",
+     "hours": "morning 06-09",
+     "share": 0.0922259556760093
+    },
+    {
+     "term": "carbon",
+     "occupancy": "occupied",
+     "hours": "evening 17-24",
+     "share": 0.04249223093735608
+    },
+    {
+     "term": "energy",
+     "occupancy": "occupied",
+     "hours": "evening 17-24",
+     "share": 0.03996124431897627
+    }
+   ]
+  },
+  "Penguin": {
+   "scenes": [
+    "building_train_4/atlanta_5",
+    "building_train_2/phoenix_6",
+    "building_train_2/denver_8",
+    "building_train_5/phoenix_1",
+    "building_train_7/atlanta_8",
+    "building_train_2/atlanta_3",
+    "building_train_8/atlanta_1",
+    "building_train_1/atlanta_2"
+   ],
+   "n": 8,
+   "by_term": {
+    "comfort": 0.04098420194868101,
+    "energy": 0.5199188483663494,
+    "carbon": 0.4390969496849695
+   },
+   "by_occupancy": {
+    "occupied": 0.8065036447742556,
+    "unoccupied": 0.19349635522574424
+   },
+   "energy_split": {
+    "electricity": 0.7700900036497115,
+    "gas": 0.22990999635028858
+   },
+   "top_cells": [
+    {
+     "term": "energy",
+     "occupancy": "occupied",
+     "hours": "day 09-17",
+     "share": 0.24391520562739744
+    },
+    {
+     "term": "carbon",
+     "occupancy": "occupied",
+     "hours": "morning 06-09",
+     "share": 0.17927107951152335
+    },
+    {
+     "term": "carbon",
+     "occupancy": "occupied",
+     "hours": "day 09-17",
+     "share": 0.13590577145197696
+    },
+    {
+     "term": "energy",
+     "occupancy": "occupied",
+     "hours": "morning 06-09",
+     "share": 0.1290738786106924
+    },
+    {
+     "term": "carbon",
+     "occupancy": "unoccupied",
+     "hours": "night 00-06",
+     "share": 0.07682893355790167
+    },
+    {
+     "term": "energy",
+     "occupancy": "unoccupied",
+     "hours": "night 00-06",
+     "share": 0.0536189233301825
+    },
+    {
+     "term": "energy",
+     "occupancy": "occupied",
+     "hours": "evening 17-24",
+     "share": 0.05353998299936907
+    },
+    {
+     "term": "comfort",
+     "occupancy": "occupied",
+     "hours": "morning 06-09",
+     "share": 0.04010477218383212
+    }
+   ]
+  }
+ }
+}

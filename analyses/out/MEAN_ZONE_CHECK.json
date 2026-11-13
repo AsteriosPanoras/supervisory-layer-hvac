@@ -1,0 +1,203 @@
+{
+ "note": "post hoc descriptive; frozen already-read runs",
+ "band_K": [
+  294.0,
+  297.0
+ ],
+ "band_verified_on_logged_deficits": 19,
+ "max_abs_error": 6.4189617177135e-08,
+ "scenes": {
+  "building_train_1|denver_7": {
+   "G30": {
+    "weekday_06_09_mean_zone_deviation_K": 0.001387090753726438,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.012332366983673217,
+    "weekday_06_09_share_zone_steps_outside_pct": 0.7384073434271584,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 0.6096850486346337,
+     "5": 0.08239241024275204,
+     "6": 0.016927083333333332
+    }
+   },
+   "U": {
+    "weekday_06_09_mean_zone_deviation_K": 0.001387090753726438,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.012332366983673217,
+    "weekday_06_09_share_zone_steps_outside_pct": 0.7384073434271584,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 0.6096850486346337,
+     "5": 0.08239241024275204,
+     "6": 0.016927083333333332
+    }
+   },
+   "UR": {
+    "weekday_06_09_mean_zone_deviation_K": 0.001387090753726438,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.012332366983673217,
+    "weekday_06_09_share_zone_steps_outside_pct": 0.7384073434271584,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 0.6096850486346337,
+     "5": 0.08239241024275204,
+     "6": 0.016927083333333332
+    }
+   }
+  },
+  "building_train_1|fairbanks_1": {
+   "G30": {
+    "weekday_06_09_mean_zone_deviation_K": 0.20271212734132868,
+    "weekday_06_09_largest_zone_deviation_mean_K": 1.6023716794294913,
+    "weekday_06_09_share_zone_steps_outside_pct": 15.259289367611691,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 2.0027465464629772,
+     "5": 0.7909099516612944,
+     "6": 0.4589466370624818
+    }
+   },
+   "U": {
+    "weekday_06_09_mean_zone_deviation_K": 0.20271212734132868,
+    "weekday_06_09_largest_zone_deviation_mean_K": 1.6023716794294913,
+    "weekday_06_09_share_zone_steps_outside_pct": 15.259289367611691,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 2.0027465464629772,
+     "5": 0.7909099516612944,
+     "6": 0.4589466370624818
+    }
+   },
+   "UR": {
+    "weekday_06_09_mean_zone_deviation_K": 0.19824124270894197,
+    "weekday_06_09_largest_zone_deviation_mean_K": 1.58767712289465,
+    "weekday_06_09_share_zone_steps_outside_pct": 14.619110523998238,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 1.8654996431790862,
+     "5": 0.719042584612653,
+     "6": 0.4278062940477491
+    }
+   }
+  },
+  "building_train_1|phoenix_5": {
+   "G30": {
+    "weekday_06_09_mean_zone_deviation_K": 0.009297493435004594,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.22314924796947241,
+    "weekday_06_09_share_zone_steps_outside_pct": 3.475256579615893,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 1.0550884967083698,
+     "5": 0.3035036456056964,
+     "6": 0.014027628865275348
+    }
+   },
+   "U": {
+    "weekday_06_09_mean_zone_deviation_K": 0.03937160793134272,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.5726547745133959,
+    "weekday_06_09_share_zone_steps_outside_pct": 7.607627951088982,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 2.875862708458534,
+     "5": 0.6242456325006374,
+     "6": 0.10479177906240894
+    }
+   },
+   "UR": {
+    "weekday_06_09_mean_zone_deviation_K": 0.03937160793134272,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.5726547745133959,
+    "weekday_06_09_share_zone_steps_outside_pct": 7.607627951088982,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 2.875862708458534,
+     "5": 0.6242456325006374,
+     "6": 0.10479177906240894
+    }
+   }
+  },
+  "building_train_1|singapore_8": {
+   "G30": {
+    "weekday_06_09_mean_zone_deviation_K": 0.0014994309587546151,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.04685028761507183,
+    "weekday_06_09_share_zone_steps_outside_pct": 1.0805134979507502,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 0.30706925825639203,
+     "5": 0.048759869484356795,
+     "6": 0.0003888323590472028
+    }
+   },
+   "U": {
+    "weekday_06_09_mean_zone_deviation_K": 0.0029532235477027443,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.0744330986960246,
+    "weekday_06_09_share_zone_steps_outside_pct": 1.5276225315855434,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 0.609231410882412,
+     "5": 0.08393959454445293,
+     "6": 0.0024868269344587705
+    }
+   },
+   "UR": {
+    "weekday_06_09_mean_zone_deviation_K": 0.0029532235477027443,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.0744330986960246,
+    "weekday_06_09_share_zone_steps_outside_pct": 1.5276225315855434,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 0.609231410882412,
+     "5": 0.08393959454445293,
+     "6": 0.0024868269344587705
+    }
+   }
+  },
+  "building_train_2|fairbanks_2": {
+   "G30": {
+    "weekday_06_09_mean_zone_deviation_K": 0.05770045075997188,
+    "weekday_06_09_largest_zone_deviation_mean_K": 2.001629888617693,
+    "weekday_06_09_share_zone_steps_outside_pct": 4.771155489937058,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 3.495085168522309,
+     "5": 0.7444388976071608,
+     "6": 0.19080379710477938
+    }
+   },
+   "U": {
+    "weekday_06_09_mean_zone_deviation_K": 0.05770045075997188,
+    "weekday_06_09_largest_zone_deviation_mean_K": 2.001629888617693,
+    "weekday_06_09_share_zone_steps_outside_pct": 4.771155489937058,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 3.495085168522309,
+     "5": 0.7444388976071608,
+     "6": 0.19080379710477938
+    }
+   },
+   "UR": {
+    "weekday_06_09_mean_zone_deviation_K": 0.05770045075997188,
+    "weekday_06_09_largest_zone_deviation_mean_K": 2.001629888617693,
+    "weekday_06_09_share_zone_steps_outside_pct": 4.771155489937058,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 3.495085168522309,
+     "5": 0.7444388976071608,
+     "6": 0.19080379710477938
+    }
+   }
+  },
+  "building_train_4|phoenix_8": {
+   "G30": {
+    "weekday_06_09_mean_zone_deviation_K": 0.0015777337048943655,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.027670654941896466,
+    "weekday_06_09_share_zone_steps_outside_pct": 1.0568031704095113,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 0.42386616921986797,
+     "5": 0.057771445123434864,
+     "6": 0.013002363519636469
+    }
+   },
+   "U": {
+    "weekday_06_09_mean_zone_deviation_K": 0.0015777337048943655,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.027670654941896466,
+    "weekday_06_09_share_zone_steps_outside_pct": 1.0568031704095113,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 0.42386616921986797,
+     "5": 0.057771445123434864,
+     "6": 0.013002363519636469
+    }
+   },
+   "UR": {
+    "weekday_06_09_mean_zone_deviation_K": 0.0015777337048943655,
+    "weekday_06_09_largest_zone_deviation_mean_K": 0.027670654941896466,
+    "weekday_06_09_share_zone_steps_outside_pct": 1.0568031704095113,
+    "weekday_mean_deficit_at_04_05_06_K": {
+     "4": 0.42386616921986797,
+     "5": 0.057771445123434864,
+     "6": 0.013002363519636469
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "runs": {
+  "G30": 36,
+  "ROS": 36,
+  "SUP": 36,
+  "B": 36,
+  "ROSFIX": 36,
+  "SUPFIX": 36
+ },
+ "checks": {
+  "SUP_over_G30": 2.82,
+  "ROS_over_ROSFIX": 0.95,
+  "SUP_over_ROS": 1.58
+ },
+ "PRIMARY_SUP_over_SUPFIX": {
+  "gain_pct": 0.9399463521257423,
+  "ci95": [
+   0.09554003371380185,
+   1.8182993263112421
+  ],
+  "better": 7,
+  "worse": 3,
+  "wilcoxon_exact_p": 0.083984375,
+  "sign_p": 0.34375,
+  "ood_gain_pct": -0.17536743073689465,
+  "per_architecture_gain_pct": {
+   "building_52200": 0.557,
+   "building_52201": 0.7697,
+   "building_52203": 0.9582,
+   "building_52205": 4.5498,
+   "building_52206": 0.013,
+   "building_52207": -0.0271,
+   "building_52208": -0.0006,
+   "building_52209": 0.0036,
+   "building_52211": -0.4884,
+   "building_52212": 1.7325,
+   "building_52300": -0.229,
+   "building_52301": -0.034
+  },
+  "term_change_points": {
+   "comfort": -1.4985481864590526,
+   "energy": 0.1296266044387755,
+   "carbon": 0.42897519804055956
+  }
+ },
+ "DECISION": "LEARNING ADDS VALUE INSIDE THE LAYER",
+ "SUPFIX_over_G30": {
+  "gain_pct": 1.894024472798439,
+  "ci95": [
+   1.1137896733591348,
+   2.5916485674152274
+  ],
+  "better": 9,
+  "worse": 1,
+  "wilcoxon_exact_p": 0.00390625,
+  "sign_p": 0.021484375,
+  "ood_gain_pct": 2.307150668176361,
+  "per_architecture_gain_pct": {
+   "building_52200": 1.7041,
+   "building_52201": 0.8091,
+   "building_52203": 1.2183,
+   "building_52205": 2.2395,
+   "building_52206": 0.0059,
+   "building_52207": 2.8585,
+   "building_52208": 4.0915,
+   "building_52209": -0.0047,
+   "building_52211": 1.0367,
+   "building_52212": 2.6806,
+   "building_52300": 2.9488,
+   "building_52301": 0.5741
+  },
+  "term_change_points": {
+   "comfort": -2.398889951693195,
+   "energy": 0.3042931084967979,
+   "carbon": 0.2005723685650118
+  }
+ },
+ "SUPFIX_over_ROSFIX_pressure_reset_on_fixed_start": {
+  "gain_pct": 1.5889771063940294,
+  "ci95": [
+   0.6088727216303169,
+   2.4670699234192455
+  ],
+  "better": 9,
+  "worse": 0,
+  "wilcoxon_exact_p": 0.00390625,
+  "sign_p": 0.00390625,
+  "ood_gain_pct": 2.1749138991703054,
+  "per_architecture_gain_pct": {
+   "building_52200": 1.3552,
+   "building_52201": 0.0008,
+   "building_52203": 0.7661,
+   "building_52205": 2.1075,
+   "building_52206": 0.0,
+   "building_52207": 2.8887,
+   "building_52208": 4.0711,
+   "building_52209": 0.0042,
+   "building_52211": 0.0003,
+   "building_52212": 2.6122,
+   "building_52300": 2.934,
+   "building_52301": 0.1153
+  },
+  "term_change_points": {
+   "comfort": -1.9754544362311666,
+   "energy": 0.2904195230302216,
+   "carbon": 0.09605781404586451
+  }
+ },
+ "ROS_over_ROSFIX_learning_without_reset": {
+  "gain_pct": 0.9462491188422573,
+  "ci95": [
+   0.10578755904197379,
+   1.8229768282218983
+  ],
+  "better": 8,
+  "worse": 2,
+  "wilcoxon_exact_p": 0.048828125,
+  "sign_p": 0.109375,
+  "ood_gain_pct": -0.13457127298959204,
+  "per_architecture_gain_pct": {
+   "building_52200": 0.5694,
+   "building_52201": 0.7696,
+   "building_52203": 1.0646,
+   "building_52205": 4.5223,
+   "building_52206": 0.013,
+   "building_52207": -0.0042,
+   "building_52208": 0.0016,
+   "building_52209": 0.0036,
+   "building_52211": -0.4884,
+   "building_52212": 1.6882,
+   "building_52300": -0.1717,
+   "building_52301": -0.034
+  },
+  "term_change_points": {
+   "comfort": -1.5093382648078302,
+   "energy": 0.1340956351455055,
+   "carbon": 0.42899350948869225
+  }
+ },
+ "chain_points_of_B": {
+  "G30": 8.617,
+  "ROSFIX": 8.9,
+  "ROS": 9.762,
+  "SUPFIX": 10.347,
+  "SUP": 11.19
+ },
+ "learning_points_with_reset": 0.843,
+ "learning_points_without_reset": 0.862,
+ "repro_SUP_laptop_vs_kaggle": [
+  {
+   "file": "building_52209_chicago22_w0417_k07sup__RAMP-0.3548_COLD_SAT--1.0_KI-0.0068_KP-0.0_h29a8e7c385af0104_8640.npz",
+   "bitwise": true,
+   "max_abs_diff": 0.0,
+   "rel_loss_diff": 0.0
+  },
+  {
+   "file": "building_52211_billings22_w0206_k07sup__RAMP-0.3548_COLD_SAT--1.0_KI-0.0068_KP-0.0_h29a8e7c385af0104_8640.npz",
+   "bitwise": true,
+   "max_abs_diff": 0.0,
+   "rel_loss_diff": 0.0
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "draws": 400,
+ "H2_pooled_118": 0.407,
+ "share": {
+  "REPLICATED": 0.672,
+  "INCONCLUSIVE": 0.328
+ },
+ "estimate_quantiles_5_50_95": [
+  0.177,
+  0.403,
+  0.693
+ ]
+}

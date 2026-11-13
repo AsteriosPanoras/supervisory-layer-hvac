@@ -1,0 +1,36 @@
+{
+ "F1": {
+  "differing": [],
+  "pass": true
+ },
+ "F2": {
+  "differing": [],
+  "requests_seen": 213,
+  "pass": true
+ },
+ "F3": {
+  "first_override_step": 322,
+  "prefix_differing": [],
+  "only_pressure_columns_at_first": true,
+  "pass": true
+ },
+ "F4": {
+  "tr_req_reproduced": true,
+  "tr_sp_reproduced": true,
+  "overrides_only_where_allowed": true,
+  "no_override_outside_PI": true,
+  "pass": true
+ },
+ "F5": {
+  "differing": [],
+  "pass": true
+ },
+ "F6": {
+  "first_change": 322,
+  "prefix_differing": [],
+  "ros_logged": true,
+  "tr_logged": true,
+  "pass": true
+ },
+ "VERDICT": "PASS"
+}

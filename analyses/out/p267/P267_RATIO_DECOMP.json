@@ -1,0 +1,398 @@
+{
+ "note": "post hoc, descriptive; frozen blind runs read before; TEST_BACKLOG B47 items 1-2; nothing new was run",
+ "cases": {
+  "K07": {
+   "episodes": 36,
+   "pooled_gain_composite_pct": 2.8161680109837106,
+   "pooled_gain_all_pct": 2.6928236927474036,
+   "rho_episode_gain_vs_comfort_share": 0.7981981981981981,
+   "mean_comfort_share": 0.13286793225144555,
+   "1a_rho_per_architecture": {
+    "all_12": 0.7832167832167832,
+    "composite_10": 0.7696969696969697,
+    "per_architecture": [
+     {
+      "architecture": "building_52200",
+      "gain_pct": 2.251569743938042,
+      "comfort_share": 0.21609777032957064
+     },
+     {
+      "architecture": "building_52201",
+      "gain_pct": 1.5725151539715765,
+      "comfort_share": 0.08251613366701538
+     },
+     {
+      "architecture": "building_52203",
+      "gain_pct": 2.1648448654795094,
+      "comfort_share": 0.1339325969364038
+     },
+     {
+      "architecture": "building_52205",
+      "gain_pct": 6.687397114088133,
+      "comfort_share": 0.47925293542030467
+     },
+     {
+      "architecture": "building_52206",
+      "gain_pct": 0.01891600491926715,
+      "comfort_share": 0.010508933962674074
+     },
+     {
+      "architecture": "building_52207",
+      "gain_pct": 2.832230563513549,
+      "comfort_share": 0.1456367201199551
+     },
+     {
+      "architecture": "building_52208",
+      "gain_pct": 4.090946598484868,
+      "comfort_share": 0.10092151542256182
+     },
+     {
+      "architecture": "building_52209",
+      "gain_pct": -0.0010746533653849255,
+      "comfort_share": 0.01747641572279332
+     },
+     {
+      "architecture": "building_52211",
+      "gain_pct": 0.5534000185178356,
+      "comfort_share": 0.14559449694060503
+     },
+     {
+      "architecture": "building_52212",
+      "gain_pct": 4.366674932674219,
+      "comfort_share": 0.1621546005618934
+     },
+     {
+      "architecture": "building_52300",
+      "gain_pct": 2.7265182417602674,
+      "comfort_share": 0.19792366482673532
+     },
+     {
+      "architecture": "building_52301",
+      "gain_pct": 0.5402764632453483,
+      "comfort_share": 0.05425390410632676
+     }
+    ]
+   },
+   "1b_absolute": {
+    "rho_dL_vs_comfort_loss": 0.8396396396396397,
+    "rho_dComfort_vs_comfort_loss": 0.8473616473616473,
+    "rho_total_loss_vs_comfort_loss": 0.802831402831403
+   },
+   "1c_leave_one_architecture_out_rho": {
+    "min": 0.7670454545454546,
+    "max": 0.8288770053475937
+   },
+   "1d_shared_denominator_null": {
+    "observed_rho": 0.7981981981981981,
+    "null_mean": -0.09149320463320464,
+    "null_2.5": -0.4151866151866152,
+    "null_97.5": 0.2460746460746461,
+    "p_null_ge_observed": 9.999000099990002e-05
+   },
+   "1e_capture_and_cost": {
+    "capture_median": 0.11942581214743059,
+    "capture_q25": 0.02992164979646214,
+    "capture_q75": 0.34909817795615955,
+    "rho_capture_vs_share": 0.5413127413127413,
+    "other_terms_cost_pct_median": 0.28620080579054297,
+    "rho_cost_vs_share": 0.5451737451737452
+   },
+   "2_decomposition": {
+    "composite": {
+     "change_pct_of_comparator_loss": {
+      "comfort": -3.869055268764035,
+      "energy": 0.4314645533242403,
+      "carbon": 0.6214226713724439
+     },
+     "net_change_pct": -2.816168044067351,
+     "comparator_shares": {
+      "comfort": 0.15925235375460675,
+      "energy": 0.5141703415077059,
+      "carbon": 0.3265773048344755
+     }
+    },
+    "all_36": {
+     "change_pct_of_comparator_loss": {
+      "comfort": -3.825012464054418,
+      "energy": 0.4918724280732613,
+      "carbon": 0.6403163108598358
+     },
+     "net_change_pct": -2.692823725121321,
+     "comparator_shares": {
+      "comfort": 0.15922587407174485,
+      "energy": 0.519503683604246,
+      "carbon": 0.32127044242929564
+     }
+    }
+   }
+  },
+  "ZT": {
+   "episodes": 36,
+   "pooled_gain_composite_pct": 5.71272679835062,
+   "pooled_gain_all_pct": 5.971205040091309,
+   "rho_episode_gain_vs_comfort_share": 0.9263835263835265,
+   "mean_comfort_share": 0.3632323429951522,
+   "1a_rho_per_architecture": {
+    "all_12": 0.9160839160839163,
+    "composite_10": 0.9272727272727272,
+    "per_architecture": [
+     {
+      "architecture": "building_52200",
+      "gain_pct": 8.405086213273538,
+      "comfort_share": 0.6783397809607096
+     },
+     {
+      "architecture": "building_52201",
+      "gain_pct": 2.8732512374739616,
+      "comfort_share": 0.3250661671717397
+     },
+     {
+      "architecture": "building_52203",
+      "gain_pct": 11.058996167096735,
+      "comfort_share": 0.5264552733334825
+     },
+     {
+      "architecture": "building_52205",
+      "gain_pct": 8.061631514484835,
+      "comfort_share": 0.7708395593752387
+     },
+     {
+      "architecture": "building_52206",
+      "gain_pct": 0.009793536869973085,
+      "comfort_share": 0.0997933565818399
+     },
+     {
+      "architecture": "building_52207",
+      "gain_pct": 6.225302251416265,
+      "comfort_share": 0.4639650473839635
+     },
+     {
+      "architecture": "building_52208",
+      "gain_pct": 4.963631431628279,
+      "comfort_share": 0.4199277545125215
+     },
+     {
+      "architecture": "building_52209",
+      "gain_pct": 0.030433766613247037,
+      "comfort_share": 0.038881196051257914
+     },
+     {
+      "architecture": "building_52211",
+      "gain_pct": 0.37144340837975687,
+      "comfort_share": 0.11717262489291462
+     },
+     {
+      "architecture": "building_52212",
+      "gain_pct": 5.421883865598353,
+      "comfort_share": 0.38006127535685513
+     },
+     {
+      "architecture": "building_52300",
+      "gain_pct": 8.95857892602373,
+      "comfort_share": 0.4801045495520692
+     },
+     {
+      "architecture": "building_52301",
+      "gain_pct": 1.6529637563453492,
+      "comfort_share": 0.33894942403667105
+     }
+    ]
+   },
+   "1b_absolute": {
+    "rho_dL_vs_comfort_loss": 0.9500643500643502,
+    "rho_dComfort_vs_comfort_loss": 0.9490347490347492,
+    "rho_total_loss_vs_comfort_loss": 0.8841698841698843
+   },
+   "1c_leave_one_architecture_out_rho": {
+    "min": 0.9070855614973262,
+    "max": 0.938836898395722
+   },
+   "1d_shared_denominator_null": {
+    "observed_rho": 0.9263835263835265,
+    "null_mean": -0.18257616473616475,
+    "null_2.5": -0.48983912483912484,
+    "null_97.5": 0.14105534105534107,
+    "p_null_ge_observed": 9.999000099990002e-05
+   },
+   "1e_capture_and_cost": {
+    "capture_median": 0.1269084079161302,
+    "capture_q25": 0.05622923016864158,
+    "capture_q75": 0.14492106933930698,
+    "rho_capture_vs_share": 0.5961389961389961,
+    "other_terms_cost_pct_median": 0.6442205989036905,
+    "rho_cost_vs_share": 0.5758043758043758
+   },
+   "2_decomposition": {
+    "composite": {
+     "change_pct_of_comparator_loss": {
+      "comfort": -6.619767468163253,
+      "energy": 0.6237322615466119,
+      "carbon": 0.28330842287122077
+     },
+     "net_change_pct": -5.71272678374542,
+     "comparator_shares": {
+      "comfort": 0.44187028635322695,
+      "energy": 0.34061561592311657,
+      "carbon": 0.21751409772676875
+     }
+    },
+    "all_36": {
+     "change_pct_of_comparator_loss": {
+      "comfort": -6.896542967575443,
+      "energy": 0.6449032003296691,
+      "carbon": 0.28043473232496613
+     },
+     "net_change_pct": -5.971205034920808,
+     "comparator_shares": {
+      "comfort": 0.44239613683988477,
+      "energy": 0.3436453068971496,
+      "carbon": 0.21395855631395636
+     }
+    }
+   }
+  },
+  "Penguin": {
+   "episodes": 36,
+   "pooled_gain_composite_pct": 1.8833175796013957,
+   "pooled_gain_all_pct": 1.8115857856788264,
+   "rho_episode_gain_vs_comfort_share": -0.684942084942085,
+   "mean_comfort_share": 0.02167744319326,
+   "1a_rho_per_architecture": {
+    "all_12": -0.30069930069930073,
+    "composite_10": -0.6,
+    "per_architecture": [
+     {
+      "architecture": "building_52200",
+      "gain_pct": 5.906046187266433,
+      "comfort_share": 0.014512377354427057
+     },
+     {
+      "architecture": "building_52201",
+      "gain_pct": 1.2689653846487015,
+      "comfort_share": 0.02024711776959852
+     },
+     {
+      "architecture": "building_52203",
+      "gain_pct": 1.7305790500274587,
+      "comfort_share": 0.02043986932119337
+     },
+     {
+      "architecture": "building_52205",
+      "gain_pct": 2.0770315509658244,
+      "comfort_share": 0.06071729522019992
+     },
+     {
+      "architecture": "building_52206",
+      "gain_pct": 1.8364461415072308,
+      "comfort_share": 0.008096899193389993
+     },
+     {
+      "architecture": "building_52207",
+      "gain_pct": 3.5010732077184192,
+      "comfort_share": 0.010183659851776073
+     },
+     {
+      "architecture": "building_52208",
+      "gain_pct": 4.252692345600806,
+      "comfort_share": 0.006424344058582739
+     },
+     {
+      "architecture": "building_52209",
+      "gain_pct": 1.3353703491853608,
+      "comfort_share": 0.011903974509994822
+     },
+     {
+      "architecture": "building_52211",
+      "gain_pct": 0.13296086139136243,
+      "comfort_share": 0.076158849487092
+     },
+     {
+      "architecture": "building_52212",
+      "gain_pct": 0.845884568788613,
+      "comfort_share": 0.028541879880925283
+     },
+     {
+      "architecture": "building_52300",
+      "gain_pct": 0.6807785726267612,
+      "comfort_share": 0.005394995067429922
+     },
+     {
+      "architecture": "building_52301",
+      "gain_pct": 3.7865750446872903,
+      "comfort_share": 0.017973479510344725
+     }
+    ]
+   },
+   "1b_absolute": {
+    "rho_dL_vs_comfort_loss": -0.5897039897039897,
+    "rho_dComfort_vs_comfort_loss": -0.15032175032175035,
+    "rho_total_loss_vs_comfort_loss": 0.08365508365508366
+   },
+   "1c_leave_one_architecture_out_rho": {
+    "min": -0.7289438502673797,
+    "max": -0.6463903743315509
+   },
+   "1d_shared_denominator_null": {
+    "observed_rho": -0.684942084942085,
+    "null_mean": 0.0442381981981982,
+    "null_2.5": -0.24967824967824967,
+    "null_97.5": 0.3328249678249678,
+    "p_null_ge_observed": 1.0
+   },
+   "1e_capture_and_cost": {
+    "capture_median": 0.0,
+    "capture_q25": -0.000394509199306371,
+    "capture_q75": 0.16783581299728376,
+    "rho_capture_vs_share": -0.2743886743886744,
+    "other_terms_cost_pct_median": -0.9187765936719705,
+    "rho_cost_vs_share": 0.645045045045045
+   },
+   "2_decomposition": {
+    "composite": {
+     "change_pct_of_comparator_loss": {
+      "comfort": -0.06469436672733692,
+      "energy": -1.4616047074283378,
+      "carbon": -0.35701850746271047
+     },
+     "net_change_pct": -1.8833175816183851,
+     "comparator_shares": {
+      "comfort": 0.028197992252131123,
+      "energy": 0.6006253266232217,
+      "carbon": 0.37117668116559843
+     }
+    },
+    "all_36": {
+     "change_pct_of_comparator_loss": {
+      "comfort": -0.06320262681768361,
+      "energy": -1.4068023503942357,
+      "carbon": -0.3415808125340595
+     },
+     "net_change_pct": -1.8115857897459788,
+     "comparator_shares": {
+      "comfort": 0.024726646113443558,
+      "energy": 0.6122089491540232,
+      "carbon": 0.3630644047657613
+     }
+    }
+   }
+  }
+ },
+ "0_reproduction": {
+  "rho_K07_0.80": true,
+  "rho_ZT_0.93": true,
+  "gain_K07_comp_2.82": true,
+  "gain_ZT_comp_5.71": true,
+  "gain_Penguin_comp_1.88": true,
+  "gain_K07_all_2.69": true,
+  "gain_ZT_all_5.97": true,
+  "table32_K07": true
+ },
+ "official_scenes_comfort_share": {
+  "building_train_1|phoenix_5": 0.005054016425463478,
+  "building_train_4|phoenix_8": 0.0041024190780227015,
+  "building_train_2|fairbanks_2": 0.03489286620436706,
+  "building_train_1|singapore_8": 0.0020164866422200307,
+  "building_train_1|fairbanks_1": 0.04605753882111876,
+  "building_train_1|denver_7": 0.011665471894301302
+ }
+}

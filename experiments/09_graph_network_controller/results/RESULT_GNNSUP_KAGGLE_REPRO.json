@@ -1,0 +1,16 @@
+[
+ {
+  "file": "building_52300_pittsburgh22_w0918_k07sup__;ROS-1_TR-1_8640.npz",
+  "rewards_bitwise": false,
+  "max_abs_diff": 7.301568984985352e-07,
+  "mean_abs_kaggle": 0.010688890286300271,
+  "mean_abs_laptop": 0.010688890523466173
+ },
+ {
+  "file": "building_52300_pittsburgh22_w0918_k07___8640.npz",
+  "rewards_bitwise": false,
+  "max_abs_diff": 4.5634806156158447e-07,
+  "mean_abs_kaggle": 0.011774692035981228,
+  "mean_abs_laptop": 0.011774692519348188
+ }
+]

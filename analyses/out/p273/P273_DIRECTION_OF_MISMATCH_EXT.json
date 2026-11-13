@@ -1,0 +1,175 @@
+{
+ "note": "post hoc, descriptive; 2021 main episodes (98); classes as observed by the controller at each decision; equal weights; the per-window differences after the first mismatch include carry-over from the building state, so they are not isolated per-switch costs",
+ "check1_episodes_bit_identical_before_first_mismatch": 20,
+ "stations": 17,
+ "class_gains_by_weather_file_label": {
+  "C": {
+   "n": 6,
+   "PS5": 3.119,
+   "PD5": 3.079
+  },
+  "M": {
+   "n": 9,
+   "PS5": 2.253,
+   "PD5": 4.741
+  },
+  "H": {
+   "n": 5,
+   "PS5": 2.235,
+   "PD5": 1.814
+  }
+ },
+ "class_gains_by_observed_class": {
+  "C": {
+   "n": 6,
+   "PS5": 3.119,
+   "PD5": 3.079
+  },
+  "M": {
+   "n": 9,
+   "PS5": 2.253,
+   "PD5": 4.741
+  },
+  "H": {
+   "n": 5,
+   "PS5": 2.235,
+   "PD5": 1.814
+  }
+ },
+ "by_start_class": {
+  "C": {
+   "episodes": 6,
+   "episodes_with_a_mismatch": 6,
+   "daily_minus_once_pp": -0.04,
+   "parts": {
+    "E": {
+     "windows": 5,
+     "episodes": 1,
+     "contribution_pp": 0.515,
+     "ci95_contribution": [
+      0.0,
+      1.08
+     ],
+     "rate_pct_of_B_on_these_days": 4.705,
+     "ci95_rate": [
+      4.705,
+      4.705
+     ]
+    },
+    "M": {
+     "windows": 27,
+     "episodes": 5,
+     "contribution_pp": -0.429,
+     "ci95_contribution": [
+      -1.767,
+      -0.022
+     ],
+     "rate_pct_of_B_on_these_days": -7.798,
+     "ci95_rate": [
+      -18.796,
+      -1.363
+     ]
+    },
+    "matched": {
+     "windows": 79,
+     "episodes": 6,
+     "contribution_pp": -0.126,
+     "ci95_contribution": [
+      -0.664,
+      0.026
+     ],
+     "rate_pct_of_B_on_these_days": -0.348,
+     "ci95_rate": [
+      -1.666,
+      0.058
+     ]
+    }
+   }
+  },
+  "M": {
+   "episodes": 9,
+   "episodes_with_a_mismatch": 9,
+   "daily_minus_once_pp": 2.488,
+   "parts": {
+    "C": {
+     "windows": 44,
+     "episodes": 6,
+     "contribution_pp": 1.92,
+     "ci95_contribution": [
+      0.313,
+      3.863
+     ],
+     "rate_pct_of_B_on_these_days": 7.84,
+     "ci95_rate": [
+      5.033,
+      11.132
+     ]
+    },
+    "H": {
+     "windows": 52,
+     "episodes": 3,
+     "contribution_pp": 0.596,
+     "ci95_contribution": [
+      0.0,
+      1.228
+     ],
+     "rate_pct_of_B_on_these_days": 3.024,
+     "ci95_rate": [
+      2.077,
+      5.094
+     ]
+    },
+    "matched": {
+     "windows": 111,
+     "episodes": 9,
+     "contribution_pp": -0.029,
+     "ci95_contribution": [
+      -0.104,
+      0.05
+     ],
+     "rate_pct_of_B_on_these_days": -0.079,
+     "ci95_rate": [
+      -0.365,
+      0.145
+     ]
+    }
+   }
+  },
+  "H": {
+   "episodes": 5,
+   "episodes_with_a_mismatch": 4,
+   "daily_minus_once_pp": -0.421,
+   "parts": {
+    "M": {
+     "windows": 59,
+     "episodes": 4,
+     "contribution_pp": -0.406,
+     "ci95_contribution": [
+      -1.439,
+      0.0
+     ],
+     "rate_pct_of_B_on_these_days": -1.897,
+     "ci95_rate": [
+      -6.515,
+      -0.651
+     ]
+    },
+    "matched": {
+     "windows": 33,
+     "episodes": 4,
+     "contribution_pp": -0.015,
+     "ci95_contribution": [
+      -0.031,
+      0.002
+     ],
+     "rate_pct_of_B_on_these_days": -0.066,
+     "ci95_rate": [
+      -0.132,
+      0.006
+     ]
+    }
+   }
+  }
+ },
+ "cohort": "H2-ext"
+}

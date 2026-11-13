@@ -1,0 +1,17 @@
+{
+ "checked": "2026-11-12 05:45:50",
+ "submissions": {
+  "58250728": {
+   "arm": "AX",
+   "status": "SubmissionStatus.COMPLETE",
+   "public_score": "0.01053",
+   "description": "SB26-AX public Residual PPO (alexchilton) unchanged (frozen; notebook "
+  },
+  "58250733": {
+   "arm": "AXS",
+   "status": "SubmissionStatus.COMPLETE",
+   "public_score": "0.01064",
+   "description": "SB26-AXS public Residual PPO + unchanged supervisory layer (frozen; no"
+  }
+ }
+}

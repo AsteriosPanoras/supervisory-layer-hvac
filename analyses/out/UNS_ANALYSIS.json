@@ -1,0 +1,184 @@
+{
+ "note": "post hoc descriptive analysis of finished runs; the pre-registered gate verdict is unchanged",
+ "official": {
+  "building_train_1|denver_7": {
+   "U_vs_G30_pct": 0.0,
+   "UR_vs_U_pct": 0.0,
+   "R_vs_G30_pct": 0.0,
+   "U_change_pct_of_G30_loss": {
+    "energy+carbon, weekday nights": 0.0,
+    "energy+carbon, weekends": 0.0,
+    "energy+carbon, occupied": 0.0,
+    "comfort, occupied": 0.0,
+    "comfort, weekday mornings 06-09": 0.0
+   },
+   "UR_vs_U_comfort_weekday_mornings_pct_of_G30_loss": 0.0,
+   "max_mean_zone_temp_unoccupied_C": {
+    "G30": 22.943048095703148,
+    "U": 22.943048095703148
+   },
+   "mean_zone_temp_at_06h_weekdays_C": {
+    "G30": 22.10895185384562,
+    "U": 22.10895185384562
+   },
+   "oat_mean_C": 12.937234069682956,
+   "oat_night_mean_C": 11.474420635942124,
+   "learned_start_extensions_UR": 0
+  },
+  "building_train_1|fairbanks_1": {
+   "U_vs_G30_pct": 0.0,
+   "UR_vs_U_pct": -0.07722267699734608,
+   "R_vs_G30_pct": -0.07722267699734608,
+   "U_change_pct_of_G30_loss": {
+    "energy+carbon, weekday nights": 0.0,
+    "energy+carbon, weekends": 0.0,
+    "energy+carbon, occupied": 0.0,
+    "comfort, occupied": 0.0,
+    "comfort, weekday mornings 06-09": 0.0
+   },
+   "UR_vs_U_comfort_weekday_mornings_pct_of_G30_loss": -0.0582614484852345,
+   "max_mean_zone_temp_unoccupied_C": {
+    "G30": 22.84387848682894,
+    "U": 22.84387848682894
+   },
+   "mean_zone_temp_at_06h_weekdays_C": {
+    "G30": 21.67022130913416,
+    "U": 21.67022130913416
+   },
+   "oat_mean_C": -21.42443253905682,
+   "oat_night_mean_C": -20.958852662831795,
+   "learned_start_extensions_UR": 12
+  },
+  "building_train_1|phoenix_5": {
+   "U_vs_G30_pct": -11.439584962025906,
+   "UR_vs_U_pct": 0.0,
+   "R_vs_G30_pct": 0.0,
+   "U_change_pct_of_G30_loss": {
+    "energy+carbon, weekday nights": -2.3417388929968364,
+    "energy+carbon, weekends": -20.11641938569988,
+    "energy+carbon, occupied": 8.858252517863056,
+    "comfort, occupied": 2.1603208244158747,
+    "comfort, weekday mornings 06-09": 1.6642517867440463
+   },
+   "UR_vs_U_comfort_weekday_mornings_pct_of_G30_loss": 0.0,
+   "max_mean_zone_temp_unoccupied_C": {
+    "G30": 25.447682072566124,
+    "U": 31.843896484375023
+   },
+   "mean_zone_temp_at_06h_weekdays_C": {
+    "G30": 23.260168519507715,
+    "U": 23.36875105220232
+   },
+   "oat_mean_C": 36.82532409738614,
+   "oat_night_mean_C": 35.91411577604497,
+   "learned_start_extensions_UR": 1
+  },
+  "building_train_1|singapore_8": {
+   "U_vs_G30_pct": -1.9691740878023722,
+   "UR_vs_U_pct": 0.0,
+   "R_vs_G30_pct": 0.0,
+   "U_change_pct_of_G30_loss": {
+    "energy+carbon, weekday nights": 1.148541438548482,
+    "energy+carbon, weekends": -5.240471710887406,
+    "energy+carbon, occupied": 1.9475355829222762,
+    "comfort, occupied": 0.17522058510564456,
+    "comfort, weekday mornings 06-09": 0.17522058510564456
+   },
+   "UR_vs_U_comfort_weekday_mornings_pct_of_G30_loss": 0.0,
+   "max_mean_zone_temp_unoccupied_C": {
+    "G30": 24.979641019381006,
+    "U": 27.09835518078927
+   },
+   "mean_zone_temp_at_06h_weekdays_C": {
+    "G30": 23.209593185064506,
+    "U": 23.240572696081536
+   },
+   "oat_mean_C": 26.898888503180633,
+   "oat_night_mean_C": 26.305736198978174,
+   "learned_start_extensions_UR": 0
+  },
+  "building_train_2|fairbanks_2": {
+   "U_vs_G30_pct": 0.0,
+   "UR_vs_U_pct": 0.0,
+   "R_vs_G30_pct": 0.0,
+   "U_change_pct_of_G30_loss": {
+    "energy+carbon, weekday nights": 0.0,
+    "energy+carbon, weekends": 0.0,
+    "energy+carbon, occupied": 0.0,
+    "comfort, occupied": 0.0,
+    "comfort, weekday mornings 06-09": 0.0
+   },
+   "UR_vs_U_comfort_weekday_mornings_pct_of_G30_loss": 0.0,
+   "max_mean_zone_temp_unoccupied_C": {
+    "G30": 22.661337818818936,
+    "U": 22.661337818818936
+   },
+   "mean_zone_temp_at_06h_weekdays_C": {
+    "G30": 21.93068229215864,
+    "U": 21.93068229215864
+   },
+   "oat_mean_C": -8.181157205722927,
+   "oat_night_mean_C": -9.61131291043929,
+   "learned_start_extensions_UR": 0
+  },
+  "building_train_4|phoenix_8": {
+   "U_vs_G30_pct": 0.0,
+   "UR_vs_U_pct": 0.0,
+   "R_vs_G30_pct": 0.0,
+   "U_change_pct_of_G30_loss": {
+    "energy+carbon, weekday nights": 0.0,
+    "energy+carbon, weekends": 0.0,
+    "energy+carbon, occupied": 0.0,
+    "comfort, occupied": 0.0,
+    "comfort, weekday mornings 06-09": 0.0
+   },
+   "UR_vs_U_comfort_weekday_mornings_pct_of_G30_loss": 0.0,
+   "max_mean_zone_temp_unoccupied_C": {
+    "G30": 23.078959825303855,
+    "U": 23.078959825303855
+   },
+   "mean_zone_temp_at_06h_weekdays_C": {
+    "G30": 22.456807373118377,
+    "U": 22.456807373118377
+   },
+   "oat_mean_C": 14.396579986148433,
+   "oat_night_mean_C": 13.43801360702724,
+   "learned_start_extensions_UR": 0
+  }
+ },
+ "development": {
+  "UR_vs_G30_by_architecture": {
+   "building_52000": 1.3717976025510836,
+   "building_52004": -0.3008931934354475,
+   "building_52005": 1.2993143445450772,
+   "building_52007": 1.9527882581617972,
+   "building_52008": 3.5137991868189444,
+   "building_52010": -0.2895549868485725,
+   "building_52101": 2.134263796516911,
+   "building_52103": 7.547925339142559,
+   "building_52105": -0.4948080727826154
+  },
+  "UR_vs_G30_by_first_day_class": {
+   "C": [
+    4.760156551051342,
+    4
+   ],
+   "M": [
+    -0.19964282761404384,
+    8
+   ],
+   "H": [
+    1.5201631164585505,
+    6
+   ]
+  },
+  "U_vs_G30_finished_cells": [
+   null,
+   0
+  ],
+  "UR_vs_U_finished_cells": [
+   null,
+   0
+  ]
+ }
+}

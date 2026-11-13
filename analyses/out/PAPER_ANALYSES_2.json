@@ -1,0 +1,1003 @@
+{
+ "A_learned_tau": {
+  "ROS": {
+   "per_scene": {
+    "building_52200|buffalo22_w1113": {
+     "tau_final_h": 1.727252950848074,
+     "n_informative": 21,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 4
+    },
+    "building_52200|neworleans22_w0911": {
+     "tau_final_h": 1.3245684796025383,
+     "n_informative": 12,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 2
+    },
+    "building_52200|tucson22_w0313": {
+     "tau_final_h": 1.2967866523526599,
+     "n_informative": 4,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52201|miami22_w0904": {
+     "tau_final_h": 0.8069089602780614,
+     "n_informative": 18,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52201|saltlake22_w0619": {
+     "tau_final_h": 0.996756895371994,
+     "n_informative": 18,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52201|spokane22_w1106": {
+     "tau_final_h": 1.232251717226625,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 22
+    },
+    "building_52203|albuquerque22_w1120": {
+     "tau_final_h": 1.3712553433114931,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 21
+    },
+    "building_52203|honolulu22_w0327": {
+     "tau_final_h": 1.1606769234112242,
+     "n_informative": 4,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52203|saltlake22_w0731": {
+     "tau_final_h": 0.900207031400128,
+     "n_informative": 21,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52205|birmingham22_w0320": {
+     "tau_final_h": 1.6611993956881352,
+     "n_informative": 11,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52205|kansascity22_w0206": {
+     "tau_final_h": 1.8977877736848319,
+     "n_informative": 20,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 17
+    },
+    "building_52205|orlando22_w1009": {
+     "tau_final_h": 2.1587387286623465,
+     "n_informative": 14,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 3
+    },
+    "building_52206|honolulu22_w1120": {
+     "tau_final_h": 0.6423398932204203,
+     "n_informative": 4,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52206|omaha22_w1016": {
+     "tau_final_h": 0.8836816172638524,
+     "n_informative": 13,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 1
+    },
+    "building_52206|sandiego22_w0508": {
+     "tau_final_h": 0.9318535985802379,
+     "n_informative": 4,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52207|boston22_w0925": {
+     "tau_final_h": 1.0092871714852014,
+     "n_informative": 12,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52207|oklahoma22_w0515": {
+     "tau_final_h": 1.1982194370412238,
+     "n_informative": 13,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52207|seattle22_w0102": {
+     "tau_final_h": 1.1680011690033285,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 13
+    },
+    "building_52208|oklahoma22_w0911": {
+     "tau_final_h": 1.6928666459077812,
+     "n_informative": 6,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52208|pittsburgh22_w0403": {
+     "tau_final_h": 1.2919329493926752,
+     "n_informative": 14,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 3
+    },
+    "building_52208|raleigh22_w0612": {
+     "tau_final_h": 1.3079755377007398,
+     "n_informative": 14,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52209|albuquerque22_w0710": {
+     "tau_final_h": 0.5376352713083762,
+     "n_informative": 14,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52209|charlotte22_w1023": {
+     "tau_final_h": 0.8341952942180553,
+     "n_informative": 10,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 1
+    },
+    "building_52209|chicago22_w0417": {
+     "tau_final_h": 0.7093822085162446,
+     "n_informative": 18,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 1
+    },
+    "building_52211|billings22_w0206": {
+     "tau_final_h": 0.8994776609491845,
+     "n_informative": 22,
+     "frozen": true,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 7
+    },
+    "building_52211|newyork22_w0821": {
+     "tau_final_h": 0.5743592381984377,
+     "n_informative": 6,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52211|portland22_w0522": {
+     "tau_final_h": 0.3383093549282152,
+     "n_informative": 12,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52212|detroit22_w0102": {
+     "tau_final_h": 1.7693988876627853,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 22
+    },
+    "building_52212|indianapolis22_w0515": {
+     "tau_final_h": 1.3233734704245845,
+     "n_informative": 5,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 2
+    },
+    "building_52212|tampa22_w0626": {
+     "tau_final_h": 1.3062044778713826,
+     "n_informative": 21,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52300|houston22_w0731": {
+     "tau_final_h": 1.7619273193300249,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "H",
+     "group": "ood",
+     "need_extensions": 4
+    },
+    "building_52300|memphis22_w0102": {
+     "tau_final_h": 1.1703857784936305,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "ood",
+     "need_extensions": 11
+    },
+    "building_52300|pittsburgh22_w0918": {
+     "tau_final_h": 1.2338884175250107,
+     "n_informative": 12,
+     "frozen": false,
+     "class": "M",
+     "group": "ood",
+     "need_extensions": 1
+    },
+    "building_52301|billings22_w0828": {
+     "tau_final_h": 1.7628831068801183,
+     "n_informative": 8,
+     "frozen": false,
+     "class": "M",
+     "group": "ood",
+     "need_extensions": 0
+    },
+    "building_52301|boston22_w0821": {
+     "tau_final_h": 0.9784745576270422,
+     "n_informative": 5,
+     "frozen": false,
+     "class": "H",
+     "group": "ood",
+     "need_extensions": 0
+    },
+    "building_52301|indianapolis22_w1113": {
+     "tau_final_h": 1.1112865408086254,
+     "n_informative": 21,
+     "frozen": false,
+     "class": "C",
+     "group": "ood",
+     "need_extensions": 9
+    }
+   },
+   "scenes_with_ge2_informative_mornings": 36,
+   "tau_h_min_median_max": [
+    0.3383093549282152,
+    1.1843026077674272,
+    2.1587387286623465
+   ],
+   "per_architecture_mean_tau_h": {
+    "building_52200": 1.4495360276010907,
+    "building_52201": 1.0119725242922268,
+    "building_52203": 1.144046432707615,
+    "building_52205": 1.9059086326784378,
+    "building_52206": 0.8192917030215036,
+    "building_52207": 1.1251692591765845,
+    "building_52208": 1.4309250443337322,
+    "building_52209": 0.6937375913475586,
+    "building_52211": 0.6040487513586125,
+    "building_52212": 1.4663256119862507,
+    "building_52300": 1.3887338384495553,
+    "building_52301": 1.2842147351052617
+   },
+   "safety_freezes": 1
+  },
+  "SUP": {
+   "per_scene": {
+    "building_52200|buffalo22_w1113": {
+     "tau_final_h": 1.7273861214470259,
+     "n_informative": 21,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 4
+    },
+    "building_52200|neworleans22_w0911": {
+     "tau_final_h": 1.3208908479835149,
+     "n_informative": 12,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 2
+    },
+    "building_52200|tucson22_w0313": {
+     "tau_final_h": 1.2967589546652338,
+     "n_informative": 4,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52201|miami22_w0904": {
+     "tau_final_h": 0.8069089602780614,
+     "n_informative": 18,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52201|saltlake22_w0619": {
+     "tau_final_h": 0.9836532897550349,
+     "n_informative": 18,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52201|spokane22_w1106": {
+     "tau_final_h": 1.232251717226625,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 22
+    },
+    "building_52203|albuquerque22_w1120": {
+     "tau_final_h": 1.3704989768894145,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 21
+    },
+    "building_52203|honolulu22_w0327": {
+     "tau_final_h": 1.1606768104166671,
+     "n_informative": 4,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52203|saltlake22_w0731": {
+     "tau_final_h": 0.8998695246312327,
+     "n_informative": 21,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52205|birmingham22_w0320": {
+     "tau_final_h": 1.6613124110910407,
+     "n_informative": 11,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52205|kansascity22_w0206": {
+     "tau_final_h": 1.8978629688243245,
+     "n_informative": 20,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 17
+    },
+    "building_52205|orlando22_w1009": {
+     "tau_final_h": 1.5816310796453463,
+     "n_informative": 12,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 3
+    },
+    "building_52206|honolulu22_w1120": {
+     "tau_final_h": 0.6423398932204203,
+     "n_informative": 4,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52206|omaha22_w1016": {
+     "tau_final_h": 0.8836816172638524,
+     "n_informative": 13,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 1
+    },
+    "building_52206|sandiego22_w0508": {
+     "tau_final_h": 0.9318535985802379,
+     "n_informative": 4,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52207|boston22_w0925": {
+     "tau_final_h": 1.0087388016121763,
+     "n_informative": 12,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52207|oklahoma22_w0515": {
+     "tau_final_h": 1.147492160029568,
+     "n_informative": 13,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52207|seattle22_w0102": {
+     "tau_final_h": 1.1694127685746307,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 13
+    },
+    "building_52208|oklahoma22_w0911": {
+     "tau_final_h": 1.6466049132112655,
+     "n_informative": 4,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52208|pittsburgh22_w0403": {
+     "tau_final_h": 1.2918815180977252,
+     "n_informative": 14,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 3
+    },
+    "building_52208|raleigh22_w0612": {
+     "tau_final_h": 1.266255995390581,
+     "n_informative": 13,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52209|albuquerque22_w0710": {
+     "tau_final_h": 0.5376352713083762,
+     "n_informative": 14,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52209|charlotte22_w1023": {
+     "tau_final_h": 0.8341952803717614,
+     "n_informative": 10,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 1
+    },
+    "building_52209|chicago22_w0417": {
+     "tau_final_h": 0.7093834800671746,
+     "n_informative": 18,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 1
+    },
+    "building_52211|billings22_w0206": {
+     "tau_final_h": 0.8994776609491845,
+     "n_informative": 22,
+     "frozen": true,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 7
+    },
+    "building_52211|newyork22_w0821": {
+     "tau_final_h": 0.5743561016870966,
+     "n_informative": 6,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52211|portland22_w0522": {
+     "tau_final_h": 0.3383091309350989,
+     "n_informative": 12,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52212|detroit22_w0102": {
+     "tau_final_h": 1.769446035652436,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "composite",
+     "need_extensions": 22
+    },
+    "building_52212|indianapolis22_w0515": {
+     "tau_final_h": 1.320399168323704,
+     "n_informative": 5,
+     "frozen": false,
+     "class": "M",
+     "group": "composite",
+     "need_extensions": 2
+    },
+    "building_52212|tampa22_w0626": {
+     "tau_final_h": 1.3175123144977248,
+     "n_informative": 21,
+     "frozen": false,
+     "class": "H",
+     "group": "composite",
+     "need_extensions": 0
+    },
+    "building_52300|houston22_w0731": {
+     "tau_final_h": 1.7622991624399174,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "H",
+     "group": "ood",
+     "need_extensions": 3
+    },
+    "building_52300|memphis22_w0102": {
+     "tau_final_h": 1.1715379198443987,
+     "n_informative": 22,
+     "frozen": false,
+     "class": "C",
+     "group": "ood",
+     "need_extensions": 11
+    },
+    "building_52300|pittsburgh22_w0918": {
+     "tau_final_h": 1.2338178368382817,
+     "n_informative": 12,
+     "frozen": false,
+     "class": "M",
+     "group": "ood",
+     "need_extensions": 1
+    },
+    "building_52301|billings22_w0828": {
+     "tau_final_h": 1.76267556355165,
+     "n_informative": 8,
+     "frozen": false,
+     "class": "M",
+     "group": "ood",
+     "need_extensions": 0
+    },
+    "building_52301|boston22_w0821": {
+     "tau_final_h": 0.9784731344234161,
+     "n_informative": 5,
+     "frozen": false,
+     "class": "H",
+     "group": "ood",
+     "need_extensions": 0
+    },
+    "building_52301|indianapolis22_w1113": {
+     "tau_final_h": 1.1112865408086254,
+     "n_informative": 21,
+     "frozen": false,
+     "class": "C",
+     "group": "ood",
+     "need_extensions": 9
+    }
+   },
+   "scenes_with_ge2_informative_mornings": 36,
+   "tau_h_min_median_max": [
+    0.3383091309350989,
+    1.1704753442095148,
+    1.8978629688243245
+   ],
+   "per_architecture_mean_tau_h": {
+    "building_52200": 1.4483453080319248,
+    "building_52201": 1.0076046557532405,
+    "building_52203": 1.1436817706457714,
+    "building_52205": 1.713602153186904,
+    "building_52206": 0.8192917030215036,
+    "building_52207": 1.108547910072125,
+    "building_52208": 1.4015808088998571,
+    "building_52209": 0.6937380105824374,
+    "building_52211": 0.60404763119046,
+    "building_52212": 1.4691191728246216,
+    "building_52300": 1.3892183063741992,
+    "building_52301": 1.2841450795945637
+   },
+   "safety_freezes": 1
+  }
+ },
+ "B_activity_vs_gain": {
+  "per_scene": [
+   {
+    "scene": "building_52200|buffalo22_w1113",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 4,
+    "tr_override_share": 0.025179723502304147,
+    "gain_SUP_vs_G30_pct": 5.768874293416015,
+    "gain_LOS_vs_G30_pct": 4.655154054531141
+   },
+   {
+    "scene": "building_52200|neworleans22_w0911",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 2,
+    "tr_override_share": 0.037056504599211566,
+    "gain_SUP_vs_G30_pct": 1.4226957603367008,
+    "gain_LOS_vs_G30_pct": 0.038065067082548865
+   },
+   {
+    "scene": "building_52200|tucson22_w0313",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.02242000901306895,
+    "gain_SUP_vs_G30_pct": 1.3800143466454196,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52201|miami22_w0904",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.0,
+    "gain_SUP_vs_G30_pct": 0.0,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52201|saltlake22_w0619",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.0001752541184717841,
+    "gain_SUP_vs_G30_pct": 0.002965391300790987,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52201|spokane22_w1106",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 22,
+    "tr_override_share": 0.0,
+    "gain_SUP_vs_G30_pct": 3.3897789540000667,
+    "gain_LOS_vs_G30_pct": 3.3897789540000667
+   },
+   {
+    "scene": "building_52203|albuquerque22_w1120",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 21,
+    "tr_override_share": 0.043617197875166006,
+    "gain_SUP_vs_G30_pct": 4.7796728520791305,
+    "gain_LOS_vs_G30_pct": 3.792272411858477
+   },
+   {
+    "scene": "building_52203|honolulu22_w0327",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.005082369435681739,
+    "gain_SUP_vs_G30_pct": 0.03898103186373847,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52203|saltlake22_w0731",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.06129512793550648,
+    "gain_SUP_vs_G30_pct": 0.714103836483504,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52205|birmingham22_w0320",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.02647589004055881,
+    "gain_SUP_vs_G30_pct": 1.4809556179283812,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52205|kansascity22_w0206",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 17,
+    "tr_override_share": 0.008759942534776972,
+    "gain_SUP_vs_G30_pct": 10.28500891475571,
+    "gain_LOS_vs_G30_pct": 10.189793952543813
+   },
+   {
+    "scene": "building_52205|orlando22_w1009",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 3,
+    "tr_override_share": 0.17688679245283018,
+    "gain_SUP_vs_G30_pct": 5.598649440102898,
+    "gain_LOS_vs_G30_pct": 0.48225777812669346
+   },
+   {
+    "scene": "building_52206|honolulu22_w1120",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.0,
+    "gain_SUP_vs_G30_pct": 0.0,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52206|omaha22_w1016",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 1,
+    "tr_override_share": 0.0,
+    "gain_SUP_vs_G30_pct": 0.06474598460276537,
+    "gain_LOS_vs_G30_pct": 0.06474598460276537
+   },
+   {
+    "scene": "building_52206|sandiego22_w0508",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.0,
+    "gain_SUP_vs_G30_pct": 0.0,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52207|boston22_w0925",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.08300473186119874,
+    "gain_SUP_vs_G30_pct": 2.1652464118797954,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52207|oklahoma22_w0515",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.23856466876971608,
+    "gain_SUP_vs_G30_pct": 4.780363300184187,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52207|seattle22_w0102",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 13,
+    "tr_override_share": 0.08386198860693941,
+    "gain_SUP_vs_G30_pct": 0.7717287465707434,
+    "gain_LOS_vs_G30_pct": -0.11707679484922462
+   },
+   {
+    "scene": "building_52208|oklahoma22_w0911",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.08869610935856993,
+    "gain_SUP_vs_G30_pct": 2.5793082231207687,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52208|pittsburgh22_w0403",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 3,
+    "tr_override_share": 0.015735641227380016,
+    "gain_SUP_vs_G30_pct": 0.3792284833549542,
+    "gain_LOS_vs_G30_pct": 0.10238826579670457
+   },
+   {
+    "scene": "building_52208|raleigh22_w0612",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.23170347003154573,
+    "gain_SUP_vs_G30_pct": 7.0570534055026,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52209|albuquerque22_w0710",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.0,
+    "gain_SUP_vs_G30_pct": 0.0,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52209|charlotte22_w1023",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 1,
+    "tr_override_share": 0.0007880220646178094,
+    "gain_SUP_vs_G30_pct": 0.03952207182971179,
+    "gain_LOS_vs_G30_pct": 0.02707079040954463
+   },
+   {
+    "scene": "building_52209|chicago22_w0417",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 1,
+    "tr_override_share": 0.0006304176516942475,
+    "gain_SUP_vs_G30_pct": -0.037399816927408125,
+    "gain_LOS_vs_G30_pct": -0.03988048036727143
+   },
+   {
+    "scene": "building_52211|billings22_w0206",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 7,
+    "tr_override_share": 0.0,
+    "gain_SUP_vs_G30_pct": 0.7217361215822837,
+    "gain_LOS_vs_G30_pct": 0.7217361215822837
+   },
+   {
+    "scene": "building_52211|newyork22_w0821",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.0005735589331803843,
+    "gain_SUP_vs_G30_pct": -0.0015149679174486508,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52211|portland22_w0522",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.010754229997132205,
+    "gain_SUP_vs_G30_pct": 0.004679662066342516,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52212|detroit22_w0102",
+    "class": "C",
+    "group": "composite",
+    "los_extensions": 22,
+    "tr_override_share": 0.04464931308749096,
+    "gain_SUP_vs_G30_pct": 3.4888837394896455,
+    "gain_LOS_vs_G30_pct": 3.3998525559122306
+   },
+   {
+    "scene": "building_52212|indianapolis22_w0515",
+    "class": "M",
+    "group": "composite",
+    "los_extensions": 2,
+    "tr_override_share": 0.06194167104571729,
+    "gain_SUP_vs_G30_pct": 1.88869857700934,
+    "gain_LOS_vs_G30_pct": 0.0655460963441934
+   },
+   {
+    "scene": "building_52212|tampa22_w0626",
+    "class": "H",
+    "group": "composite",
+    "los_extensions": 0,
+    "tr_override_share": 0.34825184016824395,
+    "gain_SUP_vs_G30_pct": 6.979454647979699,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52300|houston22_w0731",
+    "class": "H",
+    "group": "ood",
+    "los_extensions": 3,
+    "tr_override_share": 0.31662730691856905,
+    "gain_SUP_vs_G30_pct": 4.543917238784944,
+    "gain_LOS_vs_G30_pct": 0.08827762821211893
+   },
+   {
+    "scene": "building_52300|memphis22_w0102",
+    "class": "C",
+    "group": "ood",
+    "los_extensions": 11,
+    "tr_override_share": 0.06187062638675542,
+    "gain_SUP_vs_G30_pct": -0.6165940634522249,
+    "gain_LOS_vs_G30_pct": -0.6917566032920597
+   },
+   {
+    "scene": "building_52300|pittsburgh22_w0918",
+    "class": "M",
+    "group": "ood",
+    "los_extensions": 1,
+    "tr_override_share": 0.08819407952355929,
+    "gain_SUP_vs_G30_pct": 2.1635906106533542,
+    "gain_LOS_vs_G30_pct": -0.09337128864070898
+   },
+   {
+    "scene": "building_52301|billings22_w0828",
+    "class": "M",
+    "group": "ood",
+    "los_extensions": 0,
+    "tr_override_share": 0.019190325972660356,
+    "gain_SUP_vs_G30_pct": 0.19981864986386988,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52301|boston22_w0821",
+    "class": "H",
+    "group": "ood",
+    "los_extensions": 0,
+    "tr_override_share": 0.017665615141955835,
+    "gain_SUP_vs_G30_pct": 0.15197462119006522,
+    "gain_LOS_vs_G30_pct": 0.0
+   },
+   {
+    "scene": "building_52301|indianapolis22_w1113",
+    "class": "C",
+    "group": "ood",
+    "los_extensions": 9,
+    "tr_override_share": 0.0,
+    "gain_SUP_vs_G30_pct": 1.2254205041552946,
+    "gain_LOS_vs_G30_pct": 1.2254205041552946
+   }
+  ],
+  "inactive_scenes": 4,
+  "inactive_gain_SUP_pct_min_max": [
+   0.0,
+   0.0
+  ],
+  "active_scenes": 32,
+  "active_gain_SUP_pct_mean": 2.2941113309511136,
+  "active_scenes_worse_than_0p1pct": 1,
+  "active_scenes_better": 29,
+  "spearman_tr_share_vs_gain_SUP": 0.6357786357786358,
+  "spearman_los_extensions_vs_gain_LOS": 0.5966537966537967,
+  "by_class": {
+   "C": {
+    "scenes": 12,
+    "mean_los_extensions": 10.916666666666666,
+    "mean_tr_override_share": 0.023692070906042265
+   },
+   "M": {
+    "scenes": 12,
+    "mean_los_extensions": 0.3333333333333333,
+    "mean_tr_override_share": 0.03389355770260307
+   },
+   "H": {
+    "scenes": 12,
+    "mean_los_extensions": 0.6666666666666666,
+    "mean_tr_override_share": 0.1190520737458966
+   }
+  }
+ },
+ "C_overhead": {
+  "G30": {
+   "policy_ms_per_step_median": 2.0161651614025358,
+   "policy_ms_per_step_max": 4.954783351619629,
+   "wall_s_median": 2917.478750304
+  },
+  "ROS": {
+   "policy_ms_per_step_median": 1.9688885773131002,
+   "policy_ms_per_step_max": 4.795989051506751,
+   "wall_s_median": 2910.256011755
+  },
+  "SUP": {
+   "policy_ms_per_step_median": 2.021127013647959,
+   "policy_ms_per_step_max": 5.270380509256519,
+   "wall_s_median": 3001.3440350450005
+  }
+ }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "asteriospanoras/sb26-cmp-k07-native-b",
+  "title": "SB26 CMP K07 Native B",
+  "code_file": "sb26-cmp-k07-native-b.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [],
+  "competition_sources": [
+    "neurips-2026-smart-buildings"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}

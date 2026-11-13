@@ -1,0 +1,115 @@
+{
+ "scenes": [
+  "building_train_1/denver_7",
+  "building_train_1/fairbanks_1",
+  "building_train_1/phoenix_5",
+  "building_train_1/singapore_8",
+  "building_train_2/fairbanks_2",
+  "building_train_4/phoenix_8"
+ ],
+ "setup_total_change_pct_of_G30": -1.9293099310214008,
+ "cells": {
+  "occupied": {
+   "comfort": {
+    "G30_share": 0.032417191295606815,
+    "ResPPO_share": 0.025163729700997818,
+    "setup_change_pts_of_G30": 0.3511264037986706
+   },
+   "energy": {
+    "G30_share": 0.25410490419527687,
+    "ResPPO_share": 0.30459674336607667,
+    "setup_change_pts_of_G30": 1.2354632069543736
+   },
+   "carbon": {
+    "G30_share": 0.27582758030853843,
+    "ResPPO_share": 0.3256175691285234,
+    "setup_change_pts_of_G30": 0.2869081662386414
+   }
+  },
+  "weekday 00-02": {
+   "comfort": {
+    "G30_share": 0.0,
+    "ResPPO_share": 0.0,
+    "setup_change_pts_of_G30": 0.0
+   },
+   "energy": {
+    "G30_share": 0.005775536850593762,
+    "ResPPO_share": 0.00024562439891976376,
+    "setup_change_pts_of_G30": -0.26666175857057306
+   },
+   "carbon": {
+    "G30_share": 0.00617738718240415,
+    "ResPPO_share": 0.0004233181654681975,
+    "setup_change_pts_of_G30": -0.05862924292665636
+   }
+  },
+  "weekday 02-06 (pre-start window)": {
+   "comfort": {
+    "G30_share": 0.0,
+    "ResPPO_share": 0.0,
+    "setup_change_pts_of_G30": 0.0
+   },
+   "energy": {
+    "G30_share": 0.08002637986370584,
+    "ResPPO_share": 0.10759625763961292,
+    "setup_change_pts_of_G30": 0.07766182663083393
+   },
+   "carbon": {
+    "G30_share": 0.14948044724560497,
+    "ResPPO_share": 0.17659578448726657,
+    "setup_change_pts_of_G30": 0.017721752420836914
+   }
+  },
+  "weekday 17-24 unoccupied": {
+   "comfort": {
+    "G30_share": 0.0,
+    "ResPPO_share": 0.0,
+    "setup_change_pts_of_G30": 0.0
+   },
+   "energy": {
+    "G30_share": 0.0039449789171270445,
+    "ResPPO_share": 0.004409414190815128,
+    "setup_change_pts_of_G30": -0.10340109693023479
+   },
+   "carbon": {
+    "G30_share": 0.0038262481476090565,
+    "ResPPO_share": 0.006877930302631647,
+    "setup_change_pts_of_G30": -0.022799456359100835
+   }
+  },
+  "weekday other unoccupied": {
+   "comfort": {
+    "G30_share": 0.0,
+    "ResPPO_share": 0.0,
+    "setup_change_pts_of_G30": 0.0
+   },
+   "energy": {
+    "G30_share": 0.011595532783997678,
+    "ResPPO_share": 0.016534229863884746,
+    "setup_change_pts_of_G30": 0.051871483280952625
+   },
+   "carbon": {
+    "G30_share": 0.02044567047227358,
+    "ResPPO_share": 0.02881640602882409,
+    "setup_change_pts_of_G30": 0.013578073368087031
+   }
+  },
+  "weekend (all unoccupied steps)": {
+   "comfort": {
+    "G30_share": 0.0,
+    "ResPPO_share": 0.0,
+    "setup_change_pts_of_G30": 0.0
+   },
+   "energy": {
+    "G30_share": 0.07136984660549966,
+    "ResPPO_share": 0.001246194472923781,
+    "setup_change_pts_of_G30": -2.8424284789926006
+   },
+   "carbon": {
+    "G30_share": 0.08500829613176206,
+    "ResPPO_share": 0.0018767982540552782,
+    "setup_change_pts_of_G30": -0.6697208099346262
+   }
+  }
+ }
+}

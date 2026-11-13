@@ -1,0 +1,19 @@
+\begin{tikzpicture}[
+  font=\small,
+  st/.style={draw, rounded corners=2pt, align=center, text width=23mm, minimum height=20mm, inner sep=3pt},
+  exp/.style={st, fill=black!4, draw=black!50},
+  conf/.style={st, fill=green!8, draw=green!45!black, very thick},
+  frz/.style={st, fill=white, draw=green!45!black, dashed, text width=19mm},
+  arr/.style={-{Latex[length=2mm]}, thick, black!60}
+]
+\node[exp]  (d)  {\textbf{Development}\\[1pt]\scriptsize first-workday \& 5-day studies; baseline $B$, profile library, G30};
+\node[exp,  right=4mm of d]  (a) {\textbf{2023 weather}\\[1pt]\scriptsize $n=70$ (23/24/23)\\ fixed vs.\ schedules; sparse \& persistence arms added};
+\node[exp,  right=4mm of a]  (b) {\textbf{2022 weather}\\[1pt]\scriptsize $n=58$ and $n=30$\\ frozen schedules; mild-start pattern observed};
+\node[frz,  right=4mm of b]  (f) {\textbf{Internal freeze}\\[1pt]\scriptsize gate MG, 6 arms, sample order, primary contrast, analysis};
+\node[conf, right=4mm of f]  (t) {\textbf{2021 weather}\\[1pt]\scriptsize $n=98$ main\\ (+20 optional)\\ primary test};
+\foreach \u/\v in {d/a, a/b, b/f, f/t} \draw[arr] (\u) -- (\v);
+\draw[decorate, decoration={brace, mirror, amplitude=5pt}, black!60]
+  ([yshift=-2mm]d.south west) -- node[below=6pt, font=\scriptsize]{exploratory: outcomes inspected, policies revised} ([yshift=-2mm]b.south east);
+\draw[decorate, decoration={brace, mirror, amplitude=5pt}, green!45!black]
+  ([yshift=-2mm]f.south west) -- node[below=6pt, font=\scriptsize, text=green!35!black]{pre-specified, outcomes unseen} ([yshift=-2mm]t.south east);
+\end{tikzpicture}

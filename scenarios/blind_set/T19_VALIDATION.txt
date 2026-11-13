@@ -1,0 +1,19 @@
+atlanta_4      probe   24.12 M  offline  24.115 M
+atlanta_7      probe   18.87 M  offline  18.873 M
+denver_1       probe    0.96 C  offline   0.958 C
+denver_4       probe   13.36 M  offline  13.355 M
+fairbanks_3    probe   -3.88 C  offline  -3.879 C
+fairbanks_6    probe   15.28 M  offline  15.280 M
+minneapolis_1  probe   -1.42 C  offline  -1.425 C
+minneapolis_2  probe   -2.92 C  offline  -2.915 C
+minneapolis_3  probe    4.91 C  offline   4.907 C
+minneapolis_4  probe    5.84 C  offline   5.843 C
+minneapolis_5  probe   16.34 M  offline  16.338 M
+minneapolis_6  probe   23.28 M  offline  23.282 M
+minneapolis_7  probe   24.19 M  offline  24.194 M
+minneapolis_8  probe    0.39 C  offline   0.393 C
+phoenix_2      probe   23.13 M  offline  23.132 M
+phoenix_7      probe   26.96 H  offline  26.958 H
+singapore_2    probe   29.27 H  offline  29.268 H
+singapore_5    probe   28.67 H  offline  28.669 H
+max |offline - probe| (K): {'offset 0': 0.0, 'offset 1': 0.03}

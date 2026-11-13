@@ -1,0 +1,32 @@
+{
+ "ref": "<project>/audit_2026-11-02/DABU/N9_design/laptop_run_k07x2/work_par/out",
+ "test": "<project>/audit_2026-11-02/DABU/N9_design/host-B_k07x2_par/out",
+ "runs": {
+  "('building_52103', 'phoenix_2', 'k07@RAMP=0.25,COLD_SAT=-0.8,HEAT_U_SCALE=0.875,KP=0.075,NIGHT_HEAT_DROP_K=3,MILD_SHIFT_K=0.75', 1500)": {
+   "arrays_compared": 16,
+   "all_bitwise": true,
+   "not_bitwise": [],
+   "illegal": [
+    0,
+    0
+   ],
+   "ref_wall_s": 507.26955844199983,
+   "test_wall_s": 176.40203145996202
+  },
+  "('building_52103', 'phoenix_2', 'k07unif@mgatehot-g30nonM', 1500)": {
+   "arrays_compared": 16,
+   "all_bitwise": true,
+   "not_bitwise": [],
+   "illegal": [
+    0,
+    0
+   ],
+   "ref_wall_s": 499.7590873420122,
+   "test_wall_s": 171.54078223498072
+  }
+ },
+ "n_common": 2,
+ "only_in_ref": [],
+ "only_in_test": [],
+ "VERDICT": "PASS-BITWISE"
+}

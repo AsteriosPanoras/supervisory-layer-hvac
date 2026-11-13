@@ -1,0 +1,17 @@
+{
+ "checked": "2026-11-11 22:24:16",
+ "submissions": {
+  "58239181": {
+   "arm": "U",
+   "status": "SubmissionStatus.COMPLETE",
+   "public_score": "0.01414",
+   "description": "SB26-CMP2-6 K07 G30 + G36 unoccupied setup (frozen; notebook 305b8866)"
+  },
+  "58239531": {
+   "arm": "UR",
+   "status": "SubmissionStatus.COMPLETE",
+   "public_score": "0.01415",
+   "description": "SB26-CMP2-7 K07 G30 + G36 unoccupied setup + learned optimal start (fr"
+  }
+ }
+}

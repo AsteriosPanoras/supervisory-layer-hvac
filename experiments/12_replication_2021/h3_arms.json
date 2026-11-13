@@ -1,0 +1,5 @@
+{
+ "B": "k07@RAMP=0.25,COLD_SAT=-0.8,HEAT_U_SCALE=0.875,KP=0.075,NIGHT_HEAT_DROP_K=3,MILD_SHIFT_K=0.75",
+ "TRIG2": "k07unif@trighot:2",
+ "MG": "k07unif@mgatehot"
+}

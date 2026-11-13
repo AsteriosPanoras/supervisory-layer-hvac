@@ -1,0 +1,16 @@
+{
+ "tag": "K07_G30_UNSROS",
+ "family": "k07",
+ "policy": "SB26-CMP2-7 K07 G30 + G36 unoccupied setup + learned optimal start (frozen; notebook cdafdcd0)",
+ "kernel": "asteriospanoras/sb26-cmp2-k07-g30-unsros",
+ "kernel_version": 1,
+ "notebook_sha256_prefix": "cdafdcd0",
+ "submission_id": "58239531",
+ "submitted": "2026-11-11 13:41:21.323000",
+ "status_at_record": "SubmissionStatus.PENDING",
+ "approval": "authors 2026-11-11 15:14: \u00ab\u03ba\u03ac\u03bd\u03b5 \u03c5\u03c0\u03bf\u03b2\u03bf\u03bb\u03ad\u03c2 \u03ba\u03b1\u03b9 \u03c4\u03c1\u03ad\u03be\u03b5 \u03ba\u03b1\u03b9 \u03bc\u03b5\u03c4\u03ac \u03c3\u03c5\u03bd\u03b5\u03c7\u03af\u03b6\u03bf\u03c5\u03bc\u03b5 \u03c3\u03c4\u03b7\u03bd \u03b5\u03bd\u03cc\u03c4\u03b7\u03c4\u03b1 2\u00bb \u2014 yes to U (UNS) and UR (UNSROS)",
+ "parity": "official_adapter/dry/PARITY_UNS.txt",
+ "gate": "k07uns/RESULT_K07UNS_GATE.json (GATE_PASS)",
+ "frozen_research_artifact": "k07sup@<G30>;ROS=1,TR=0,UNS_COOL_K=305.4 (run_episode_k07_v9supe.py sha e1b7921f...)",
+ "purpose": "leaderboard consistency point and ablation: LB(UNSROS) - LB(UNS) isolates the learned start; LB(G30+ROS) = LB(G30) = 0.01477 is known"
+}

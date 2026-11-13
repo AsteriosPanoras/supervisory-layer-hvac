@@ -1,0 +1,221 @@
+{
+ "smoke": {
+  "building_52200": {
+   "status": "OK",
+   "weather": "neworleans22_w0911",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1098.0078125,
+   "wall_s": 51.04814853001153
+  },
+  "building_52209": {
+   "status": "OK",
+   "weather": "albuquerque22_w0710",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1191.8125,
+   "wall_s": 63.386397496040445
+  },
+  "building_52201": {
+   "status": "OK",
+   "weather": "miami22_w0904",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 984.9375,
+   "wall_s": 41.07201310101664
+  },
+  "building_52208": {
+   "status": "OK",
+   "weather": "raleigh22_w0612",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1236.00390625,
+   "wall_s": 53.35383851901861
+  },
+  "building_52212": {
+   "status": "OK",
+   "weather": "tampa22_w0626",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1315.8359375,
+   "wall_s": 56.34313602000475
+  },
+  "building_52301": {
+   "status": "OK",
+   "weather": "boston22_w0821",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1034.15234375,
+   "wall_s": 43.51221854001051
+  },
+  "building_52207": {
+   "status": "OK",
+   "weather": "oklahoma22_w0515",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 2363.27734375,
+   "wall_s": 119.54115635500057
+  },
+  "building_52211": {
+   "status": "OK",
+   "weather": "newyork22_w0821",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1260.60546875,
+   "wall_s": 65.09527620498557
+  },
+  "building_52206": {
+   "status": "OK",
+   "weather": "honolulu22_w1120",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1204.84375,
+   "wall_s": 63.914986554009374
+  },
+  "building_52300": {
+   "status": "OK",
+   "weather": "houston22_w0731",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1433.92578125,
+   "wall_s": 49.352640052034985
+  },
+  "building_52205": {
+   "status": "OK",
+   "weather": "orlando22_w1009",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1052.00390625,
+   "wall_s": 25.87969225901179
+  },
+  "building_52203": {
+   "status": "OK",
+   "weather": "saltlake22_w0731",
+   "steps_done": 120,
+   "illegal_actions": 0,
+   "ru_maxrss_mb": 1025.62109375,
+   "wall_s": 42.56297682202421
+  }
+ },
+ "r_central": 7.628473709386492,
+ "r_range": [
+  5.976757055893747,
+  9.280190362879239
+ ],
+ "c_ref_ms_per_zone_step": 3.050922531769306,
+ "est_min_per_scene": {
+  "building_52208": {
+   "10d": 6.8,
+   "10d_range": [
+    5.3,
+    8.3
+   ],
+   "30d": 20.4,
+   "zones_model_10d": 5.9
+  },
+  "building_52205": {
+   "10d": 3.3,
+   "10d_range": [
+    2.6,
+    4.0
+   ],
+   "30d": 9.9,
+   "zones_model_10d": 3.4
+  },
+  "building_52200": {
+   "10d": 6.5,
+   "10d_range": [
+    5.1,
+    7.9
+   ],
+   "30d": 19.5,
+   "zones_model_10d": 4.2
+  },
+  "building_52207": {
+   "10d": 15.2,
+   "10d_range": [
+    11.9,
+    18.5
+   ],
+   "30d": 45.6,
+   "zones_model_10d": 11.1
+  },
+  "building_52209": {
+   "10d": 8.1,
+   "10d_range": [
+    6.3,
+    9.8
+   ],
+   "30d": 24.2,
+   "zones_model_10d": 14.5
+  },
+  "building_52201": {
+   "10d": 5.2,
+   "10d_range": [
+    4.1,
+    6.4
+   ],
+   "30d": 15.7,
+   "zones_model_10d": 5.3
+  },
+  "building_52211": {
+   "10d": 8.3,
+   "10d_range": [
+    6.5,
+    10.1
+   ],
+   "30d": 24.8,
+   "zones_model_10d": 15.4
+  },
+  "building_52301": {
+   "10d": 5.5,
+   "10d_range": [
+    4.3,
+    6.7
+   ],
+   "30d": 16.6,
+   "zones_model_10d": 5.1
+  },
+  "building_52203": {
+   "10d": 5.4,
+   "10d_range": [
+    4.2,
+    6.6
+   ],
+   "30d": 16.2,
+   "zones_model_10d": 4.7
+  },
+  "building_52212": {
+   "10d": 7.2,
+   "10d_range": [
+    5.6,
+    8.7
+   ],
+   "30d": 21.5,
+   "zones_model_10d": 5.6
+  },
+  "building_52300": {
+   "10d": 6.3,
+   "10d_range": [
+    4.9,
+    7.6
+   ],
+   "30d": 18.8,
+   "zones_model_10d": 4.1
+  },
+  "building_52206": {
+   "10d": 8.1,
+   "10d_range": [
+    6.4,
+    9.9
+   ],
+   "30d": 24.4,
+   "zones_model_10d": 10.3
+  }
+ },
+ "total_h_one_worker_36_scenes": {
+  "10d": 4.29,
+  "30d": 12.87,
+  "zones_model_10d": 4.47
+ }
+}

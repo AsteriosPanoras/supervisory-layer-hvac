@@ -1,0 +1,11 @@
+{
+ "checked": "2026-11-12 02:41:32",
+ "submissions": {
+  "58247740": {
+   "arm": "PGPC",
+   "status": "SubmissionStatus.COMPLETE",
+   "public_score": "0.01001",
+   "description": "SB26-CMP-PG-PC Penguin deep-native + learned precooling (frozen; noteb"
+  }
+ }
+}

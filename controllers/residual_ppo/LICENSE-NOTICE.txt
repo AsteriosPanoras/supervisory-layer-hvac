@@ -1,0 +1,9 @@
+Smart Buildings Residual RL - licence notice
+
+Everything in this dataset is released under Apache-2.0.
+
+It builds on:
+- zt_controller.py: the per-zone PI controller "zt" by malyshevdanil, Apache-2.0
+  (https://www.kaggle.com/code/malyshevdanil/smart-buildings-probe-zt-best). Changed: an off-hours rule and research knobs added.
+- base.py: wraps the organisers' PIDWaterResetPolicy from the NeurIPS 2026 Smart Buildings starter kit, Apache-2.0.
+The weights in skynet.pt were trained by us on the competition simulator.

@@ -1,0 +1,66 @@
+{
+ "weights_sha256": "e5483721a48a99d50e1684d28c9dff48da00fe5894908a214b0ceaf70c7e4c51",
+ "teacher": {
+  "building_train_8|fairbanks_8": {
+   "status": "OK",
+   "steps": 2016,
+   "illegal": 0,
+   "L": 0.013214777923289308
+  },
+  "building_52104|minneapolis_1": {
+   "status": "OK",
+   "steps": 2016,
+   "illegal": 0,
+   "L": 0.005553739665498359
+  },
+  "building_52109|atlanta_7": {
+   "status": "OK",
+   "steps": 2016,
+   "illegal": 0,
+   "L": 0.007873495446692651
+  },
+  "building_52003|atlanta_4": {
+   "status": "OK",
+   "steps": 2016,
+   "illegal": 0,
+   "L": 0.02068414850214681
+  }
+ },
+ "gn": {
+  "building_train_8|fairbanks_8": {
+   "status": "OK",
+   "steps": 2016,
+   "illegal": 0,
+   "L": 0.013133961502329304
+  },
+  "building_52104|minneapolis_1": {
+   "status": "OK",
+   "steps": 2016,
+   "illegal": 0,
+   "L": 0.005545737274918163
+  },
+  "building_52109|atlanta_7": {
+   "status": "OK",
+   "steps": 2016,
+   "illegal": 0,
+   "L": 0.007944391186983452
+  },
+  "building_52003|atlanta_4": {
+   "status": "OK",
+   "steps": 2016,
+   "illegal": 0,
+   "L": 0.020690876356792298
+  }
+ },
+ "G1": true,
+ "teacher_complete": true,
+ "ratio_pooled_gn_over_teacher": 0.9997634454973702,
+ "per_scene_ratio": {
+  "building_52003|atlanta_4": 1.0003252662126647,
+  "building_52104|minneapolis_1": 0.9985590987222701,
+  "building_52109|atlanta_7": 1.0090043540090674,
+  "building_train_8|fairbanks_8": 0.9938843905339055
+ },
+ "G2": true,
+ "GATE_PASS": true
+}

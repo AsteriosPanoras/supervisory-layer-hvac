@@ -1,0 +1,216 @@
+{
+ "runs": {
+  "G30": 36,
+  "SUP": 36,
+  "ZS": 36,
+  "ZB": 36,
+  "AXS": 36,
+  "AX": 36,
+  "AXT": 36,
+  "AXR": 36
+ },
+ "AXR_vs_AX": {
+  "gain_pct": 0.48683292197003736,
+  "ci95": [
+   -0.09572644078327745,
+   1.0336136772470956
+  ],
+  "ci95_p277_rule_once": [
+   0.045550532291717155,
+   0.9512243164466416
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 7,
+  "worst_architecture_gain_pct": -1.3393976842993816,
+  "by_class_gain_pct": {
+   "C": 1.3216637880247184,
+   "M": -0.06374709664747069,
+   "H": 0.0029175201403996986
+  },
+  "ood_gain_pct": 0.48544168872620697,
+  "per_architecture_gain_pct": {
+   "building_52200": 1.7325545377498752,
+   "building_52201": 0.8042518511984342,
+   "building_52203": 1.7544529994937164,
+   "building_52205": 0.2600062836872308,
+   "building_52206": -0.014833899120980654,
+   "building_52207": 1.5281044590795156,
+   "building_52208": 0.29059105212456693,
+   "building_52209": -1.3393976842993816,
+   "building_52211": -1.1531833687199455,
+   "building_52212": 0.22033462805171045,
+   "building_52300": 0.32738056949641603,
+   "building_52301": 0.9968635500936296
+  }
+ },
+ "AXT_vs_AX": {
+  "gain_pct": 2.9864783535096695,
+  "ci95": [
+   1.5971514328330745,
+   4.525806331608821
+  ],
+  "ci95_p277_rule_once": [
+   1.7456335145620867,
+   4.185809991651535
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 10,
+  "worst_architecture_gain_pct": 0.037057636650095205,
+  "by_class_gain_pct": {
+   "C": 2.1677710032750652,
+   "M": 2.82467809775917,
+   "H": 3.938861356326173
+  },
+  "ood_gain_pct": 5.074636519046527,
+  "per_architecture_gain_pct": {
+   "building_52200": 4.701290280809422,
+   "building_52201": 0.997011321802288,
+   "building_52203": 2.574765287313485,
+   "building_52205": 4.281463434131149,
+   "building_52206": 0.6148387708324266,
+   "building_52207": 6.532200186760473,
+   "building_52208": 6.323212254181787,
+   "building_52209": 0.05241426531521487,
+   "building_52211": 0.037057636650095205,
+   "building_52212": 1.875813234484125,
+   "building_52300": 6.2367799780718824,
+   "building_52301": 1.3144102604520036
+  }
+ },
+ "AXS_vs_AX": {
+  "gain_pct": 3.365982443024196,
+  "ci95": [
+   1.5728973553570287,
+   5.219035076474843
+  ],
+  "ci95_p277_rule_once": [
+   1.9085743055032667,
+   4.821979961242018
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 8,
+  "worst_architecture_gain_pct": -1.3542859775051541,
+  "by_class_gain_pct": {
+   "C": 3.2530789402102855,
+   "M": 2.7045480932701427,
+   "H": 3.9324930776452605
+  },
+  "ood_gain_pct": 5.576912608656459,
+  "per_architecture_gain_pct": {
+   "building_52200": 6.053038591804194,
+   "building_52201": 1.7259370135165208,
+   "building_52203": 4.1755162951833675,
+   "building_52205": 4.466874629866135,
+   "building_52206": 0.33216738149226543,
+   "building_52207": 7.766493478482928,
+   "building_52208": 6.7793050721891674,
+   "building_52209": -1.3542859775051541,
+   "building_52211": -1.1508366799372505,
+   "building_52212": 2.05574997634288,
+   "building_52300": 6.519009603758108,
+   "building_52301": 2.528667719772326
+  }
+ },
+ "AXS_vs_AXR": {
+  "gain_pct": 2.8932347402797154,
+  "ci95": [
+   1.4983130817104702,
+   4.435049572939757
+  ],
+  "ci95_p277_rule_once": [
+   1.648724686007097,
+   4.070774723274207
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 9,
+  "worst_architecture_gain_pct": -0.014691515388864929,
+  "by_class_gain_pct": {
+   "C": 1.9572838642481827,
+   "M": 2.7665316063407275,
+   "H": 3.9296902070081074
+  },
+  "ood_gain_pct": 5.1163076099926315,
+  "per_architecture_gain_pct": {
+   "building_52200": 4.396658561470446,
+   "building_52201": 0.9291579321882737,
+   "building_52203": 2.464298250257768,
+   "building_52205": 4.2178349821681005,
+   "building_52206": 0.34694981442776607,
+   "building_52207": 6.335197454192409,
+   "building_52208": 6.507624594843064,
+   "building_52209": -0.014691515388864929,
+   "building_52211": 0.0023199356703806906,
+   "building_52212": 1.839468334003036,
+   "building_52300": 6.211965803285402,
+   "building_52301": 1.547227920858607
+  }
+ },
+ "AXS_vs_AXT": {
+  "gain_pct": 0.3911867985757822,
+  "ci95": [
+   -0.16958930386848922,
+   0.9217184140748109
+  ],
+  "ci95_p277_rule_once": [
+   -0.028368482258889216,
+   0.8273862745123872
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 7,
+  "worst_architecture_gain_pct": -1.407437941076961,
+  "by_class_gain_pct": {
+   "C": 1.1093562398251766,
+   "M": -0.12362192595551935,
+   "H": -0.0066294016194623495
+  },
+  "ood_gain_pct": 0.5291273809140629,
+  "per_architecture_gain_pct": {
+   "building_52200": 1.4184329619759461,
+   "building_52201": 0.7362663505882217,
+   "building_52203": 1.6430558392705907,
+   "building_52205": 0.19370458678857894,
+   "building_52206": -0.2844201144760028,
+   "building_52207": 1.3205545590981305,
+   "building_52208": 0.48687922481387425,
+   "building_52209": -1.407437941076961,
+   "building_52211": -1.1883346853372334,
+   "building_52212": 0.18337654332744036,
+   "building_52300": 0.3010024886306417,
+   "building_52301": 1.2304303622494461
+  }
+ },
+ "rule_layer_helps_both_reference": {
+  "composite_pooled_gain_gt_0": true,
+  "majority_of_changed_better": true,
+  "no_architecture_worse_than_1pct": false
+ },
+ "LAYER_HELPS_both_reference": false,
+ "component_change_pct_of_AX_loss": {
+  "AXR": {
+   "energy": 0.3291396925639587,
+   "carbon": 0.6447710758037639,
+   "comfort": -1.4607436763687711
+  },
+  "AXT": {
+   "energy": 0.29090410888634605,
+   "carbon": 0.09562570147002473,
+   "comfort": -3.373008157728405
+  },
+  "AXS": {
+   "energy": 0.6079500884564496,
+   "carbon": 0.7307790815278455,
+   "comfort": -4.704711602974814
+  }
+ },
+ "predictions": {
+  "A1_ros_only_gain_gt_0": true,
+  "A2_tr_only_gain_gt_0": true,
+  "A3_both_at_least_the_larger_single": true,
+  "A4_each_single_rule_reduces_comfort_loss": true
+ },
+ "AX_comfort_share_composite": 0.22415045986395227,
+ "supervisor_activity": {
+  "LOS_need_extensions_total": 161,
+  "TR_override_share_mean": 0.04022867880649164
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "note": "official training scenes (in sample for the network); plain kit; 8640 steps",
+ "pooled_gain_pct": 0.13769922047988103,
+ "per_scene": {
+  "building_train_1/denver_7": {
+   "gain_pct": -1.425252273996347,
+   "AX_loss": 0.002596343293173483,
+   "AX_share_comfort": 0.14184711864769148,
+   "AX_share_energy": 0.39845838396274535,
+   "AX_share_carbon": 0.45969449738956314,
+   "AX_unoccupied_energy_carbon_share": 0.19564434628762278,
+   "learned_starts": 8,
+   "pressure_override_steps": 0
+  },
+  "building_train_1/fairbanks_1": {
+   "gain_pct": -0.2713400480668815,
+   "AX_loss": 0.04633532221571109,
+   "AX_share_comfort": 0.018808425885351563,
+   "AX_share_energy": 0.29570652371214956,
+   "AX_share_carbon": 0.6854850504024989,
+   "AX_unoccupied_energy_carbon_share": 0.3853120751181264,
+   "learned_starts": 22,
+   "pressure_override_steps": 0
+  },
+  "building_train_1/phoenix_5": {
+   "gain_pct": 0.8943656202234473,
+   "AX_loss": 0.014870030333814581,
+   "AX_share_comfort": 0.024037200786868343,
+   "AX_share_energy": 0.7941400883253061,
+   "AX_share_carbon": 0.18182271088782548,
+   "AX_unoccupied_energy_carbon_share": 0.16123406464222595,
+   "learned_starts": 2,
+   "pressure_override_steps": 560
+  },
+  "building_train_1/singapore_8": {
+   "gain_pct": -0.02989500093426578,
+   "AX_loss": 0.006753216591476774,
+   "AX_share_comfort": 0.00017288399182722574,
+   "AX_share_energy": 0.8010847239619838,
+   "AX_share_carbon": 0.19874239204618893,
+   "AX_unoccupied_energy_carbon_share": 0.22202255107367838,
+   "learned_starts": 1,
+   "pressure_override_steps": 0
+  },
+  "building_train_2/fairbanks_2": {
+   "gain_pct": 1.5235146956518286,
+   "AX_loss": 0.01153020836920572,
+   "AX_share_comfort": 0.03400693612600962,
+   "AX_share_energy": 0.29229457097161227,
+   "AX_share_carbon": 0.6736984929023782,
+   "AX_unoccupied_energy_carbon_share": 0.5496847759193398,
+   "learned_starts": 15,
+   "pressure_override_steps": 0
+  },
+  "building_train_4/phoenix_8": {
+   "gain_pct": -1.193103043910404,
+   "AX_loss": 0.0023201557252080975,
+   "AX_share_comfort": 0.05752406428096692,
+   "AX_share_energy": 0.5860558028667417,
+   "AX_share_carbon": 0.35642013285229135,
+   "AX_unoccupied_energy_carbon_share": 0.2118352635738273,
+   "learned_starts": 4,
+   "pressure_override_steps": 0
+  }
+ },
+ "pooled_AX_shares": {
+  "comfort": 0.025163729700997815,
+  "energy": 0.434628463932233,
+  "carbon": 0.5402078063667691
+ }
+}

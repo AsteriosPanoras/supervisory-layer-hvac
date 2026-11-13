@@ -1,0 +1,40 @@
+\begin{tikzpicture}[
+  font=\small,
+  box/.style={draw=black!60, rounded corners=2pt, align=center, minimum height=11mm, minimum width=36mm, inner sep=3pt, fill=white},
+  sup/.style={box, fill=green!6, draw=green!45!black},
+  plant/.style={box, fill=black!4},
+  arr/.style={-{Latex[length=2mm]}, thick, black!70},
+  lab/.style={font=\scriptsize, text=black!70, fill=white, inner sep=1pt}
+]
+\node[sup]   (cls) at (0,0)    {Regime classifier\\$k_d = r(\bar T_d)\in\{E,C,M,H\}$};
+\node[sup]   (sch) at (5.2,0)  {Reassignment schedule $\pi$\\{\scriptsize once / daily / persistence / gate}};
+\node[sup]   (lib) at (10.4,0) {Frozen profile library\\$\{\theta_E,\theta_C,\theta_M,\theta_H\}$};
+\begin{scope}[on background layer]
+  \node[draw=green!45!black, dashed, rounded corners=4pt, fit=(cls)(sch)(lib), inner sep=5pt] (supbox) {};
+\end{scope}
+\node[font=\scriptsize\bfseries, text=green!35!black, anchor=south] at (supbox.north) {Supervisory layer (one decision per day)};
+\node[plant] (wx)  at (0,-3)    {Outdoor weather\\{\scriptsize past observations only}};
+\node[plant] (ctl) at (5.2,-3)  {Rule-based controller\\$u_t = C(x_t,\theta_t)$};
+\node[plant] (sim) at (10.4,-3) {Building simulator\\{\scriptsize 5-minute steps}};
+\draw[arr] (wx.north) -- node[lab, right=1pt]{$\bar T_d$ over 228 steps} (cls.south);
+\draw[arr] (cls.east) -- node[lab, above=1pt]{regime} (sch.west);
+\draw[arr] (sch.east) -- node[lab, above=1pt]{adopt?} (lib.west);
+\draw[arr] (lib.south) -- ++(0,-0.75) -| node[lab, pos=0.25, above=1pt]{$\theta_t$ applied in place} ([xshift=6mm]ctl.north);
+\draw[arr] ([yshift=2mm]ctl.east) -- node[lab, above=1pt]{$u_t$} ([yshift=2mm]sim.west);
+\draw[arr] ([yshift=-2mm]sim.west) -- node[lab, below=1pt]{$x_t$} ([yshift=-2mm]ctl.east);
+\draw[arr] (wx.east) -- (ctl.west);
+\node[font=\scriptsize, text=black!60, below=1mm of ctl] {integrators and plant state preserved};
+\begin{scope}[yshift=-5.2cm, xshift=-1.8cm]
+  \draw[thick, black!60] (0,0) -- (14,0);
+  \fill[black!15] (0,-0.15) rectangle (2.0,0.15);
+  \node[font=\scriptsize, above] at (1.0,0.18) {baseline $B$};
+  \foreach \x/\l in {2.0/{$t_1{=}228$}, 5.0/{$t_2$}, 8.0/{$t_3$}, 11.0/{$t_4$}} {
+     \draw[green!45!black, very thick] (\x,-0.22) -- (\x,0.22);
+     \node[font=\scriptsize, below] at (\x,-0.22) {\l};
+  }
+  \node[font=\scriptsize] at (12.9,-0.4) {$\cdots\ t_{30}$};
+  \draw[{Latex[length=1.5mm]}-{Latex[length=1.5mm]}, black!60] (2.0,0.45) -- node[font=\scriptsize, above]{288 steps (1 day)} (5.0,0.45);
+  \node[font=\scriptsize, text=black!70, anchor=west] at (0,-0.95)
+    {Episode: 8{,}640 five-minute steps (30 days). Decisions use only the preceding 228 observed outdoor temperatures.};
+\end{scope}
+\end{tikzpicture}

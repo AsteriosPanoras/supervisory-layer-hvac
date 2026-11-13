@@ -1,0 +1,67 @@
+[
+ {
+  "tag": "PG_DEEP",
+  "family": "penguin",
+  "policy": "DEEP native",
+  "kernel": "asteriospanoras/sb26-cmp-penguin-deep-native",
+  "kernel_version": 1,
+  "notebook_sha256": "a71c313cfd447452acafbcd0289881fac9125685fbf9ed7a6a037d810b63c6f2",
+  "submission_id": "58166119",
+  "submitted_utc": "2026-11-09 13:38:35 UTC",
+  "label": "SB26-CMP-1",
+  "status_at_submission": "PENDING",
+  "frozen_research_artifact": "research arm pgx@static@ (runner v3, policy file from the author's notebook cell 1)"
+ },
+ {
+  "tag": "PG_A4",
+  "family": "penguin",
+  "policy": "A4 static (340 + precondition 0.75)",
+  "kernel": "asteriospanoras/sb26-cmp-penguin-a4-static",
+  "kernel_version": 1,
+  "notebook_sha256": "5f27cd7560ca16e3b83a80caba231842efeb86c523826cf9136cceace9684f93",
+  "submission_id": "58166137",
+  "submitted_utc": "2026-11-09 13:39:12 UTC",
+  "label": "SB26-CMP-2",
+  "status_at_submission": "PENDING",
+  "frozen_research_artifact": "research arm pgx@static@hot_water_target=340.0,precondition_hours=0.75"
+ },
+ {
+  "tag": "PG_CT",
+  "family": "penguin",
+  "policy": "CONT_ALL18 contextual",
+  "kernel": "asteriospanoras/sb26-cmp-penguin-cont-all18",
+  "kernel_version": 1,
+  "notebook_sha256": "0a7fcba855d3090ee8a915b9052f211afb35b735fc71a9b4973530807b55711a",
+  "submission_id": "58166151",
+  "submitted_utc": "2026-11-09 13:39:35 UTC",
+  "label": "SB26-CMP-3",
+  "status_at_submission": "PENDING",
+  "frozen_research_artifact": "research arm pgx@ctx@CONT_ALL18_FOR_EVALUATION_NOT_USED_IN_DEV (spec sha256 72932fd9...)"
+ },
+ {
+  "tag": "K07_B",
+  "family": "k07",
+  "policy": "K07 native B",
+  "kernel": "asteriospanoras/sb26-cmp-k07-native-b",
+  "kernel_version": 1,
+  "notebook_sha256": "fa31141da1001b9584bc97a93448bc29a5b0d3ebc042b75aa14f2db3585d8aed",
+  "submission_id": "58166156",
+  "submitted_utc": "2026-11-09 13:39:58 UTC",
+  "label": "SB26-CMP-4",
+  "status_at_submission": "PENDING",
+  "frozen_research_artifact": "research arm B: k07@RAMP=0.25,COLD_SAT=-0.8,HEAT_U_SCALE=0.875,KP=0.075,NIGHT_HEAT_DROP_K=3,MILD_SHIFT_K=0.75"
+ },
+ {
+  "tag": "K07_MG",
+  "family": "k07",
+  "policy": "K07 MG adaptation",
+  "kernel": "asteriospanoras/sb26-cmp-k07-mg-adaptation",
+  "kernel_version": 1,
+  "notebook_sha256": "01c69c0c6912b3a9776a6d793165305679a8b0c4cbfe55def058ddaae792b9b5",
+  "submission_id": "58166170",
+  "submitted_utc": "2026-11-09 13:40:21 UTC",
+  "label": "SB26-CMP-5",
+  "status_at_submission": "PENDING",
+  "frozen_research_artifact": "research arm MG: k07unif@mgatehot"
+ }
+]

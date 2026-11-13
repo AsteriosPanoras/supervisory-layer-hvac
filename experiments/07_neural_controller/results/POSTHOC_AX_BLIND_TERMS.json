@@ -1,0 +1,138 @@
+{
+ "note": "post hoc, descriptive",
+ "architectures": {
+  "building_52200": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": 6.05303858818429,
+   "AX_comfort_share_pct": 37.38896929501437,
+   "comfort_change_pct": 6.372020228405302,
+   "energy_change_pct": -0.20144396105852388,
+   "carbon_change_pct": -0.11753767916248527,
+   "night_energy_carbon_change_pct": -0.6689631461163675,
+   "early_comfort_change_pct": 1.0712825893376836
+  },
+  "building_52201": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": 1.7259370229504745,
+   "AX_comfort_share_pct": 6.649590527500824,
+   "comfort_change_pct": 2.327332974208346,
+   "energy_change_pct": -0.2794755020939393,
+   "carbon_change_pct": -0.3219204491639294,
+   "night_energy_carbon_change_pct": -2.7839546715039263,
+   "early_comfort_change_pct": 1.1770928170194868
+  },
+  "building_52203": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": 4.175516326074346,
+   "AX_comfort_share_pct": 19.040784951774146,
+   "comfort_change_pct": 5.025676759759608,
+   "energy_change_pct": -0.43194319628197725,
+   "carbon_change_pct": -0.4182172374032831,
+   "night_energy_carbon_change_pct": -1.194753916804854,
+   "early_comfort_change_pct": 0.7934677971683223
+  },
+  "building_52205": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": 4.466874623980721,
+   "AX_comfort_share_pct": 60.60064449837045,
+   "comfort_change_pct": 4.671893858534708,
+   "energy_change_pct": -0.1444452407768558,
+   "carbon_change_pct": -0.0605739937771375,
+   "night_energy_carbon_change_pct": -0.04118861635748652,
+   "early_comfort_change_pct": 0.4121608527702626
+  },
+  "building_52206": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": 0.3321673924292168,
+   "AX_comfort_share_pct": 1.8687084508662746,
+   "comfort_change_pct": 0.8604428927091295,
+   "energy_change_pct": -0.3627678923384018,
+   "carbon_change_pct": -0.1655076079414975,
+   "night_energy_carbon_change_pct": -1.271567690924857,
+   "early_comfort_change_pct": 0.07883892548270979
+  },
+  "building_52207": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": 7.76649351597507,
+   "AX_comfort_share_pct": 37.30725221378791,
+   "comfort_change_pct": 9.090819178681237,
+   "energy_change_pct": -0.7648083140100569,
+   "carbon_change_pct": -0.5595173486961049,
+   "night_energy_carbon_change_pct": -1.2219439520131543,
+   "early_comfort_change_pct": 0.9111287549473319
+  },
+  "building_52208": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": 6.779305125313018,
+   "AX_comfort_share_pct": 15.17578748652115,
+   "comfort_change_pct": 7.742695437288664,
+   "energy_change_pct": -0.7297625835769871,
+   "carbon_change_pct": -0.2336277283986702,
+   "night_energy_carbon_change_pct": -0.1603553515901338,
+   "early_comfort_change_pct": 0.7752945317852767
+  },
+  "building_52209": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": -1.3542859782117223,
+   "AX_comfort_share_pct": 3.0325031314598707,
+   "comfort_change_pct": 0.25289028235959593,
+   "energy_change_pct": -0.6924824175031167,
+   "carbon_change_pct": -0.914693843068188,
+   "night_energy_carbon_change_pct": -3.5801560362096136,
+   "early_comfort_change_pct": 0.04400611062031558
+  },
+  "building_52211": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": -1.1508368260129798,
+   "AX_comfort_share_pct": 10.740964718350652,
+   "comfort_change_pct": 1.8654706215041406,
+   "energy_change_pct": -0.9148744993423704,
+   "carbon_change_pct": -2.101432948174747,
+   "night_energy_carbon_change_pct": -7.507189368759991,
+   "early_comfort_change_pct": 0.6016909815480951
+  },
+  "building_52212": {
+   "group": "composite",
+   "windows": 3,
+   "gain_pct": 2.0557499350225883,
+   "AX_comfort_share_pct": 13.964194101733005,
+   "comfort_change_pct": 4.450315653276643,
+   "energy_change_pct": -0.9882668963657003,
+   "carbon_change_pct": -1.406298821888341,
+   "night_energy_carbon_change_pct": -4.122576217202727,
+   "early_comfort_change_pct": 0.823149347946049
+  },
+  "building_52300": {
+   "group": "ood",
+   "windows": 3,
+   "gain_pct": 6.519009675552601,
+   "AX_comfort_share_pct": 34.93608099451035,
+   "comfort_change_pct": 7.5906875292014275,
+   "energy_change_pct": -0.7901157977668275,
+   "carbon_change_pct": -0.2815620558820081,
+   "night_energy_carbon_change_pct": -0.2714312716859848,
+   "early_comfort_change_pct": 0.42252145007951536
+  },
+  "building_52301": {
+   "group": "ood",
+   "windows": 3,
+   "gain_pct": 2.5286676864611723,
+   "AX_comfort_share_pct": 8.06084139989637,
+   "comfort_change_pct": 3.3171674412343397,
+   "energy_change_pct": -0.44942893374410564,
+   "carbon_change_pct": -0.33907082102905284,
+   "night_energy_carbon_change_pct": -3.0423533913388203,
+   "early_comfort_change_pct": 0.9215585062456709
+  }
+ },
+ "spearman_share_gain_12": 0.7832167832167832
+}

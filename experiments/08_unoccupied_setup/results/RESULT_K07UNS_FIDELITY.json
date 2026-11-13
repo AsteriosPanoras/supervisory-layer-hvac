@@ -1,0 +1,28 @@
+{
+ "F1": {
+  "differing": [],
+  "log_equal": true,
+  "pass": true
+ },
+ "F2": {
+  "phoenix_7": {
+   "first_diff_step": 138,
+   "prefix_differing": [],
+   "pi_active_at_first_diff": false,
+   "max_zone_k_at_first_diff": 298.0078430175781,
+   "pass": true
+  },
+  "fairbanks_3": {
+   "identical": true,
+   "pass": true
+  },
+  "pass": true
+ },
+ "F3": {
+  "ros_extensions": 0,
+  "first_extension_step": null,
+  "prefix_differing": [],
+  "pass": true
+ },
+ "ALL_PASS": true
+}

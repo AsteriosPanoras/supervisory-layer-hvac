@@ -1,0 +1,138 @@
+{
+ "cells": 18,
+ "r_PC_vs_V0_pct": {
+  "building_52000": -1.2618339174334858,
+  "building_52004": -0.5718577756546384,
+  "building_52005": -3.4679722877778763,
+  "building_52007": -1.5900286134306385,
+  "building_52008": -1.4744888649523613,
+  "building_52010": -1.5327061666890796,
+  "building_52101": -0.8185949912621671,
+  "building_52103": -0.31081918505003747,
+  "building_52105": -2.646767878817047
+ },
+ "composite_mean_pct": -1.6498146043230133,
+ "gate": {
+  "composite_mean_lt_0": true,
+  "every_dev_architecture_le_1pct": true,
+  "all_18_cells": true
+ },
+ "GATE_PASS": true,
+ "per_scene_pct": {
+  "52000|denver_1": 0.0,
+  "52000|fairbanks_6": -5.4188503106431085,
+  "52004|atlanta_7": -1.168133750780287,
+  "52004|denver_4": 0.0,
+  "52005|denver_4": -5.335965123471153,
+  "52005|singapore_5": -2.5580945849174697,
+  "52007|atlanta_4": -2.9755670965386005,
+  "52007|fairbanks_3": 0.0,
+  "52008|phoenix_7": -3.3970099842197232,
+  "52008|singapore_2": -0.26537474220645896,
+  "52010|phoenix_7": -3.8615060876022067,
+  "52010|singapore_5": -0.05449552381173728,
+  "52101|atlanta_7": -1.632775417423049,
+  "52101|singapore_2": -0.46529671041956044,
+  "52103|fairbanks_3": 0.0,
+  "52103|phoenix_2": -1.6293778521103697,
+  "52105|denver_1": 0.0,
+  "52105|phoenix_2": -3.9074395173390175
+ },
+ "component_diff_mean_per_step": {
+  "energy": -0.0001014325062226912,
+  "carbon": -2.2261583339193192e-05,
+  "comfort": -3.925639606689992e-06
+ },
+ "behaviour": {
+  "52103|fairbanks_3": {
+   "precool_steps": 0,
+   "need_final_k": null,
+   "frozen": false
+  },
+  "52103|phoenix_2": {
+   "precool_steps": 780,
+   "need_final_k": 0.46577407088808065,
+   "frozen": false
+  },
+  "52005|denver_4": {
+   "precool_steps": 660,
+   "need_final_k": 0.9234956611174614,
+   "frozen": false
+  },
+  "52010|singapore_5": {
+   "precool_steps": 15,
+   "need_final_k": 1.4870001795021497,
+   "frozen": false
+  },
+  "52005|singapore_5": {
+   "precool_steps": 209,
+   "need_final_k": 2.301501958949639,
+   "frozen": false
+  },
+  "52004|atlanta_7": {
+   "precool_steps": 422,
+   "need_final_k": 0.7407853846057151,
+   "frozen": true
+  },
+  "52000|denver_1": {
+   "precool_steps": 0,
+   "need_final_k": null,
+   "frozen": false
+  },
+  "52004|denver_4": {
+   "precool_steps": 0,
+   "need_final_k": -0.5099316494587857,
+   "frozen": false
+  },
+  "52000|fairbanks_6": {
+   "precool_steps": 900,
+   "need_final_k": 0.6740742008937204,
+   "frozen": false
+  },
+  "52010|phoenix_7": {
+   "precool_steps": 913,
+   "need_final_k": 0.813968390487787,
+   "frozen": false
+  },
+  "52007|atlanta_4": {
+   "precool_steps": 455,
+   "need_final_k": 1.0270929457291609,
+   "frozen": false
+  },
+  "52007|fairbanks_3": {
+   "precool_steps": 0,
+   "need_final_k": null,
+   "frozen": false
+  },
+  "52101|singapore_2": {
+   "precool_steps": 148,
+   "need_final_k": 1.456580803763879,
+   "frozen": false
+  },
+  "52101|atlanta_7": {
+   "precool_steps": 724,
+   "need_final_k": 0.48489383849264733,
+   "frozen": false
+  },
+  "52105|denver_1": {
+   "precool_steps": 0,
+   "need_final_k": null,
+   "frozen": false
+  },
+  "52008|singapore_2": {
+   "precool_steps": 81,
+   "need_final_k": 1.353416067034912,
+   "frozen": false
+  },
+  "52008|phoenix_7": {
+   "precool_steps": 917,
+   "need_final_k": 0.8704875858895633,
+   "frozen": false
+  },
+  "52105|phoenix_2": {
+   "precool_steps": 1155,
+   "need_final_k": 0.21890709913250816,
+   "frozen": false
+  }
+ }
+}

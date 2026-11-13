@@ -1,0 +1,149 @@
+{
+ "cells": 12,
+ "missing": [],
+ "r_SUP_vs_G30_pct": {
+  "building_52001": -0.9945625797859292,
+  "building_52003": -7.803870738738206,
+  "building_52006": 0.09105014912427212,
+  "building_52009": 0.27294436988933857,
+  "building_52102": -0.6366464453279819,
+  "building_52108": -3.91563531842708
+ },
+ "composite_pooled_pct": -3.874555135228952,
+ "composite_mean_pct": -2.108609699877631,
+ "per_cell_pct": {
+  "building_52001|minneapolis_1": -1.22744607903561,
+  "building_52001|minneapolis_5": -0.00023881533328662385,
+  "building_52003|minneapolis_1": -6.455148204365768,
+  "building_52003|minneapolis_5": -11.102028282772237,
+  "building_52006|minneapolis_1": 0.14102751670974634,
+  "building_52006|minneapolis_5": 0.0,
+  "building_52009|minneapolis_1": 0.3433227201924405,
+  "building_52009|minneapolis_5": 0.0,
+  "building_52102|minneapolis_1": -0.7092176192477817,
+  "building_52102|minneapolis_5": -0.07796359023055643,
+  "building_52108|minneapolis_1": -0.481531981404848,
+  "building_52108|minneapolis_5": -8.653807847983163
+ },
+ "split_mean_diff_SUP_minus_G30": {
+  "energy": 5.19265151107275e-05,
+  "carbon": 0.00012352115555207355,
+  "comfort": -0.0009295881433960853
+ },
+ "sup_behaviour": {
+  "building_52009|minneapolis_1": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 15,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 7,
+   "ros_frozen": false
+  },
+  "building_52009|minneapolis_5": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 15,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 0,
+   "ros_frozen": false
+  },
+  "building_52003|minneapolis_1": {
+   "override_share": 0.05171805130618969,
+   "ahus_with_override": 3,
+   "n_ahus": 4,
+   "frozen_ahus": [],
+   "unresponsive_zones": 3,
+   "ros_extended_mornings": 22,
+   "ros_frozen": false
+  },
+  "building_52003|minneapolis_5": {
+   "override_share": 0.3495005257623554,
+   "ahus_with_override": 4,
+   "n_ahus": 4,
+   "frozen_ahus": [],
+   "unresponsive_zones": 2,
+   "ros_extended_mornings": 0,
+   "ros_frozen": false
+  },
+  "building_52006|minneapolis_5": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 10,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 0,
+   "ros_frozen": false
+  },
+  "building_52108|minneapolis_5": {
+   "override_share": 0.15863001351960343,
+   "ahus_with_override": 4,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 0,
+   "ros_frozen": false
+  },
+  "building_52006|minneapolis_1": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 10,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 4,
+   "ros_frozen": false
+  },
+  "building_52108|minneapolis_1": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 15,
+   "ros_frozen": false
+  },
+  "building_52102|minneapolis_1": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 5,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 6,
+   "ros_frozen": true
+  },
+  "building_52001|minneapolis_1": {
+   "override_share": 0.0007184166097920184,
+   "ahus_with_override": 1,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 11,
+   "ros_frozen": true
+  },
+  "building_52102|minneapolis_5": {
+   "override_share": 0.00452155625657203,
+   "ahus_with_override": 2,
+   "n_ahus": 5,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 0,
+   "ros_frozen": false
+  },
+  "building_52001|minneapolis_5": {
+   "override_share": 0.001765059336037254,
+   "ahus_with_override": 3,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0,
+   "ros_extended_mornings": 0,
+   "ros_frozen": false
+  }
+ },
+ "rule": {
+  "composite_pooled_lt_0": true,
+  "composite_better_ge_3_of_4": false,
+  "no_architecture_worse_than_2pct": true
+ },
+ "SUP_PASSES_HELDOUT": false
+}

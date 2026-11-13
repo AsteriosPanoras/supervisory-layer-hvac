@@ -1,0 +1,113 @@
+{
+ "cells": 12,
+ "missing": [],
+ "r_ROS_vs_G30_pct": {
+  "building_52001": -0.9943270041786412,
+  "building_52003": -4.208379012897567,
+  "building_52006": 0.09105014912427212,
+  "building_52009": 0.27294436988933857,
+  "building_52102": -0.6276834779697871,
+  "building_52108": -0.2791855835075352
+ },
+ "composite_pooled_pct": -2.2121764344133155,
+ "composite_mean_pct": -1.2096778745156493,
+ "per_cell_pct": {
+  "building_52001|minneapolis_1": -1.2272112622140785,
+  "building_52001|minneapolis_5": 0.0,
+  "building_52003|minneapolis_1": -5.7869613324634805,
+  "building_52003|minneapolis_5": -0.3481238058637093,
+  "building_52006|minneapolis_1": 0.14102751670974634,
+  "building_52006|minneapolis_5": 0.0,
+  "building_52009|minneapolis_1": 0.3433227201924405,
+  "building_52009|minneapolis_5": 0.0,
+  "building_52102|minneapolis_1": -0.7092176192477817,
+  "building_52102|minneapolis_5": -1.269206961751479e-10,
+  "building_52108|minneapolis_1": -0.481531981404848,
+  "building_52108|minneapolis_5": 0.0
+ },
+ "split_mean_diff_ROS_minus_G30": {
+  "energy": 1.0752108287985145e-06,
+  "carbon": 0.00010377257208204987,
+  "comfort": -0.0005192663496005329
+ },
+ "ros_behaviour": {
+  "building_52009|minneapolis_5": {
+   "extended_mornings": 0,
+   "mean_lead_h": null,
+   "tau_final_h": 0.5172004914613811,
+   "frozen": false
+  },
+  "building_52009|minneapolis_1": {
+   "extended_mornings": 7,
+   "mean_lead_h": 2.5119048143850233,
+   "tau_final_h": 0.6374940438577513,
+   "frozen": false
+  },
+  "building_52102|minneapolis_1": {
+   "extended_mornings": 6,
+   "mean_lead_h": 2.972222225261278,
+   "tau_final_h": 1.1822573606207627,
+   "frozen": true
+  },
+  "building_52001|minneapolis_1": {
+   "extended_mornings": 11,
+   "mean_lead_h": 2.787878792548783,
+   "tau_final_h": 1.162991584456679,
+   "frozen": true
+  },
+  "building_52001|minneapolis_5": {
+   "extended_mornings": 0,
+   "mean_lead_h": null,
+   "tau_final_h": 1.2481695100878707,
+   "frozen": false
+  },
+  "building_52006|minneapolis_1": {
+   "extended_mornings": 4,
+   "mean_lead_h": 2.3958333587793215,
+   "tau_final_h": 0.6598724133817511,
+   "frozen": false
+  },
+  "building_52102|minneapolis_5": {
+   "extended_mornings": 0,
+   "mean_lead_h": null,
+   "tau_final_h": 1.2423793788069575,
+   "frozen": false
+  },
+  "building_52006|minneapolis_5": {
+   "extended_mornings": 0,
+   "mean_lead_h": null,
+   "tau_final_h": 0.5861385900903006,
+   "frozen": false
+  },
+  "building_52003|minneapolis_1": {
+   "extended_mornings": 22,
+   "mean_lead_h": 3.6856060392208536,
+   "tau_final_h": 1.9601740425247598,
+   "frozen": false
+  },
+  "building_52108|minneapolis_1": {
+   "extended_mornings": 15,
+   "mean_lead_h": 2.7944444610780916,
+   "tau_final_h": 1.1543100957847525,
+   "frozen": false
+  },
+  "building_52003|minneapolis_5": {
+   "extended_mornings": 3,
+   "mean_lead_h": 2.305555593983699,
+   "tau_final_h": 1.754004458878164,
+   "frozen": false
+  },
+  "building_52108|minneapolis_5": {
+   "extended_mornings": 0,
+   "mean_lead_h": null,
+   "tau_final_h": 1.2993503937481887,
+   "frozen": false
+  }
+ },
+ "rule": {
+  "composite_pooled_lt_0": true,
+  "composite_better_ge_3_of_4": false,
+  "no_architecture_worse_than_2pct": true
+ },
+ "ROS_PASSES_HELDOUT": false
+}

@@ -1,0 +1,51 @@
+{
+ "note": "post hoc, descriptive; mean observed temperature of the 228-step window before each daily decision, by start class -> day class",
+ "episodes": 98,
+ "by_direction": {
+  "C->C": {
+   "days": 663,
+   "mean_c": 2.5645861679448436,
+   "median_c": 2.9370638395610835
+  },
+  "C->E": {
+   "days": 13,
+   "mean_c": -17.62398954074873,
+   "median_c": -17.79385952865866
+  },
+  "C->H": {
+   "days": 1,
+   "mean_c": 25.87368458530361,
+   "median_c": 25.87368458530361
+  },
+  "C->M": {
+   "days": 164,
+   "mean_c": 15.058959892054242,
+   "median_c": 14.61480343467313
+  },
+  "H->H": {
+   "days": 471,
+   "mean_c": 27.478941174081353,
+   "median_c": 26.96710558439558
+  },
+  "H->M": {
+   "days": 283,
+   "mean_c": 21.389242028909262,
+   "median_c": 22.2524104068154
+  },
+  "M->C": {
+   "days": 158,
+   "mean_c": 7.6436471781941595,
+   "median_c": 8.555592640659288
+  },
+  "M->H": {
+   "days": 234,
+   "mean_c": 27.033819667137212,
+   "median_c": 26.713048486542306
+  },
+  "M->M": {
+   "days": 855,
+   "mean_c": 17.862293452948485,
+   "median_c": 17.81732450786392
+  }
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "F1_recording_equals_teacher": true,
+ "F1_n_recorded_calls": 600,
+ "gn_runs_use_the_weights": true,
+ "p275": {
+  "scenes": {
+   "building_52010|phoenix_7": {
+    "status_ok_no_illegal": true,
+    "F2_identical": true,
+    "F3_first_diff_step": 407,
+    "F3_identical_before": true,
+    "supervisor_first_action_step": 407,
+    "first_pi_hours_difference_step": null,
+    "learned_starts": [],
+    "pressure_override_steps_per_ahu": [
+     149,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "base_prestart": 2,
+    "F3_pass": true,
+    "ms_per_step": [
+     6.219580594376937,
+     6.129547648150172
+    ],
+    "wall_s": [
+     249.1444007300306,
+     251.15974202600773
+    ],
+    "rss_mb": [
+     1648.1171875,
+     1647.3828125
+    ]
+   },
+   "building_52103|fairbanks_3": {
+    "status_ok_no_illegal": true,
+    "F2_identical": true,
+    "F3_first_diff_step": 252,
+    "F3_identical_before": true,
+    "supervisor_first_action_step": 252,
+    "first_pi_hours_difference_step": 252,
+    "learned_starts": [
+     {
+      "step": 252,
+      "why": "need",
+      "tod_h": 3.0,
+      "prestart_set": 3,
+      "tau_h": 1.0
+     },
+     {
+      "step": 540,
+      "why": "need",
+      "tod_h": 3.0,
+      "prestart_set": 3,
+      "tau_h": 1.2260210536314742
+     },
+     {
+      "step": 816,
+      "why": "need",
+      "tod_h": 2.0000000296861367,
+      "prestart_set": 4,
+      "tau_h": 1.7267131999022596
+     }
+    ],
+    "pressure_override_steps_per_ahu": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ],
+    "base_prestart": 2,
+    "F3_pass": true,
+    "ms_per_step": [
+     4.832209698549748,
+     4.791163268910842
+    ],
+    "wall_s": [
+     137.99524818302598,
+     133.82972094602883
+    ],
+    "rss_mb": [
+     1392.25,
+     1392.8046875
+    ]
+   }
+  },
+  "ALL_PASS": true
+ },
+ "ALL_PASS": true
+}

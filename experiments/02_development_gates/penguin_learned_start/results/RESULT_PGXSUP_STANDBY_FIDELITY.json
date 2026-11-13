@@ -1,0 +1,42 @@
+{
+ "S1_degenerate_eq_native": {
+  "differing": [],
+  "switches": 0,
+  "pass": true
+ },
+ "S2_equal_until_first_change": {
+  "first_change_step": 264,
+  "prefix_differing": [],
+  "first_action_diff": 264,
+  "pass": true
+ },
+ "S3_decisions": {
+  "starts": [
+   {
+    "step": 264,
+    "tod": 4.0,
+    "lead_h": 2.0,
+    "first_fire_ok": true,
+    "set_ok": true
+   },
+   {
+    "step": 552,
+    "tod": 4.0,
+    "lead_h": 2.0,
+    "first_fire_ok": true,
+    "set_ok": true
+   },
+   {
+    "step": 843,
+    "tod": 4.25,
+    "lead_h": 1.75,
+    "first_fire_ok": true,
+    "set_ok": true
+   }
+  ],
+  "n_other_changes": 6,
+  "others_are_noon_or_freeze_restores": true,
+  "pass": true
+ },
+ "VERDICT": "PASS"
+}

@@ -1,0 +1,77 @@
+{
+ "F1": {
+  "common_arrays": [
+   "actions_cont",
+   "base_prestart_c",
+   "comp_keys",
+   "comps",
+   "disc",
+   "ema_c",
+   "oat_c",
+   "occupancy",
+   "pi_active_c",
+   "prestart_attr_c",
+   "rewards",
+   "ts",
+   "zone_integral_sum_c",
+   "zone_t_k",
+   "zone_u",
+   "zone_u_sum_c"
+  ],
+  "differing": [],
+  "status": [
+   "OK",
+   "OK"
+  ],
+  "pass": true
+ },
+ "F2": {
+  "differing": [],
+  "pass": true
+ },
+ "F3": {
+  "phoenix_7": {
+   "status": "OK",
+   "illegal_actions": 0,
+   "ros_events": {
+    "update:None": 3
+   },
+   "tr_override_steps": [
+    172,
+    100,
+    6,
+    121,
+    30,
+    140,
+    114
+   ],
+   "tr_log_events": 20,
+   "first_diff_step": 377,
+   "prefix_differing": [],
+   "ros_start_at_or_before": false,
+   "tr_override_at": true,
+   "pass": true
+  },
+  "fairbanks_3": {
+   "status": "OK",
+   "illegal_actions": 0,
+   "ros_events": {
+    "start:need": 3,
+    "update:None": 3
+   },
+   "tr_override_steps": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "tr_log_events": 0,
+   "pass": true
+  },
+  "pass": true
+ },
+ "ALL_PASS": true
+}

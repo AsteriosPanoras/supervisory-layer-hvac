@@ -1,0 +1,322 @@
+{
+ "weights": "gnn_weights_v1.pt",
+ "weights_sha256": "e5483721a48a99d50e1684d28c9dff48da00fe5894908a214b0ceaf70c7e4c51",
+ "args": {
+  "out": "gnn_weights_v1.pt",
+  "report": "REPORT_TRAIN_v1.json",
+  "train": [
+   "laptop/work_rec_o/rec/building_train_1_fairbanks_1_k07___2016.rec.npz",
+   "laptop/work_rec_o/rec/building_train_1_phoenix_5_k07___2016.rec.npz",
+   "laptop/work_rec_o/rec/building_train_2_atlanta_3_k07___2016.rec.npz",
+   "laptop/work_rec_o/rec/building_train_2_fairbanks_2_k07___2016.rec.npz",
+   "laptop/work_rec_o/rec/building_train_4_denver_2_k07___2016.rec.npz",
+   "laptop/work_rec_o/rec/building_train_4_singapore_3_k07___2016.rec.npz",
+   "laptop/work_rec_o/rec/building_train_5_fairbanks_5_k07___2016.rec.npz",
+   "laptop/work_rec_o/rec/building_train_5_phoenix_1_k07___2016.rec.npz",
+   "laptop/work_rec_o/rec/building_train_7_atlanta_8_k07___2016.rec.npz",
+   "laptop/work_rec_o/rec/building_train_7_denver_5_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52000_minneapolis_2_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52000_minneapolis_5_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52001_denver_1_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52001_fairbanks_3_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52004_minneapolis_7_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52004_minneapolis_8_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52005_fairbanks_6_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52005_phoenix_7_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52100_phoenix_2_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52100_singapore_2_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52101_atlanta_4_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52101_denver_1_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52102_atlanta_7_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52102_denver_4_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52103_minneapolis_3_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52103_minneapolis_6_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52105_denver_4_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52105_singapore_2_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52106_fairbanks_6_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52106_singapore_5_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52107_minneapolis_2_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52107_minneapolis_5_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52108_minneapolis_1_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52108_minneapolis_4_k07___2016.rec.npz"
+  ],
+  "val": [
+   "laptop/work_rec_o/rec/building_train_8_fairbanks_8_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52003_atlanta_4_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52104_minneapolis_1_k07___2016.rec.npz",
+   "laptop/work_rec_x/rec/building_52109_atlanta_7_k07___2016.rec.npz"
+  ],
+  "iters": 6000,
+  "batch": 64,
+  "seed": 0,
+  "lr": 0.001,
+  "d": 64,
+  "threads": 4
+ },
+ "gnn_net_sha256": "6d3448dd43b8a9a17f5269bb65148f8e5f29818022f231ea52453bc7d1edbd32",
+ "train_files": {
+  "building_train_1_fairbanks_1_k07___2016.rec.npz": "d4e800600060225d",
+  "building_train_1_phoenix_5_k07___2016.rec.npz": "c4f6184755bbae88",
+  "building_train_2_atlanta_3_k07___2016.rec.npz": "a4a72ee346481839",
+  "building_train_2_fairbanks_2_k07___2016.rec.npz": "3f7821540c63d092",
+  "building_train_4_denver_2_k07___2016.rec.npz": "4db7be019f42dd99",
+  "building_train_4_singapore_3_k07___2016.rec.npz": "bcfd5ebf4bb4c372",
+  "building_train_5_fairbanks_5_k07___2016.rec.npz": "8c70adfcad17b7bf",
+  "building_train_5_phoenix_1_k07___2016.rec.npz": "0e28b52c77c8e56f",
+  "building_train_7_atlanta_8_k07___2016.rec.npz": "fb290f4198aa40d4",
+  "building_train_7_denver_5_k07___2016.rec.npz": "8d1b7136c3c677e7",
+  "building_52000_minneapolis_2_k07___2016.rec.npz": "4bd70f9b4675a24b",
+  "building_52000_minneapolis_5_k07___2016.rec.npz": "5f86334a08f5e5a8",
+  "building_52001_denver_1_k07___2016.rec.npz": "bffe77caa8a0cccb",
+  "building_52001_fairbanks_3_k07___2016.rec.npz": "baf473d67691e195",
+  "building_52004_minneapolis_7_k07___2016.rec.npz": "09bb7c872659476e",
+  "building_52004_minneapolis_8_k07___2016.rec.npz": "11d960c8c599ac52",
+  "building_52005_fairbanks_6_k07___2016.rec.npz": "948773fc78a738fe",
+  "building_52005_phoenix_7_k07___2016.rec.npz": "d79156890a4e634e",
+  "building_52100_phoenix_2_k07___2016.rec.npz": "db1407513d0efa74",
+  "building_52100_singapore_2_k07___2016.rec.npz": "e8bd7f5735e78b06",
+  "building_52101_atlanta_4_k07___2016.rec.npz": "de4ae3500405ec07",
+  "building_52101_denver_1_k07___2016.rec.npz": "fc4673c8a6072cc0",
+  "building_52102_atlanta_7_k07___2016.rec.npz": "a95d8b1eac2a089a",
+  "building_52102_denver_4_k07___2016.rec.npz": "ac8bf9609803c649",
+  "building_52103_minneapolis_3_k07___2016.rec.npz": "cf29681d87d028eb",
+  "building_52103_minneapolis_6_k07___2016.rec.npz": "25e92b41f4912861",
+  "building_52105_denver_4_k07___2016.rec.npz": "ef457e2bffc55a23",
+  "building_52105_singapore_2_k07___2016.rec.npz": "83946674229a5cff",
+  "building_52106_fairbanks_6_k07___2016.rec.npz": "1d565d57a243f6c0",
+  "building_52106_singapore_5_k07___2016.rec.npz": "951505f8b988535f",
+  "building_52107_minneapolis_2_k07___2016.rec.npz": "a7c0f36ae291e91b",
+  "building_52107_minneapolis_5_k07___2016.rec.npz": "706d05233075c58f",
+  "building_52108_minneapolis_1_k07___2016.rec.npz": "70e6a2a3052a243f",
+  "building_52108_minneapolis_4_k07___2016.rec.npz": "5975a2549d45a7de"
+ },
+ "val_files": {
+  "building_train_8_fairbanks_8_k07___2016.rec.npz": "56e8ba0f627af280",
+  "building_52003_atlanta_4_k07___2016.rec.npz": "5bc12f7fbb8403ca",
+  "building_52104_minneapolis_1_k07___2016.rec.npz": "631538c68ca364ee",
+  "building_52109_atlanta_7_k07___2016.rec.npz": "3bf4eef7cd1cebf8"
+ },
+ "n_train_steps": 68544,
+ "n_train_episodes": 34,
+ "n_val_episodes": 4,
+ "n_params": 75146,
+ "history": [
+  {
+   "iter": 0,
+   "loss": 1.529113531112671,
+   "parts": [
+    0.05525220185518265,
+    0.10041765868663788,
+    1.3734437227249146
+   ],
+   "s": 0.1
+  },
+  {
+   "iter": 500,
+   "loss": 0.008317780680954456,
+   "parts": [
+    0.0010710876667872071,
+    0.0016860082978382707,
+    0.005560684949159622
+   ],
+   "s": 29.6
+  },
+  {
+   "iter": 1000,
+   "loss": 0.004260313231498003,
+   "parts": [
+    0.00027925483300350606,
+    0.0010195357026532292,
+    0.0029615226667374372
+   ],
+   "s": 56.9
+  },
+  {
+   "iter": 1500,
+   "loss": 0.002928526606410742,
+   "parts": [
+    0.00025939050829038024,
+    0.0007963789394125342,
+    0.00187275733333081
+   ],
+   "s": 86.9
+  },
+  {
+   "iter": 2000,
+   "loss": 0.0022031632252037525,
+   "parts": [
+    0.00030479711131192744,
+    0.0005523826112039387,
+    0.001345983357168734
+   ],
+   "s": 119.1
+  },
+  {
+   "iter": 2500,
+   "loss": 0.0017841364024206996,
+   "parts": [
+    0.00012839093687944114,
+    0.0006212036241777241,
+    0.0010345418704673648
+   ],
+   "s": 148.9
+  },
+  {
+   "iter": 3000,
+   "loss": 0.0010919822379946709,
+   "parts": [
+    0.00013339558790903538,
+    0.00030233542202040553,
+    0.0006562512717209756
+   ],
+   "s": 179.2
+  },
+  {
+   "iter": 3500,
+   "loss": 0.0020824384409934282,
+   "parts": [
+    8.279879693873227e-05,
+    0.00035561679396778345,
+    0.001644022879190743
+   ],
+   "s": 209.5
+  },
+  {
+   "iter": 4000,
+   "loss": 0.0011004825355485082,
+   "parts": [
+    6.714813207508996e-05,
+    0.0004517882189247757,
+    0.0005815461627207696
+   ],
+   "s": 233.3
+  },
+  {
+   "iter": 4500,
+   "loss": 0.0007069244747981429,
+   "parts": [
+    5.3306444897316396e-05,
+    0.0003174247976858169,
+    0.0003361932176630944
+   ],
+   "s": 265.4
+  },
+  {
+   "iter": 5000,
+   "loss": 0.0012260049115866423,
+   "parts": [
+    4.708916458184831e-05,
+    0.00033106698538176715,
+    0.0008478487725369632
+   ],
+   "s": 298.7
+  },
+  {
+   "iter": 5500,
+   "loss": 0.0007658753311261535,
+   "parts": [
+    7.169622404035181e-05,
+    0.00026795282610692084,
+    0.0004262263246346265
+   ],
+   "s": 332.0
+  },
+  {
+   "iter": 5999,
+   "loss": 0.0007919811177998781,
+   "parts": [
+    3.2633921364322305e-05,
+    0.0002824599505402148,
+    0.0004768872167915106
+   ],
+   "s": 364.8
+  }
+ ],
+ "train_fit": {
+  "z": {
+   "r2": [
+    0.9985429048538208,
+    0.9989522099494934,
+    0.9988735914230347
+   ],
+   "mse": 4.3116393499076366e-05,
+   "teacher_std": [
+    0.18768006563186646,
+    0.18284204602241516,
+    0.19537527859210968
+   ]
+  },
+  "a": {
+   "r2": [
+    0.9987083673477173,
+    0.9939231276512146,
+    0.99492347240448,
+    0.9985238909721375
+   ],
+   "mse": 0.000299226725474,
+   "teacher_std": [
+    0.38825559616088867,
+    0.3828302323818207,
+    0.11127666383981705,
+    0.18167687952518463
+   ]
+  },
+  "p": {
+   "r2": [
+    0.9996853470802307,
+    0.9993523359298706,
+    0.9993525743484497
+   ],
+   "mse": 0.0005359715432859957,
+   "teacher_std": [
+    0.9115664958953857,
+    0.7822905778884888,
+    1.2113865613937378
+   ]
+  }
+ },
+ "val_fit": {
+  "z": {
+   "r2": [
+    0.9987684488296509,
+    0.9986408948898315,
+    0.9986215829849243
+   ],
+   "mse": 5.590566070168279e-05,
+   "teacher_std": [
+    0.21216416358947754,
+    0.1880064457654953,
+    0.2158840000629425
+   ]
+  },
+  "a": {
+   "r2": [
+    0.998021125793457,
+    0.9743603467941284,
+    0.9864766001701355,
+    0.9955949783325195
+   ],
+   "mse": 0.0007541902596130967,
+   "teacher_std": [
+    0.41623130440711975,
+    0.3045233190059662,
+    0.10041370987892151,
+    0.19051988422870636
+   ]
+  },
+  "p": {
+   "r2": [
+    0.9993343949317932,
+    0.998716413974762,
+    0.9995375871658325
+   ],
+   "mse": 0.0007979249930940568,
+   "teacher_std": [
+    1.0395170450210571,
+    0.7887992262840271,
+    1.3762532472610474
+   ]
+  }
+ },
+ "wall_s": 377.3
+}

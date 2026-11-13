@@ -1,0 +1,3 @@
+numpy>=1.26
+matplotlib>=3.8
+# for the runners (simulator episodes): the SB26 starter kit environment; torch (CPU) for the neural and graph controllers

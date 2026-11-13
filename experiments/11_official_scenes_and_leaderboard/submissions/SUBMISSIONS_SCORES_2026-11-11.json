@@ -1,0 +1,3 @@
+{"read_at": "2026-11-11 06:33:26", "source": "kaggle competitions submissions (public score, 5 decimals)",
+ "submissions": [{"id": 58215633, "label": "SB26-CMP2-3 K07 G30 + supervisor ROS+TR (notebook f4256a11)", "status": "COMPLETE", "public_score": 0.01477}],
+ "note": "Equal to G30 (0.01477) and G30+ROS (0.01477), as stated to the authors beforehand: on official buildings TR acted at 19 of 2880 steps in 1 of 4 hot scenes and ROS acts only on cold weekday mornings; the leaderboard scene gives the mechanisms nothing to correct.  58217066 and 58217111 pending."}

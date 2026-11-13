@@ -1,0 +1,10 @@
+{
+ "note": "post hoc, descriptive",
+ "estimate": 0.255,
+ "ci95": [
+  -0.037,
+  0.709
+ ],
+ "share_of_replicates_above_0": 0.95,
+ "one_sided_p_bootstrap": 0.05
+}

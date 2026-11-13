@@ -1,0 +1,40 @@
+{
+ "F1": {
+  "differing": [],
+  "pass": true
+ },
+ "F2": {
+  "gate_classes": [
+   "cold",
+   "cold",
+   "cold"
+  ],
+  "precool_steps": 0,
+  "differing": [],
+  "pass": true
+ },
+ "F3": {
+  "first_precool_step": 792,
+  "precool_steps": 180,
+  "prefix_differing": [],
+  "value_rule_ok": true,
+  "economizer_rule_ok": true,
+  "native_elsewhere_ok": true,
+  "need_final_k": 0.21890709913250816,
+  "gate_classes": [
+   "warm",
+   "warm",
+   "warm",
+   "warm",
+   "warm"
+  ],
+  "frozen": false,
+  "pass": true
+ },
+ "F4": {
+  "gate_events": 8,
+  "matching": 8,
+  "pass": true
+ },
+ "ALL_PASS": true
+}

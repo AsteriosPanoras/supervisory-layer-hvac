@@ -1,0 +1,334 @@
+{
+ "runs": 72,
+ "ROS_vs_G30": {
+  "cells": 36,
+  "per_architecture_pct": {
+   "building_52200": -0.9210725673182818,
+   "building_52201": -1.5716979464618919,
+   "building_52203": -1.5153953263327469,
+   "building_52205": -4.6510712294312695,
+   "building_52206": -0.01891600491926715,
+   "building_52207": 0.03531803453986626,
+   "building_52208": -0.022825117227676106,
+   "building_52209": 0.005301986105443746,
+   "building_52211": -0.5531119595732159,
+   "building_52212": -1.7571911200565338,
+   "building_52300": 0.15646569171960945,
+   "building_52301": -0.4255550227064475
+  },
+  "composite_pooled_pct": -1.2532887669459258,
+  "composite_better": 8,
+  "n_composite": 10,
+  "ood_pooled_pct": -0.0007873829414473121,
+  "by_day1_class_pct": {
+   "C": -2.4659409929876253,
+   "M": -0.00044509234884415605,
+   "H": -0.05319198923230406
+  },
+  "worst_architecture_pct": 0.15646569171960945,
+  "per_scene_pct": {
+   "building_52200|buffalo22_w1113": -4.655154054531141,
+   "building_52200|neworleans22_w0911": -0.038065067082548865,
+   "building_52200|tucson22_w0313": 0.0,
+   "building_52201|miami22_w0904": 0.0,
+   "building_52201|saltlake22_w0619": 0.0,
+   "building_52201|spokane22_w1106": -3.3897789540000667,
+   "building_52203|albuquerque22_w1120": -3.792272411858477,
+   "building_52203|honolulu22_w0327": 0.0,
+   "building_52203|saltlake22_w0731": 0.0,
+   "building_52205|birmingham22_w0320": 0.0,
+   "building_52205|kansascity22_w0206": -10.189793952543813,
+   "building_52205|orlando22_w1009": -0.48225777812669346,
+   "building_52206|honolulu22_w1120": 0.0,
+   "building_52206|omaha22_w1016": -0.06474598460276537,
+   "building_52206|sandiego22_w0508": 0.0,
+   "building_52207|boston22_w0925": 0.0,
+   "building_52207|oklahoma22_w0515": 0.0,
+   "building_52207|seattle22_w0102": 0.11707679484922462,
+   "building_52208|oklahoma22_w0911": 0.0,
+   "building_52208|pittsburgh22_w0403": -0.10238826579670457,
+   "building_52208|raleigh22_w0612": 0.0,
+   "building_52209|albuquerque22_w0710": 0.0,
+   "building_52209|charlotte22_w1023": -0.02707079040954463,
+   "building_52209|chicago22_w0417": 0.03988048036727143,
+   "building_52211|billings22_w0206": -0.7217361215822837,
+   "building_52211|newyork22_w0821": 0.0,
+   "building_52211|portland22_w0522": 0.0,
+   "building_52212|detroit22_w0102": -3.3998525559122306,
+   "building_52212|indianapolis22_w0515": -0.0655460963441934,
+   "building_52212|tampa22_w0626": 0.0,
+   "building_52300|houston22_w0731": -0.08827762821211893,
+   "building_52300|memphis22_w0102": 0.6917566032920597,
+   "building_52300|pittsburgh22_w0918": 0.09337128864070898,
+   "building_52301|billings22_w0828": 0.0,
+   "building_52301|boston22_w0821": 0.0,
+   "building_52301|indianapolis22_w1113": -1.2254205041552946
+  },
+  "rule": {
+   "composite_pooled_lt_0": true,
+   "composite_better_majority": true,
+   "no_architecture_worse_than_2pct": true
+  },
+  "PASS": true
+ },
+ "SUP_vs_G30": {
+  "cells": 0,
+  "per_architecture_pct": {},
+  "composite_pooled_pct": null,
+  "composite_better": 0,
+  "n_composite": 0,
+  "ood_pooled_pct": null,
+  "by_day1_class_pct": {
+   "C": null,
+   "M": null,
+   "H": null
+  },
+  "worst_architecture_pct": null,
+  "per_scene_pct": {},
+  "rule": {
+   "composite_pooled_lt_0": false,
+   "composite_better_majority": false,
+   "no_architecture_worse_than_2pct": true
+  },
+  "PASS": false
+ },
+ "SUP_vs_ROS": {
+  "cells": 0,
+  "per_architecture_pct": {},
+  "composite_pooled_pct": null,
+  "composite_better": 0,
+  "n_composite": 0,
+  "ood_pooled_pct": null,
+  "by_day1_class_pct": {
+   "C": null,
+   "M": null,
+   "H": null
+  },
+  "worst_architecture_pct": null,
+  "per_scene_pct": {},
+  "rule": {
+   "composite_pooled_lt_0": false,
+   "composite_better_majority": false,
+   "no_architecture_worse_than_2pct": true
+  },
+  "PASS": false
+ },
+ "behaviour": {
+  "building_52203|honolulu22_w0327|G30": {},
+  "building_52205|birmingham22_w0320|G30": {},
+  "building_52212|indianapolis22_w0515|G30": {},
+  "building_52201|saltlake22_w0619|G30": {},
+  "building_52209|charlotte22_w1023|ROS": {
+   "ros_extended": 1,
+   "ros_frozen": false,
+   "tau_h": 0.8341952942180553
+  },
+  "building_52203|honolulu22_w0327|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 1.1606769234112242
+  },
+  "building_52201|saltlake22_w0619|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 0.996756895371994
+  },
+  "building_52209|charlotte22_w1023|G30": {},
+  "building_52205|birmingham22_w0320|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 1.6611993956881352
+  },
+  "building_52207|boston22_w0925|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 1.0092871714852014
+  },
+  "building_52212|indianapolis22_w0515|ROS": {
+   "ros_extended": 2,
+   "ros_frozen": false,
+   "tau_h": 1.3233734704245845
+  },
+  "building_52207|boston22_w0925|G30": {},
+  "building_52300|memphis22_w0102|G30": {},
+  "building_52200|buffalo22_w1113|G30": {},
+  "building_52211|billings22_w0206|ROS": {
+   "ros_extended": 7,
+   "ros_frozen": true,
+   "tau_h": 0.8994776609491845
+  },
+  "building_52200|buffalo22_w1113|ROS": {
+   "ros_extended": 4,
+   "ros_frozen": false,
+   "tau_h": 1.727252950848074
+  },
+  "building_52300|memphis22_w0102|ROS": {
+   "ros_extended": 11,
+   "ros_frozen": false,
+   "tau_h": 1.1703857784936305
+  },
+  "building_52301|indianapolis22_w1113|ROS": {
+   "ros_extended": 9,
+   "ros_frozen": false,
+   "tau_h": 1.1112865408086254
+  },
+  "building_52208|pittsburgh22_w0403|G30": {},
+  "building_52301|indianapolis22_w1113|G30": {},
+  "building_52206|omaha22_w1016|G30": {},
+  "building_52206|omaha22_w1016|ROS": {
+   "ros_extended": 1,
+   "ros_frozen": false,
+   "tau_h": 0.8836816172638524
+  },
+  "building_52208|pittsburgh22_w0403|ROS": {
+   "ros_extended": 3,
+   "ros_frozen": false,
+   "tau_h": 1.2919329493926752
+  },
+  "building_52211|billings22_w0206|G30": {},
+  "building_52206|honolulu22_w1120|G30": {},
+  "building_52200|neworleans22_w0911|ROS": {
+   "ros_extended": 2,
+   "ros_frozen": false,
+   "tau_h": 1.3245684796025383
+  },
+  "building_52300|houston22_w0731|G30": {},
+  "building_52200|neworleans22_w0911|G30": {},
+  "building_52211|newyork22_w0821|G30": {},
+  "building_52301|boston22_w0821|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 0.9784745576270422
+  },
+  "building_52206|honolulu22_w1120|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 0.6423398932204203
+  },
+  "building_52208|raleigh22_w0612|G30": {},
+  "building_52211|newyork22_w0821|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 0.5743592381984377
+  },
+  "building_52208|raleigh22_w0612|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 1.3079755377007398
+  },
+  "building_52300|houston22_w0731|ROS": {
+   "ros_extended": 4,
+   "ros_frozen": false,
+   "tau_h": 1.7619273193300249
+  },
+  "building_52301|boston22_w0821|G30": {},
+  "building_52201|miami22_w0904|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 0.8069089602780614
+  },
+  "building_52212|tampa22_w0626|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 1.3062044778713826
+  },
+  "building_52207|oklahoma22_w0515|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 1.1982194370412238
+  },
+  "building_52207|oklahoma22_w0515|G30": {},
+  "building_52209|albuquerque22_w0710|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 0.5376352713083762
+  },
+  "building_52203|saltlake22_w0731|G30": {},
+  "building_52201|miami22_w0904|G30": {},
+  "building_52212|tampa22_w0626|G30": {},
+  "building_52203|saltlake22_w0731|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 0.900207031400128
+  },
+  "building_52205|orlando22_w1009|ROS": {
+   "ros_extended": 3,
+   "ros_frozen": false,
+   "tau_h": 2.1587387286623465
+  },
+  "building_52209|albuquerque22_w0710|G30": {},
+  "building_52205|orlando22_w1009|G30": {},
+  "building_52203|albuquerque22_w1120|ROS": {
+   "ros_extended": 21,
+   "ros_frozen": false,
+   "tau_h": 1.3712553433114931
+  },
+  "building_52201|spokane22_w1106|ROS": {
+   "ros_extended": 22,
+   "ros_frozen": false,
+   "tau_h": 1.232251717226625
+  },
+  "building_52205|kansascity22_w0206|ROS": {
+   "ros_extended": 17,
+   "ros_frozen": false,
+   "tau_h": 1.8977877736848319
+  },
+  "building_52209|chicago22_w0417|ROS": {
+   "ros_extended": 1,
+   "ros_frozen": false,
+   "tau_h": 0.7093822085162446
+  },
+  "building_52205|kansascity22_w0206|G30": {},
+  "building_52207|seattle22_w0102|ROS": {
+   "ros_extended": 13,
+   "ros_frozen": false,
+   "tau_h": 1.1680011690033285
+  },
+  "building_52203|albuquerque22_w1120|G30": {},
+  "building_52207|seattle22_w0102|G30": {},
+  "building_52212|detroit22_w0102|ROS": {
+   "ros_extended": 22,
+   "ros_frozen": false,
+   "tau_h": 1.7693988876627853
+  },
+  "building_52201|spokane22_w1106|G30": {},
+  "building_52212|detroit22_w0102|G30": {},
+  "building_52209|chicago22_w0417|G30": {},
+  "building_52200|tucson22_w0313|G30": {},
+  "building_52200|tucson22_w0313|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 1.2967866523526599
+  },
+  "building_52206|sandiego22_w0508|G30": {},
+  "building_52206|sandiego22_w0508|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 0.9318535985802379
+  },
+  "building_52301|billings22_w0828|G30": {},
+  "building_52300|pittsburgh22_w0918|ROS": {
+   "ros_extended": 1,
+   "ros_frozen": false,
+   "tau_h": 1.2338884175250107
+  },
+  "building_52301|billings22_w0828|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 1.7628831068801183
+  },
+  "building_52300|pittsburgh22_w0918|G30": {},
+  "building_52208|oklahoma22_w0911|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 1.6928666459077812
+  },
+  "building_52208|oklahoma22_w0911|G30": {},
+  "building_52211|portland22_w0522|G30": {},
+  "building_52211|portland22_w0522|ROS": {
+   "ros_extended": 0,
+   "ros_frozen": false,
+   "tau_h": 0.3383093549282152
+  }
+ }
+}

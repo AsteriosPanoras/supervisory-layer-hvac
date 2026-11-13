@@ -1,0 +1,146 @@
+{
+ "tag": "fa2_all_from_s3_8m@7004160",
+ "steps": 7004160,
+ "notebook": "https://www.kaggle.com/code/alexchilton/yes-rl-can-run-a-building-residual-ppo",
+ "train_args": {
+  "run": "fa2_all_from_s3_8m",
+  "resume": true,
+  "init": "data/skynet/s3_from_s2_10m/ckpt_8011776.pt",
+  "steps": 10000000,
+  "workers": 6,
+  "n_steps": 2048,
+  "epochs": 4,
+  "minibatch": 256,
+  "lr": 8e-05,
+  "gamma": 0.995,
+  "lam": 0.95,
+  "clip": 0.2,
+  "vf_coef": 0.5,
+  "reward_scale": 10.0,
+  "scale": 1.0,
+  "d": 128,
+  "depth": 2,
+  "seed": 4,
+  "max_steps": 8640,
+  "ckpt_every": 10,
+  "eval_every": 1000000,
+  "no_eval": false,
+  "base": "zt_off_cmagen_ramp_all",
+  "latch": 1,
+  "holdout": "building_train_8",
+  "reward": "raw",
+  "hold": 1,
+  "gen_cold": 450,
+  "gen_other": 450,
+  "gen_seed": 1,
+  "log_std": null
+ },
+ "base": {
+  "controller": "zt_off_all",
+  "attrs": {
+   "KP": 0.020318379375330296,
+   "KI": 0.013227803697835525,
+   "ZONE_SHIFT_K": 0.9765517049142098,
+   "DEMAND_QUANTILE": 0.30130473603295366,
+   "MILD_SHIFT_K": 0.27210404688723905,
+   "EXTREME_HEAT_DAMPER": 0.9966897203030574,
+   "ZONE_SHIFT_FULL_U": 0.05018385015293129,
+   "FORCED_SAT": -0.8306186018499686,
+   "RAMP_K": 1.0
+  },
+  "cma_gen": 12,
+  "cma_fitness": 0.012030839457160403,
+  "cma_log": "logs/cma_zt_gen/history.jsonl",
+  "bill": "honest"
+ },
+ "files": {
+  "LICENSE-NOTICE.txt": {
+   "bytes": 519,
+   "sha256": "7c05f57205d85446f26c582bacc3d56b5531b85d940ca588e1d9bd678123c224"
+  },
+  "README.md": {
+   "bytes": 5984,
+   "sha256": "cfbe22de67c4eaed6d8d594be3646858bf1c774df72da41d77988b8b7520e832"
+  },
+  "TAG.txt": {
+   "bytes": 40,
+   "sha256": "d4ebc4d57f8447c0f2a3591c92257f76152b2b46bfd1c3e4123e1688b350e7bc"
+  },
+  "__init__.py": {
+   "bytes": 0,
+   "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "base.py": {
+   "bytes": 4840,
+   "sha256": "c8346d05a35011beeb96df606c423273e856da4e3b834ac7d73aaf3857c4d764"
+  },
+  "cma_search.py": {
+   "bytes": 6446,
+   "sha256": "a2e9b8d3dcfe765e5d7df622f5544beac3317bd4feb7e2e6cba2d2e9f67353fa"
+  },
+  "curves.json": {
+   "bytes": 42926,
+   "sha256": "f447bc33279e7a0eee01cb34561d1de09f251fd9133d53b5aad204d8524e7879"
+  },
+  "env.py": {
+   "bytes": 8596,
+   "sha256": "15caa6e47fd85e71e7d8935eb5e1661a1e2224ee7856968dd698d5d27bf63107"
+  },
+  "features.py": {
+   "bytes": 14339,
+   "sha256": "cb711e6dd9bf80be3d53311a7cd774ce5ec7a3ac6586cf68f0dd149943b88950"
+  },
+  "hist_cma.jsonl": {
+   "bytes": 581,
+   "sha256": "1483fbf2bd62edf301f16c7e9a35b72ab1cf76261f58350c85713858dadbb3a6"
+  },
+  "hist_cma_zt.jsonl": {
+   "bytes": 432,
+   "sha256": "9142a5cb5d0e61ed078cc0f8b330ae9711b89f1f32566cda2270b5b71a6c09d3"
+  },
+  "hist_cma_zt_gen.jsonl": {
+   "bytes": 432,
+   "sha256": "3061a58fa1c561f3095730db7a465812157ec073777380cc4f1e424de879e521"
+  },
+  "hist_cma_zt_warm.jsonl": {
+   "bytes": 618,
+   "sha256": "daebb947902733ddf386295b8ba99c8d79ec958875048bc8e614b746fa7e3f98"
+  },
+  "nets.py": {
+   "bytes": 5562,
+   "sha256": "f121e1770e7b580231f74f1b5e7083e197ea97649649dd62e49fe45b1b034986"
+  },
+  "policy.py": {
+   "bytes": 3731,
+   "sha256": "94ad797b1606a06b9080d2d3e93472dd7b60e638dc1c5e94e50e7746342df8df"
+  },
+  "sbrl.py": {
+   "bytes": 5982,
+   "sha256": "417b0919be350bbb0361d3d6fc50b707b4b00dfbf70a4ebc1a213cab77717e5b"
+  },
+  "selection_extra.json": {
+   "bytes": 1640,
+   "sha256": "3e4b44886657d600812ede76f32c8296f4fe0671261665a01ccd05e2ca1681fa"
+  },
+  "selection_set.json": {
+   "bytes": 829,
+   "sha256": "d7b27d9fc3253bdf7b927ae9acd64e2365f15839bdc5eb9c60e9fea25cd01e64"
+  },
+  "skynet.pt": {
+   "bytes": 692745,
+   "sha256": "8b1b4d0a4ff045760be670fbae2d559e02e63494439029bc3feb33af9bbb3e66"
+  },
+  "skynet_eval.py": {
+   "bytes": 7247,
+   "sha256": "8074e978861771fb3b354de020bb6e4952720a614fae5f290b557792e45fd322"
+  },
+  "skynet_train.py": {
+   "bytes": 20156,
+   "sha256": "9067ff5916537749c5c525de96c5bc6bb8d75fc55af48903ac3d9e6b42376960"
+  },
+  "zt_controller.py": {
+   "bytes": 27136,
+   "sha256": "3a02c6950e7c59651f305d2c61d48887099fbe71cad55df0ff61821f55aba58a"
+  }
+ }
+}

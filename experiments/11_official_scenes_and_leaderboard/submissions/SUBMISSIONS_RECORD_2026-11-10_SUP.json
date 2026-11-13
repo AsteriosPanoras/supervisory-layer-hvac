@@ -1,0 +1,17 @@
+{
+ "tag": "K07_G30_SUP",
+ "family": "k07",
+ "policy": "K07 G30 + supervisor (ROS + TR)",
+ "kernel": "asteriospanoras/sb26-cmp2-k07-g30-sup",
+ "kernel_version": 1,
+ "notebook_sha256_prefix": "f4256a11bd101387",
+ "submission_id": "58215633",
+ "submitted": "2026-11-10 22:09:46.737000",
+ "label": "SB26-CMP2-3",
+ "status_at_record": "SubmissionStatus.PENDING",
+ "approval": "authors, chat 10 Nov about 22:20 ('kanto nai')",
+ "parity": "official_adapter/dry/PARITY_SUP.txt",
+ "frozen_research_artifact": "k07sup@<G30>;ROS=1,TR=1 (run_episode_k07_v9supc.py sha aedb278b...)",
+ "evidence_before_submission": "K07-X development gate PASS (composite -1.85 %), frozen selection S=SUP GO; held-out composite pooled -3.87 %, 2 of 4 composite better (strict rule not met), no architecture worse than +0.27 %",
+ "expectation_stated_to_owner": "about 0.01477 or very close: on official buildings TR acted at 19 of 2880 steps in 1 of 4 hot scenes, ROS acts only on cold mornings"
+}

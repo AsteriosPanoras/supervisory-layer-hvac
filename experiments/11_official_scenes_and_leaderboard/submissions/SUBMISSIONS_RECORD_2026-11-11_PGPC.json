@@ -1,0 +1,15 @@
+{
+ "tag": "PG_PC",
+ "family": "penguin",
+ "policy": "SB26-CMP-PG-PC Penguin deep-native + learned precooling (frozen; notebook 95ac93bb)",
+ "kernel": "asteriospanoras/sb26-cmp-penguin-pc",
+ "kernel_version": 1,
+ "notebook_sha256_prefix": "95ac93bb",
+ "submission_id": "58247740",
+ "submitted": "2026-11-11 18:39:53.290000",
+ "status_at_record": "SubmissionStatus.PENDING",
+ "approval": "authors 2026-11-11 ~20:05 EET: '\u03b5\u03ba\u03b5\u03af\u03bd\u03bf \u03c0\u03bf\u03c5 \u03b5\u03af\u03c7\u03b5 \u03bc\u03b5\u03b3\u03ac\u03bb\u03bf \u03ba\u03ad\u03c1\u03b4\u03bf\u03c2 \u03c3\u03c4\u03bf penguin \u03bc\u03b5 \u03c4\u03b7\u03bd \u03b1\u03c1\u03c7\u03b9\u03c4\u03b5\u03ba\u03c4\u03bf\u03bd\u03b9\u03ba\u03ae \u03c0\u03c1\u03ad\u03c0\u03b5\u03b9 \u03bd\u03b1 \u03b1\u03bd\u03b5\u03b2\u03ac\u03c3\u03bf\u03c5\u03bc\u03b5'; condition stated to him: submit only if the sequential parity passes (passed 20:2x)",
+ "parity": "official_adapter/dry_pg/PARITY_PGPC.txt (sequential rerun, both scenes bit-identical)",
+ "frozen_research_artifact": "pgx@sup@ROS=0,TR=0,PC=1 (run_episode_penguin_v3pc.py sha 0a4fd26d...)",
+ "expectation_told_to_owner": "the precooling acts in 1 of 8 official training scenes (building_train_4 atlanta_5, 153 steps); the LB may stay near the deep-native 0.01004"
+}

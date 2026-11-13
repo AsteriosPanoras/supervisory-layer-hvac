@@ -1,0 +1,365 @@
+{
+ "base": "AX",
+ "layer": "AXS",
+ "episodes": 36,
+ "mean_share": 0.21214549372099623,
+ "pooled_gain_pct": 3.7831472603718774,
+ "spearman_gain_vs_share": 0.745945945945946,
+ "p_one_sided_perm": 9.999000099990002e-05,
+ "thirds_by_share": [
+  {
+   "mean_share": 0.036633314166841985,
+   "pooled_gain_pct": 0.7039766547633497,
+   "n": 12
+  },
+  {
+   "mean_share": 0.13117417447430985,
+   "pooled_gain_pct": 2.409755265108815,
+   "n": 12
+  },
+  {
+   "mean_share": 0.46862899252183704,
+   "pooled_gain_pct": 6.974823495879701,
+   "n": 12
+  }
+ ],
+ "first_week_share_mean": 0.16655637792174507,
+ "spearman_days8_30_gain_vs_first_week_share": 0.5075933075933076,
+ "per_episode": [
+  {
+   "architecture": "building_52200",
+   "weather": "buffalo22_w1113",
+   "group": "composite",
+   "base_comfort_share": 0.6426850645561312,
+   "gain_pct": 14.49316466845707,
+   "first_week_share": 0.5400610609301493,
+   "gain_days8_30_pct": 12.714272025362149
+  },
+  {
+   "architecture": "building_52200",
+   "weather": "neworleans22_w0911",
+   "group": "composite",
+   "base_comfort_share": 0.2969202795650352,
+   "gain_pct": 4.707852801103563,
+   "first_week_share": 0.15242462452475272,
+   "gain_days8_30_pct": 5.2255945889801865
+  },
+  {
+   "architecture": "building_52200",
+   "weather": "tucson22_w0313",
+   "group": "composite",
+   "base_comfort_share": 0.3075458736595933,
+   "gain_pct": 2.4335002842267417,
+   "first_week_share": 0.2174223039967504,
+   "gain_days8_30_pct": 1.9106422256513822
+  },
+  {
+   "architecture": "building_52201",
+   "weather": "miami22_w0904",
+   "group": "composite",
+   "base_comfort_share": 0.04851550559667486,
+   "gain_pct": 2.773213317854384,
+   "first_week_share": 0.00018956219205845323,
+   "gain_days8_30_pct": 3.5466682388033077
+  },
+  {
+   "architecture": "building_52201",
+   "weather": "saltlake22_w0619",
+   "group": "composite",
+   "base_comfort_share": 0.02983322688194895,
+   "gain_pct": 0.7729961445993139,
+   "first_week_share": 0.005722459911793837,
+   "gain_days8_30_pct": 0.8953631297558551
+  },
+  {
+   "architecture": "building_52201",
+   "weather": "spokane22_w1106",
+   "group": "composite",
+   "base_comfort_share": 0.104630547240669,
+   "gain_pct": 1.6583430103917274,
+   "first_week_share": 0.022753868660143044,
+   "gain_days8_30_pct": 1.8183046831842575
+  },
+  {
+   "architecture": "building_52203",
+   "weather": "albuquerque22_w1120",
+   "group": "composite",
+   "base_comfort_share": 0.3769343597236571,
+   "gain_pct": 5.566085091239515,
+   "first_week_share": 0.31097339957423553,
+   "gain_days8_30_pct": 5.046494679417579
+  },
+  {
+   "architecture": "building_52203",
+   "weather": "honolulu22_w0327",
+   "group": "composite",
+   "base_comfort_share": 0.06584699963716963,
+   "gain_pct": 2.992763883873384,
+   "first_week_share": 0.016005456815760002,
+   "gain_days8_30_pct": 3.7032129574810058
+  },
+  {
+   "architecture": "building_52203",
+   "weather": "saltlake22_w0731",
+   "group": "composite",
+   "base_comfort_share": 0.0945017073293775,
+   "gain_pct": 3.6463673366255778,
+   "first_week_share": 0.0426594236995345,
+   "gain_days8_30_pct": 4.114500912281683
+  },
+  {
+   "architecture": "building_52205",
+   "weather": "birmingham22_w0320",
+   "group": "composite",
+   "base_comfort_share": 0.6956344507446585,
+   "gain_pct": 3.703313034224931,
+   "first_week_share": 0.6800547853963951,
+   "gain_days8_30_pct": 1.1342517643150196
+  },
+  {
+   "architecture": "building_52205",
+   "weather": "kansascity22_w0206",
+   "group": "composite",
+   "base_comfort_share": 0.5598673303062668,
+   "gain_pct": 1.9893681962364962,
+   "first_week_share": 0.7804565066841009,
+   "gain_days8_30_pct": 0.1372586487717098
+  },
+  {
+   "architecture": "building_52205",
+   "weather": "orlando22_w1009",
+   "group": "composite",
+   "base_comfort_share": 0.5784316114196332,
+   "gain_pct": 7.380173656021882,
+   "first_week_share": 0.45026091329496,
+   "gain_days8_30_pct": 6.722395657674185
+  },
+  {
+   "architecture": "building_52206",
+   "weather": "honolulu22_w1120",
+   "group": "composite",
+   "base_comfort_share": 0.0008987092723089389,
+   "gain_pct": 0.038810148259849075,
+   "first_week_share": 0.0,
+   "gain_days8_30_pct": 0.04937234775301835
+  },
+  {
+   "architecture": "building_52206",
+   "weather": "omaha22_w1016",
+   "group": "composite",
+   "base_comfort_share": 0.0743725822882244,
+   "gain_pct": 1.3184017203531573,
+   "first_week_share": 0.061528797827141844,
+   "gain_days8_30_pct": 1.5733183545085128
+  },
+  {
+   "architecture": "building_52206",
+   "weather": "sandiego22_w0508",
+   "group": "composite",
+   "base_comfort_share": 0.006385490743254071,
+   "gain_pct": 0.0781902956521141,
+   "first_week_share": 0.013415583625599276,
+   "gain_days8_30_pct": 0.09943957714902973
+  },
+  {
+   "architecture": "building_52207",
+   "weather": "boston22_w0925",
+   "group": "composite",
+   "base_comfort_share": 0.42468949493110053,
+   "gain_pct": 5.450987142365316,
+   "first_week_share": 0.27367005226345403,
+   "gain_days8_30_pct": 4.671121742635409
+  },
+  {
+   "architecture": "building_52207",
+   "weather": "oklahoma22_w0515",
+   "group": "composite",
+   "base_comfort_share": 0.18582445959319718,
+   "gain_pct": 5.101499621693506,
+   "first_week_share": 0.09186838277189573,
+   "gain_days8_30_pct": 5.02726120048822
+  },
+  {
+   "architecture": "building_52207",
+   "weather": "seattle22_w0102",
+   "group": "composite",
+   "base_comfort_share": 0.5779757826888454,
+   "gain_pct": 13.941177727896036,
+   "first_week_share": 0.5549406002324769,
+   "gain_days8_30_pct": 12.08642168241858
+  },
+  {
+   "architecture": "building_52208",
+   "weather": "oklahoma22_w0911",
+   "group": "composite",
+   "base_comfort_share": 0.08327419748514446,
+   "gain_pct": 4.344548622476707,
+   "first_week_share": 0.06862389392093161,
+   "gain_days8_30_pct": 4.776914827215073
+  },
+  {
+   "architecture": "building_52208",
+   "weather": "pittsburgh22_w0403",
+   "group": "composite",
+   "base_comfort_share": 0.3511716759984102,
+   "gain_pct": 13.422729981679426,
+   "first_week_share": 0.3633164486329294,
+   "gain_days8_30_pct": 12.451857612904394
+  },
+  {
+   "architecture": "building_52208",
+   "weather": "raleigh22_w0612",
+   "group": "composite",
+   "base_comfort_share": 0.11091933976415638,
+   "gain_pct": 5.533567763540937,
+   "first_week_share": 0.1642174083255803,
+   "gain_days8_30_pct": 2.960310999914506
+  },
+  {
+   "architecture": "building_52209",
+   "weather": "albuquerque22_w0710",
+   "group": "composite",
+   "base_comfort_share": 0.001538997921298038,
+   "gain_pct": -0.08459042455546406,
+   "first_week_share": 0.00030722803685441903,
+   "gain_days8_30_pct": -0.10783011249158037
+  },
+  {
+   "architecture": "building_52209",
+   "weather": "charlotte22_w1023",
+   "group": "composite",
+   "base_comfort_share": 0.06596805721997676,
+   "gain_pct": -0.749444886792916,
+   "first_week_share": 0.08091619063187534,
+   "gain_days8_30_pct": -0.9209529309388564
+  },
+  {
+   "architecture": "building_52209",
+   "weather": "chicago22_w0417",
+   "group": "composite",
+   "base_comfort_share": 0.04800572856077957,
+   "gain_pct": -3.993254012898184,
+   "first_week_share": 0.0612505062282689,
+   "gain_days8_30_pct": -5.115536702779977
+  },
+  {
+   "architecture": "building_52211",
+   "weather": "billings22_w0206",
+   "group": "composite",
+   "base_comfort_share": 0.1336721682711755,
+   "gain_pct": -1.2937236504007021,
+   "first_week_share": 0.046736782692296884,
+   "gain_days8_30_pct": -0.9639665394501229
+  },
+  {
+   "architecture": "building_52211",
+   "weather": "newyork22_w0821",
+   "group": "composite",
+   "base_comfort_share": 0.010080953008051776,
+   "gain_pct": 0.012994170444224906,
+   "first_week_share": 0.0016311457218738986,
+   "gain_days8_30_pct": 0.01781846210069382
+  },
+  {
+   "architecture": "building_52211",
+   "weather": "portland22_w0522",
+   "group": "composite",
+   "base_comfort_share": 0.0812808499608472,
+   "gain_pct": -2.1002814470136855,
+   "first_week_share": 0.07023333706463077,
+   "gain_days8_30_pct": -2.6340909227381637
+  },
+  {
+   "architecture": "building_52212",
+   "weather": "detroit22_w0102",
+   "group": "composite",
+   "base_comfort_share": 0.11993318027175243,
+   "gain_pct": 0.5461441829834102,
+   "first_week_share": 0.044759331513996574,
+   "gain_days8_30_pct": 1.213899659626816
+  },
+  {
+   "architecture": "building_52212",
+   "weather": "indianapolis22_w0515",
+   "group": "composite",
+   "base_comfort_share": 0.11439014289510721,
+   "gain_pct": 2.4092550471619067,
+   "first_week_share": 0.10266371413599955,
+   "gain_days8_30_pct": 1.640209723854158
+  },
+  {
+   "architecture": "building_52212",
+   "weather": "tampa22_w0626",
+   "group": "composite",
+   "base_comfort_share": 0.17669082588419102,
+   "gain_pct": 3.81203894510046,
+   "first_week_share": 0.10014770511564627,
+   "gain_days8_30_pct": 3.4990213918652535
+  },
+  {
+   "architecture": "building_52300",
+   "weather": "houston22_w0731",
+   "group": "ood",
+   "base_comfort_share": 0.37609598034229946,
+   "gain_pct": 7.648654596433424,
+   "first_week_share": 0.26188386846754275,
+   "gain_days8_30_pct": 5.8636984259109575
+  },
+  {
+   "architecture": "building_52300",
+   "weather": "memphis22_w0102",
+   "group": "ood",
+   "base_comfort_share": 0.18592223741116906,
+   "gain_pct": 1.871961794269661,
+   "first_week_share": 0.08741383290434088,
+   "gain_days8_30_pct": 2.211618300189133
+  },
+  {
+   "architecture": "building_52300",
+   "weather": "pittsburgh22_w0918",
+   "group": "ood",
+   "base_comfort_share": 0.4355960063264137,
+   "gain_pct": 7.668070375427116,
+   "first_week_share": 0.23196058712990253,
+   "gain_days8_30_pct": 7.546014494337316
+  },
+  {
+   "architecture": "building_52301",
+   "weather": "billings22_w0828",
+   "group": "ood",
+   "base_comfort_share": 0.07141246071427906,
+   "gain_pct": 1.0787928416179038,
+   "first_week_share": 0.041009186721952286,
+   "gain_days8_30_pct": 1.3444029958883053
+  },
+  {
+   "architecture": "building_52301",
+   "weather": "boston22_w0821",
+   "group": "ood",
+   "base_comfort_share": 0.01674105815813777,
+   "gain_pct": 0.42574735878558867,
+   "first_week_share": 0.010394013486420486,
+   "gain_days8_30_pct": 0.590596332104254
+  },
+  {
+   "architecture": "building_52301",
+   "weather": "indianapolis22_w1113",
+   "group": "ood",
+   "base_comfort_share": 0.183050437584931,
+   "gain_pct": 7.464481809571566,
+   "first_week_share": 0.044156642050578516,
+   "gain_days8_30_pct": 9.516962896218562
+  }
+ ],
+ "predictions": {
+  "P1_rho_gt_0_and_p_lt_0.05": true,
+  "P2_lowest_third_within_0.5pct": false,
+  "P3": {
+   "reference_mean_share": 0.1328679322120068,
+   "reference_pooled_gain_pct": 2.692823692747437,
+   "predicted": "higher",
+   "pass": true
+  },
+  "P4_first_week_share_ranks_days8_30_gain": true
+ }
+}

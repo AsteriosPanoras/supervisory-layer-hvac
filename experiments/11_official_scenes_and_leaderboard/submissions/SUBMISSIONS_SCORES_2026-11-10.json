@@ -1,0 +1,6 @@
+{"read_at": "2026-11-10 21:52:07", "source": "kaggle competitions submissions -c neurips-2026-smart-buildings (public score; 5 decimals is the precision the API returns)",
+ "submissions": [
+  {"id": 58202923, "label": "SB26-CMP2-1 K07 G30 robust base (notebook 40584516)", "status": "COMPLETE", "public_score": 0.01477},
+  {"id": 58203100, "label": "SB26-CMP2-2 K07 G30 + recovery-learning optimal start ROS (notebook 12424ed5)", "status": "COMPLETE", "public_score": 0.01477}],
+ "reference_scores_reported_earlier": {"K07 B": 0.01517, "K07 MG": 0.01549, "Penguin V0": 0.01004, "Penguin A4/CT": 0.01005},
+ "note": "G30 vs B: -2.6 % on the leaderboard scene. ROS = G30 to 5 decimals: consistent with ROS acting only on cold mornings (fresh set: mild/hot about 0); the leaderboard scene's weather is not known. Leaderboard scores are a consistency check, never used to choose a policy (authors' rule)."}

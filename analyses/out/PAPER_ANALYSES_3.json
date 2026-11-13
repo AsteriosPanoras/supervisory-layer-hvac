@@ -1,0 +1,1372 @@
+{
+ "A_tests_blind": {
+  "SUP_vs_G30": {
+   "gain_pct": 2.816168010983744,
+   "ci95": [
+    1.5344757794394703,
+    3.7348877502222266
+   ],
+   "p_boot": 0.0,
+   "p_wilcoxon": 0.00390625,
+   "p_sign": 0.021484375,
+   "better_of_10": 9,
+   "worse_of_10": 1
+  },
+  "G30_vs_B": {
+   "gain_pct": 8.616515866742125,
+   "ci95": [
+    6.559130301969929,
+    11.016980192408232
+   ],
+   "p_boot": 0.0,
+   "p_wilcoxon": 0.001953125,
+   "p_sign": 0.001953125,
+   "better_of_10": 10,
+   "worse_of_10": 0
+  },
+  "SUP_vs_B": {
+   "gain_pct": 11.190028314225342,
+   "ci95": [
+    8.37154281062623,
+    13.711387465056546
+   ],
+   "p_boot": 0.0,
+   "p_wilcoxon": 0.001953125,
+   "p_sign": 0.001953125,
+   "better_of_10": 10,
+   "worse_of_10": 0
+  },
+  "ROS_vs_G30": {
+   "gain_pct": 1.2532887669459258,
+   "ci95": [
+    0.49352615775656306,
+    1.7863069531036224
+   ],
+   "p_boot": 0.0,
+   "p_wilcoxon": 0.01953125,
+   "p_sign": 0.109375,
+   "better_of_10": 8,
+   "worse_of_10": 2,
+   "p_holm_boot": 0.0,
+   "p_holm_wilcoxon": 0.078125
+  },
+  "ROSFIX_vs_G30": {
+   "gain_pct": 0.30997276263879936,
+   "ci95": [
+    0.07816771201059058,
+    0.5205883210187735
+   ],
+   "p_boot": 0.0,
+   "p_wilcoxon": 0.02734375,
+   "p_sign": 0.109375,
+   "better_of_10": 8,
+   "worse_of_10": 2,
+   "p_holm_boot": 0.0,
+   "p_holm_wilcoxon": 0.08203125
+  },
+  "ROS_vs_ROSFIX": {
+   "gain_pct": 0.9462491188422573,
+   "ci95": [
+    0.12113604636025954,
+    1.5328472393044401
+   ],
+   "p_boot": 0.012666666666666666,
+   "p_wilcoxon": 0.048828125,
+   "p_sign": 0.109375,
+   "better_of_10": 8,
+   "worse_of_10": 2,
+   "p_holm_boot": 0.016,
+   "p_holm_wilcoxon": 0.09765625
+  },
+  "SUP_vs_ROS": {
+   "gain_pct": 1.5827152363071861,
+   "ci95": [
+    0.632390615973144,
+    2.2846311021461574
+   ],
+   "p_boot": 0.0,
+   "p_wilcoxon": 0.00390625,
+   "p_sign": 0.00390625,
+   "better_of_10": 9,
+   "worse_of_10": 0,
+   "p_holm_boot": 0.0,
+   "p_holm_wilcoxon": 0.01953125
+  },
+  "SUPW2_vs_SUP": {
+   "gain_pct": 0.21107793340363612,
+   "ci95": [
+    0.008551844652582297,
+    0.3556692787337612
+   ],
+   "p_boot": 0.008,
+   "p_wilcoxon": 0.125,
+   "p_sign": 0.125,
+   "better_of_10": 4,
+   "worse_of_10": 0,
+   "p_holm_boot": 0.016,
+   "p_holm_wilcoxon": 0.125
+  },
+  "PC_vs_V0": {
+   "gain_pct": 1.8833175796014179,
+   "ci95": [
+    1.2355140117596304,
+    2.9175565390803015
+   ],
+   "p_boot": 0.0,
+   "p_wilcoxon": 0.001953125,
+   "p_sign": 0.001953125,
+   "better_of_10": 10,
+   "worse_of_10": 0,
+   "p_holm_boot": 0.0,
+   "p_holm_wilcoxon": 0.01171875
+  }
+ },
+ "B_robustness_primary": {
+  "pooled_gain_pct": 2.816168010983744,
+  "leave_one_architecture_out_min_max": [
+   2.3914813695979253,
+   3.1470321097241793
+  ],
+  "mean_of_architecture_gains_pct": 2.4537420342221647,
+  "episodes_better_worse_equal": [
+   29,
+   3,
+   4
+  ],
+  "episodes_worse_than_0p1pct": 1
+ },
+ "C_per_architecture_gain_pct": {
+  "building_52200": {
+   "group": "composite",
+   "SUP_vs_G30": 2.2515697439380533,
+   "G30_vs_B": 15.400842085876999,
+   "SUP_vs_B": 17.305651129097765,
+   "ROS_vs_G30": 0.9210725673182818,
+   "ROSFIX_vs_G30": 0.353678843286942,
+   "ROS_vs_ROSFIX": 0.5694075982383806,
+   "SUP_vs_ROS": 1.3428659464685633,
+   "SUPW2_vs_SUP": 0.049827573520289103,
+   "PC_vs_V0": 5.906046187266433
+  },
+  "building_52201": {
+   "group": "composite",
+   "SUP_vs_G30": 1.5725151539715765,
+   "G30_vs_B": 6.182835299553668,
+   "SUP_vs_B": 7.658124431494651,
+   "ROS_vs_G30": 1.5716979464618919,
+   "ROSFIX_vs_G30": 0.8082708983397913,
+   "ROS_vs_ROSFIX": 0.7696478880206525,
+   "SUP_vs_ROS": 0.0008302566361861885,
+   "SUPW2_vs_SUP": 0.0,
+   "PC_vs_V0": 1.2689653846487015
+  },
+  "building_52203": {
+   "group": "composite",
+   "SUP_vs_G30": 2.1648448654795316,
+   "G30_vs_B": 14.183502796392277,
+   "SUP_vs_B": 16.04129682983896,
+   "ROS_vs_G30": 1.5153953263327469,
+   "ROSFIX_vs_G30": 0.455650055352419,
+   "ROS_vs_ROSFIX": 1.0645961037161866,
+   "SUP_vs_ROS": 0.6594427030486294,
+   "SUPW2_vs_SUP": 0.05694974055883151,
+   "PC_vs_V0": 1.7305790500274587
+  },
+  "building_52205": {
+   "group": "composite",
+   "SUP_vs_G30": 6.687397114088133,
+   "G30_vs_B": 13.700441292294496,
+   "SUP_vs_B": 19.47163549078439,
+   "ROS_vs_G30": 4.6510712294312695,
+   "ROSFIX_vs_G30": 0.13485331025011593,
+   "ROS_vs_ROSFIX": 4.522316412563477,
+   "SUP_vs_ROS": 2.135656803818664,
+   "SUPW2_vs_SUP": 0.5156050017462777,
+   "PC_vs_V0": 2.0770315509658244
+  },
+  "building_52206": {
+   "group": "composite",
+   "SUP_vs_G30": 0.01891600491926715,
+   "G30_vs_B": 0.8243063554960628,
+   "SUP_vs_B": 0.8430664345845829,
+   "ROS_vs_G30": 0.01891600491926715,
+   "ROSFIX_vs_G30": 0.005945379015215302,
+   "ROS_vs_ROSFIX": 0.012971397102778948,
+   "SUP_vs_ROS": 0.0,
+   "SUPW2_vs_SUP": 0.0,
+   "PC_vs_V0": 1.8364461415072308
+  },
+  "building_52207": {
+   "group": "composite",
+   "SUP_vs_G30": 2.8322305635135603,
+   "G30_vs_B": 10.328727453481735,
+   "SUP_vs_B": 12.868424641235766,
+   "ROS_vs_G30": -0.03531803453986626,
+   "ROSFIX_vs_G30": -0.031071151847505973,
+   "ROS_vs_ROSFIX": -0.004245563546856346,
+   "SUP_vs_ROS": 2.8665361938103873,
+   "SUPW2_vs_SUP": 0.0,
+   "PC_vs_V0": 3.5010732077184192
+  },
+  "building_52208": {
+   "group": "composite",
+   "SUP_vs_G30": 4.090946598484846,
+   "G30_vs_B": 12.574028674702708,
+   "SUP_vs_B": 16.15057847482729,
+   "ROS_vs_G30": 0.022825117227676106,
+   "ROSFIX_vs_G30": 0.021271058730998327,
+   "ROS_vs_ROSFIX": 0.0015543891317082448,
+   "SUP_vs_ROS": 4.069050246746042,
+   "SUPW2_vs_SUP": 0.0,
+   "PC_vs_V0": 4.252692345600795
+  },
+  "building_52209": {
+   "group": "composite",
+   "SUP_vs_G30": -0.0010746533653849255,
+   "G30_vs_B": 2.2658690481973665,
+   "SUP_vs_B": 2.264818745069963,
+   "ROS_vs_G30": -0.005301986105443746,
+   "ROSFIX_vs_G30": -0.00893116407583161,
+   "ROS_vs_ROSFIX": 0.0036288538714956964,
+   "SUP_vs_ROS": 0.004227108619347941,
+   "SUPW2_vs_SUP": 0.0,
+   "PC_vs_V0": 1.3353703491853608
+  },
+  "building_52211": {
+   "group": "composite",
+   "SUP_vs_G30": 0.5534000185178467,
+   "G30_vs_B": 3.0131309838111964,
+   "SUP_vs_B": 3.5498563349066647,
+   "ROS_vs_G30": 0.5531119595732159,
+   "ROSFIX_vs_G30": 1.0364516542265556,
+   "ROS_vs_ROSFIX": -0.4884017425937248,
+   "SUP_vs_ROS": 0.00028966109478778534,
+   "SUPW2_vs_SUP": 0.0,
+   "PC_vs_V0": 0.13296086139136243
+  },
+  "building_52212": {
+   "group": "composite",
+   "SUP_vs_G30": 4.366674932674219,
+   "G30_vs_B": 6.464873763002032,
+   "SUP_vs_B": 10.549248673638212,
+   "ROS_vs_G30": 1.7571911200565338,
+   "ROSFIX_vs_G30": 0.07020439052526362,
+   "ROS_vs_ROSFIX": 1.6881719003249196,
+   "SUP_vs_ROS": 2.656157577707874,
+   "SUPW2_vs_SUP": 0.7376371501633283,
+   "PC_vs_V0": 0.8458845687886352
+  },
+  "building_52300": {
+   "group": "ood",
+   "SUP_vs_G30": 2.7265182417602674,
+   "G30_vs_B": 8.786924467572653,
+   "SUP_vs_B": 11.273865610834866,
+   "ROS_vs_G30": -0.15646569171960945,
+   "ROSFIX_vs_G30": 0.015164728790739712,
+   "ROS_vs_ROSFIX": -0.17165645174570532,
+   "SUP_vs_ROS": 2.8784800996809023,
+   "SUPW2_vs_SUP": -0.023189334616757762,
+   "PC_vs_V0": 0.6807785726267612
+  },
+  "building_52301": {
+   "group": "ood",
+   "SUP_vs_G30": 0.5402764632453594,
+   "G30_vs_B": 5.707932404680216,
+   "SUP_vs_B": 6.217370252605137,
+   "ROS_vs_G30": 0.4255550227064475,
+   "ROSFIX_vs_G30": 0.45934987841725894,
+   "ROS_vs_ROSFIX": -0.03395080870933764,
+   "SUP_vs_ROS": 0.1152117298420019,
+   "SUPW2_vs_SUP": 0.0,
+   "PC_vs_V0": 3.7865750446873014
+  }
+ },
+ "D_learning_dynamics": {
+  "summary": {
+   "episodes": 36,
+   "informative_mornings_median": 13.0,
+   "mornings_to_within_10pct_median": 11.0,
+   "mornings_to_within_10pct_p75": 15.0,
+   "share_within_10pct_by_morning_5": 0.2777777777777778
+  },
+  "per_episode": {
+   "building_52200|buffalo22_w1113": {
+    "informative_mornings": 21,
+    "tau_seq_h": [
+     1.276,
+     1.464,
+     1.575,
+     1.645,
+     1.731,
+     1.73,
+     1.683,
+     1.643,
+     1.696,
+     1.542,
+     1.531,
+     1.595,
+     1.382,
+     1.551,
+     1.676,
+     1.626,
+     1.473,
+     1.404,
+     1.551,
+     1.617,
+     1.727
+    ],
+    "mornings_to_within_10pct": 20
+   },
+   "building_52200|neworleans22_w0911": {
+    "informative_mornings": 12,
+    "tau_seq_h": [
+     1.118,
+     1.285,
+     1.363,
+     1.443,
+     1.526,
+     1.498,
+     1.486,
+     1.49,
+     1.518,
+     1.545,
+     1.442,
+     1.321
+    ],
+    "mornings_to_within_10pct": 11
+   },
+   "building_52200|tucson22_w0313": {
+    "informative_mornings": 4,
+    "tau_seq_h": [
+     1.328,
+     1.308,
+     1.247,
+     1.297
+    ],
+    "mornings_to_within_10pct": 1
+   },
+   "building_52201|miami22_w0904": {
+    "informative_mornings": 18,
+    "tau_seq_h": [
+     1.001,
+     0.98,
+     0.972,
+     0.884,
+     0.797,
+     0.91,
+     0.871,
+     0.814,
+     0.885,
+     0.848,
+     0.819,
+     0.806,
+     0.813,
+     0.92,
+     0.854,
+     0.791,
+     0.867,
+     0.807
+    ],
+    "mornings_to_within_10pct": 15
+   },
+   "building_52201|saltlake22_w0619": {
+    "informative_mornings": 18,
+    "tau_seq_h": [
+     0.794,
+     0.865,
+     0.877,
+     0.907,
+     0.795,
+     0.772,
+     0.935,
+     0.947,
+     0.929,
+     0.92,
+     0.913,
+     0.945,
+     0.868,
+     0.927,
+     0.927,
+     0.967,
+     1.013,
+     0.984
+    ],
+    "mornings_to_within_10pct": 14
+   },
+   "building_52201|spokane22_w1106": {
+    "informative_mornings": 22,
+    "tau_seq_h": [
+     1.073,
+     1.134,
+     1.164,
+     1.186,
+     1.19,
+     1.202,
+     1.204,
+     1.208,
+     1.186,
+     1.202,
+     1.331,
+     1.238,
+     1.202,
+     1.181,
+     1.165,
+     1.26,
+     1.261,
+     1.219,
+     1.175,
+     1.199,
+     1.282,
+     1.232
+    ],
+    "mornings_to_within_10pct": 2
+   },
+   "building_52203|albuquerque22_w1120": {
+    "informative_mornings": 22,
+    "tau_seq_h": [
+     1.171,
+     1.23,
+     1.273,
+     1.305,
+     1.318,
+     1.359,
+     1.331,
+     1.324,
+     1.312,
+     1.269,
+     1.285,
+     1.192,
+     1.216,
+     1.221,
+     1.266,
+     1.32,
+     1.325,
+     1.321,
+     1.333,
+     1.346,
+     1.422,
+     1.37
+    ],
+    "mornings_to_within_10pct": 15
+   },
+   "building_52203|honolulu22_w0327": {
+    "informative_mornings": 4,
+    "tau_seq_h": [
+     1.089,
+     1.132,
+     1.134,
+     1.161
+    ],
+    "mornings_to_within_10pct": 1
+   },
+   "building_52203|saltlake22_w0731": {
+    "informative_mornings": 21,
+    "tau_seq_h": [
+     1.316,
+     1.019,
+     0.879,
+     0.956,
+     1.098,
+     1.133,
+     0.952,
+     1.085,
+     0.96,
+     1.038,
+     0.981,
+     1.088,
+     1.115,
+     1.159,
+     1.122,
+     0.97,
+     1.024,
+     0.878,
+     0.898,
+     1.0,
+     0.9
+    ],
+    "mornings_to_within_10pct": 21
+   },
+   "building_52205|birmingham22_w0320": {
+    "informative_mornings": 11,
+    "tau_seq_h": [
+     1.178,
+     1.24,
+     1.174,
+     1.259,
+     1.319,
+     1.302,
+     1.259,
+     1.397,
+     1.308,
+     1.803,
+     1.661
+    ],
+    "mornings_to_within_10pct": 10
+   },
+   "building_52205|kansascity22_w0206": {
+    "informative_mornings": 20,
+    "tau_seq_h": [
+     1.375,
+     1.676,
+     1.774,
+     1.914,
+     1.925,
+     1.839,
+     1.846,
+     1.94,
+     1.968,
+     1.828,
+     2.008,
+     2.003,
+     1.938,
+     1.965,
+     1.841,
+     1.926,
+     1.726,
+     1.903,
+     1.8,
+     1.898
+    ],
+    "mornings_to_within_10pct": 3
+   },
+   "building_52205|orlando22_w1009": {
+    "informative_mornings": 12,
+    "tau_seq_h": [
+     1.079,
+     1.476,
+     1.823,
+     2.029,
+     1.689,
+     1.837,
+     1.842,
+     1.592,
+     1.835,
+     1.817,
+     1.894,
+     1.582
+    ],
+    "mornings_to_within_10pct": 12
+   },
+   "building_52206|honolulu22_w1120": {
+    "informative_mornings": 4,
+    "tau_seq_h": [
+     0.796,
+     0.695,
+     0.659,
+     0.642
+    ],
+    "mornings_to_within_10pct": 2
+   },
+   "building_52206|omaha22_w1016": {
+    "informative_mornings": 13,
+    "tau_seq_h": [
+     0.921,
+     0.912,
+     0.897,
+     0.857,
+     0.735,
+     0.806,
+     0.806,
+     0.755,
+     0.781,
+     0.754,
+     0.855,
+     0.9,
+     0.884
+    ],
+    "mornings_to_within_10pct": 11
+   },
+   "building_52206|sandiego22_w0508": {
+    "informative_mornings": 4,
+    "tau_seq_h": [
+     0.938,
+     0.995,
+     0.976,
+     0.932
+    ],
+    "mornings_to_within_10pct": 1
+   },
+   "building_52207|boston22_w0925": {
+    "informative_mornings": 12,
+    "tau_seq_h": [
+     0.726,
+     0.921,
+     0.704,
+     0.615,
+     0.84,
+     0.693,
+     0.64,
+     0.936,
+     0.736,
+     0.851,
+     0.909,
+     1.009
+    ],
+    "mornings_to_within_10pct": 12
+   },
+   "building_52207|oklahoma22_w0515": {
+    "informative_mornings": 13,
+    "tau_seq_h": [
+     0.942,
+     1.005,
+     0.938,
+     0.994,
+     1.227,
+     0.783,
+     0.959,
+     1.03,
+     1.15,
+     1.168,
+     1.198,
+     1.231,
+     1.147
+    ],
+    "mornings_to_within_10pct": 9
+   },
+   "building_52207|seattle22_w0102": {
+    "informative_mornings": 22,
+    "tau_seq_h": [
+     1.12,
+     1.128,
+     1.141,
+     1.145,
+     1.049,
+     1.142,
+     1.044,
+     0.918,
+     0.945,
+     0.995,
+     1.099,
+     1.024,
+     1.045,
+     0.956,
+     1.039,
+     1.146,
+     1.156,
+     1.168,
+     1.196,
+     1.179,
+     1.185,
+     1.169
+    ],
+    "mornings_to_within_10pct": 16
+   },
+   "building_52208|oklahoma22_w0911": {
+    "informative_mornings": 4,
+    "tau_seq_h": [
+     0.991,
+     1.024,
+     1.37,
+     1.647
+    ],
+    "mornings_to_within_10pct": 4
+   },
+   "building_52208|pittsburgh22_w0403": {
+    "informative_mornings": 14,
+    "tau_seq_h": [
+     1.097,
+     1.1,
+     0.877,
+     0.978,
+     1.055,
+     1.084,
+     1.12,
+     1.159,
+     0.802,
+     0.99,
+     0.752,
+     0.949,
+     1.052,
+     1.292
+    ],
+    "mornings_to_within_10pct": 14
+   },
+   "building_52208|raleigh22_w0612": {
+    "informative_mornings": 13,
+    "tau_seq_h": [
+     0.979,
+     0.999,
+     1.03,
+     1.024,
+     1.292,
+     1.094,
+     1.069,
+     1.035,
+     1.032,
+     1.081,
+     1.039,
+     1.116,
+     1.266
+    ],
+    "mornings_to_within_10pct": 13
+   },
+   "building_52209|albuquerque22_w0710": {
+    "informative_mornings": 14,
+    "tau_seq_h": [
+     0.886,
+     0.764,
+     0.747,
+     0.651,
+     0.694,
+     0.752,
+     0.729,
+     0.757,
+     0.611,
+     0.523,
+     0.58,
+     0.645,
+     0.648,
+     0.538
+    ],
+    "mornings_to_within_10pct": 14
+   },
+   "building_52209|charlotte22_w1023": {
+    "informative_mornings": 10,
+    "tau_seq_h": [
+     0.88,
+     0.744,
+     0.723,
+     0.725,
+     0.746,
+     0.775,
+     0.814,
+     0.85,
+     0.828,
+     0.834
+    ],
+    "mornings_to_within_10pct": 6
+   },
+   "building_52209|chicago22_w0417": {
+    "informative_mornings": 18,
+    "tau_seq_h": [
+     0.921,
+     0.891,
+     0.853,
+     0.783,
+     0.741,
+     0.699,
+     0.77,
+     0.82,
+     0.83,
+     0.786,
+     0.751,
+     0.757,
+     0.791,
+     0.792,
+     0.774,
+     0.648,
+     0.679,
+     0.709
+    ],
+    "mornings_to_within_10pct": 15
+   },
+   "building_52211|billings22_w0206": {
+    "informative_mornings": 22,
+    "tau_seq_h": [
+     0.914,
+     0.859,
+     0.833,
+     0.771,
+     0.8,
+     0.872,
+     0.848,
+     0.864,
+     0.9,
+     0.859,
+     0.974,
+     1.037,
+     1.091,
+     1.108,
+     0.976,
+     0.947,
+     0.843,
+     0.821,
+     0.824,
+     0.829,
+     0.913,
+     0.899
+    ],
+    "mornings_to_within_10pct": 15
+   },
+   "building_52211|newyork22_w0821": {
+    "informative_mornings": 6,
+    "tau_seq_h": [
+     0.741,
+     0.648,
+     0.556,
+     0.516,
+     0.718,
+     0.574
+    ],
+    "mornings_to_within_10pct": 6
+   },
+   "building_52211|portland22_w0522": {
+    "informative_mornings": 12,
+    "tau_seq_h": [
+     0.486,
+     0.386,
+     0.3,
+     0.407,
+     0.364,
+     0.371,
+     0.35,
+     0.417,
+     0.381,
+     0.352,
+     0.3,
+     0.338
+    ],
+    "mornings_to_within_10pct": 12
+   },
+   "building_52212|detroit22_w0102": {
+    "informative_mornings": 22,
+    "tau_seq_h": [
+     1.282,
+     1.463,
+     1.463,
+     1.576,
+     1.634,
+     1.616,
+     1.69,
+     1.646,
+     1.594,
+     1.552,
+     1.595,
+     1.629,
+     1.525,
+     1.59,
+     1.665,
+     1.727,
+     1.724,
+     1.75,
+     1.782,
+     1.739,
+     1.816,
+     1.769
+    ],
+    "mornings_to_within_10pct": 15
+   },
+   "building_52212|indianapolis22_w0515": {
+    "informative_mornings": 5,
+    "tau_seq_h": [
+     1.613,
+     2.213,
+     1.846,
+     1.482,
+     1.32
+    ],
+    "mornings_to_within_10pct": 5
+   },
+   "building_52212|tampa22_w0626": {
+    "informative_mornings": 21,
+    "tau_seq_h": [
+     1.343,
+     1.256,
+     1.235,
+     1.229,
+     1.207,
+     1.31,
+     1.268,
+     1.247,
+     1.24,
+     1.23,
+     1.402,
+     1.316,
+     1.277,
+     1.27,
+     1.372,
+     1.306,
+     1.27,
+     1.233,
+     1.226,
+     1.401,
+     1.318
+    ],
+    "mornings_to_within_10pct": 1
+   },
+   "building_52300|houston22_w0731": {
+    "informative_mornings": 22,
+    "tau_seq_h": [
+     1.003,
+     1.054,
+     1.121,
+     1.195,
+     1.251,
+     1.413,
+     1.359,
+     1.344,
+     1.657,
+     1.49,
+     1.529,
+     1.38,
+     1.366,
+     1.369,
+     1.842,
+     1.777,
+     1.552,
+     1.464,
+     1.565,
+     1.471,
+     1.544,
+     1.762
+    ],
+    "mornings_to_within_10pct": 22
+   },
+   "building_52300|memphis22_w0102": {
+    "informative_mornings": 22,
+    "tau_seq_h": [
+     1.239,
+     1.336,
+     1.218,
+     1.251,
+     1.368,
+     1.406,
+     1.354,
+     1.309,
+     1.16,
+     1.102,
+     1.258,
+     1.267,
+     1.01,
+     1.218,
+     1.36,
+     1.437,
+     1.278,
+     1.379,
+     1.396,
+     1.329,
+     1.407,
+     1.172
+    ],
+    "mornings_to_within_10pct": 22
+   },
+   "building_52300|pittsburgh22_w0918": {
+    "informative_mornings": 12,
+    "tau_seq_h": [
+     0.801,
+     0.764,
+     0.884,
+     0.9,
+     0.966,
+     1.108,
+     1.053,
+     1.02,
+     1.169,
+     1.164,
+     1.2,
+     1.234
+    ],
+    "mornings_to_within_10pct": 9
+   },
+   "building_52301|billings22_w0828": {
+    "informative_mornings": 8,
+    "tau_seq_h": [
+     0.78,
+     0.733,
+     0.712,
+     0.776,
+     0.82,
+     0.998,
+     1.558,
+     1.763
+    ],
+    "mornings_to_within_10pct": 8
+   },
+   "building_52301|boston22_w0821": {
+    "informative_mornings": 5,
+    "tau_seq_h": [
+     0.742,
+     0.862,
+     0.871,
+     0.891,
+     0.978
+    ],
+    "mornings_to_within_10pct": 4
+   },
+   "building_52301|indianapolis22_w1113": {
+    "informative_mornings": 21,
+    "tau_seq_h": [
+     1.111,
+     1.098,
+     1.131,
+     1.178,
+     1.191,
+     1.206,
+     1.153,
+     1.117,
+     1.091,
+     0.991,
+     1.064,
+     1.012,
+     1.148,
+     1.147,
+     1.194,
+     1.091,
+     1.015,
+     1.011,
+     1.023,
+     1.084,
+     1.111
+    ],
+    "mornings_to_within_10pct": 11
+   }
+  }
+ },
+ "E_worst_cases": {
+  "blind_episodes_worse_than_0p1pct": [
+   {
+    "episode": "building_52300|memphis22_w0102",
+    "class": "C",
+    "gain_pct": -0.6165940634522249,
+    "los_extensions": 11,
+    "tr_override_share": 0.06187062638675542,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": -0.24341976711145039,
+      "unoccupied": 1.6810912681130068
+     },
+     "carbon": {
+      "occupied": -1.379149918044429,
+      "unoccupied": 3.8308677343549493
+     },
+     "comfort": {
+      "occupied": -3.272795287812712,
+      "unoccupied": 0.0
+     }
+    }
+   }
+  ],
+  "heldout_episodes": [
+   {
+    "episode": "building_52001|minneapolis_1",
+    "group": "composite",
+    "gain_pct": 1.22744607903561,
+    "los_extensions": 11,
+    "tr_override_share": 0.0007184166097920184,
+    "frozen": true,
+    "component_change_pct": {
+     "energy": {
+      "occupied": -0.5675533920168752,
+      "unoccupied": 0.4880410323433639
+     },
+     "carbon": {
+      "occupied": -1.0423099686766448,
+      "unoccupied": 1.273339973433482
+     },
+     "comfort": {
+      "occupied": -1.3789637970904414,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52001|minneapolis_5",
+    "group": "composite",
+    "gain_pct": 0.00023881533328662385,
+    "los_extensions": 0,
+    "tr_override_share": 0.001765059336037254,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": 0.0020633330809105366,
+      "unoccupied": 0.00022330482080985592
+     },
+     "carbon": {
+      "occupied": 0.0004844824059662463,
+      "unoccupied": 2.0927640620818327e-05
+     },
+     "comfort": {
+      "occupied": -0.00303081994924293,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52003|minneapolis_1",
+    "group": "composite",
+    "gain_pct": 6.455148204365768,
+    "los_extensions": 22,
+    "tr_override_share": 0.05171805130618969,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": -1.5277279983937366,
+      "unoccupied": 1.677615451340615
+     },
+     "carbon": {
+      "occupied": -2.551913069698253,
+      "unoccupied": 3.9742754878259987
+     },
+     "comfort": {
+      "occupied": -8.027398094526811,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52003|minneapolis_5",
+    "group": "composite",
+    "gain_pct": 11.102028282772237,
+    "los_extensions": 0,
+    "tr_override_share": 0.3495005257623554,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": 2.2211993802638723,
+      "unoccupied": -0.37391481215414946
+     },
+     "carbon": {
+      "occupied": 0.5332715921785374,
+      "unoccupied": -0.08082487282402663
+     },
+     "comfort": {
+      "occupied": -13.401759576040961,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52006|minneapolis_1",
+    "group": "composite",
+    "gain_pct": -0.14102751670974634,
+    "los_extensions": 4,
+    "tr_override_share": 0.0,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": -0.0851376096441662,
+      "unoccupied": 0.1582037542369628
+     },
+     "carbon": {
+      "occupied": -0.20967358411805664,
+      "unoccupied": 0.3566761903173221
+     },
+     "comfort": {
+      "occupied": -0.07904123575023304,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52006|minneapolis_5",
+    "group": "composite",
+    "gain_pct": 0.0,
+    "los_extensions": 0,
+    "tr_override_share": 0.0,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": 0.0,
+      "unoccupied": 0.0
+     },
+     "carbon": {
+      "occupied": 0.0,
+      "unoccupied": 0.0
+     },
+     "comfort": {
+      "occupied": 0.0,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52009|minneapolis_1",
+    "group": "composite",
+    "gain_pct": -0.3433227201924405,
+    "los_extensions": 7,
+    "tr_override_share": 0.0,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": -0.232794028077843,
+      "unoccupied": 0.42157096957867246
+     },
+     "carbon": {
+      "occupied": -0.5606544871210122,
+      "unoccupied": 0.9553182522440894
+     },
+     "comfort": {
+      "occupied": -0.24011800418834325,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52009|minneapolis_5",
+    "group": "composite",
+    "gain_pct": 0.0,
+    "los_extensions": 0,
+    "tr_override_share": 0.0,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": 0.0,
+      "unoccupied": 0.0
+     },
+     "carbon": {
+      "occupied": 0.0,
+      "unoccupied": 0.0
+     },
+     "comfort": {
+      "occupied": 0.0,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52102|minneapolis_1",
+    "group": "ood",
+    "gain_pct": 0.7092176192477817,
+    "los_extensions": 6,
+    "tr_override_share": 0.0,
+    "frozen": true,
+    "component_change_pct": {
+     "energy": {
+      "occupied": -0.24540358243217508,
+      "unoccupied": 0.13913509396710047
+     },
+     "carbon": {
+      "occupied": -0.3934730963799415,
+      "unoccupied": 0.423949189612494
+     },
+     "comfort": {
+      "occupied": -0.6334252849376658,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52102|minneapolis_5",
+    "group": "ood",
+    "gain_pct": 0.07796359023055643,
+    "los_extensions": 0,
+    "tr_override_share": 0.00452155625657203,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": 0.01335519905992248,
+      "unoccupied": -0.0007956160379437758
+     },
+     "carbon": {
+      "occupied": 0.0035144380442346593,
+      "unoccupied": -0.00020275906949938818
+     },
+     "comfort": {
+      "occupied": -0.09383488558088955,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52108|minneapolis_1",
+    "group": "ood",
+    "gain_pct": 0.481531981404848,
+    "los_extensions": 15,
+    "tr_override_share": 0.0,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": -0.9394568106347068,
+      "unoccupied": 1.5842183177389175
+     },
+     "carbon": {
+      "occupied": -2.1264391594123957,
+      "unoccupied": 3.700703079078518
+     },
+     "comfort": {
+      "occupied": -2.7005574629075033,
+      "unoccupied": 0.0
+     }
+    }
+   },
+   {
+    "episode": "building_52108|minneapolis_5",
+    "group": "ood",
+    "gain_pct": 8.653807847983163,
+    "los_extensions": 0,
+    "tr_override_share": 0.15863001351960343,
+    "frozen": false,
+    "component_change_pct": {
+     "energy": {
+      "occupied": 0.4056134064267326,
+      "unoccupied": -0.024650379893397294
+     },
+     "carbon": {
+      "occupied": 0.09908238002956085,
+      "unoccupied": -0.005246613849066662
+     },
+     "comfort": {
+      "occupied": -9.128606610394263,
+      "unoccupied": 0.0
+     }
+    }
+   }
+  ]
+ },
+ "F_components_occupied_unoccupied_pct_of_ref_loss": {
+  "SUP_vs_G30": {
+   "energy_occupied": -0.0664652387540561,
+   "energy_unoccupied": 0.4979297920365392,
+   "carbon_occupied": -0.69736846888801,
+   "carbon_unoccupied": 1.318791140200311,
+   "comfort_occupied": -3.86905526838956,
+   "comfort_unoccupied": 0.0
+  },
+  "PC_vs_V0": {
+   "energy_occupied": -2.2775753695979537,
+   "energy_unoccupied": 0.8159706622294727,
+   "carbon_occupied": -0.53509487112583,
+   "carbon_unoccupied": 0.17807636367773413,
+   "comfort_occupied": -0.06469436672468742,
+   "comfort_unoccupied": 0.0
+  }
+ },
+ "G_profile_study_secondary_bootstrap_p": {
+  "n_complete": 98,
+  "stations": 42,
+  "secondary": {
+   "MG-PD5": {
+    "delta_pp": 0.3351714979655092,
+    "ci95": [
+     0.2001777979679335,
+     0.4866192445649298
+    ],
+    "p_boot": 0.0,
+    "reps_le_0": 0,
+    "p_holm_boot": 0.0
+   },
+   "MG-PS5": {
+    "delta_pp": 0.7813692373820569,
+    "ci95": [
+     0.44134400670593793,
+     1.2360690058413828
+    ],
+    "p_boot": 0.0,
+    "reps_le_0": 0,
+    "p_holm_boot": 0.0
+   },
+   "MG-G30": {
+    "delta_pp": 1.230487946465416,
+    "ci95": [
+     0.18456953791445688,
+     2.3248918184992684
+    ],
+    "p_boot": 0.024666666666666667,
+    "reps_le_0": 37,
+    "p_holm_boot": 0.044
+   },
+   "PD5-PS5": {
+    "delta_pp": 0.44619773941654767,
+    "ci95": [
+     0.07049393979729568,
+     0.9368988768642005
+    ],
+    "p_boot": 0.022,
+    "reps_le_0": 33,
+    "p_holm_boot": 0.044
+   }
+  }
+ },
+ "note": "post hoc analyses of frozen, already-read results; the pre-registered rules and verdicts are unchanged"
+}

@@ -1,0 +1,125 @@
+{
+ "cells": 12,
+ "missing": [],
+ "r_TR_vs_G30_pct": {
+  "building_52001": -0.0004144761785784823,
+  "building_52003": -3.726925411949189,
+  "building_52006": 0.0,
+  "building_52009": 0.0,
+  "building_52102": -0.008962967372794228,
+  "building_52108": -3.6364497349195446
+ },
+ "composite_pooled_pct": -1.723200332278707,
+ "composite_mean_pct": -0.9318349720319419,
+ "per_cell_pct": {
+  "building_52001|minneapolis_1": -0.00045561822284989617,
+  "building_52001|minneapolis_5": -0.00023881533328662385,
+  "building_52003|minneapolis_1": -0.7110090094150867,
+  "building_52003|minneapolis_5": -11.102028282772237,
+  "building_52006|minneapolis_1": 0.0,
+  "building_52006|minneapolis_5": 0.0,
+  "building_52009|minneapolis_1": 0.0,
+  "building_52009|minneapolis_5": 0.0,
+  "building_52102|minneapolis_1": 0.0,
+  "building_52102|minneapolis_5": -0.07796359023055643,
+  "building_52108|minneapolis_1": 0.0,
+  "building_52108|minneapolis_5": -8.653807847983163
+ },
+ "split_mean_diff_TR_minus_G30": {
+  "energy": 5.15228758808748e-05,
+  "carbon": 2.1058672293835217e-05,
+  "comfort": -0.00042222640733460717
+ },
+ "tr_behaviour": {
+  "building_52009|minneapolis_5": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 15,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52009|minneapolis_1": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 15,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52001|minneapolis_1": {
+   "override_share": 0.0004418262150220913,
+   "ahus_with_override": 1,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52001|minneapolis_5": {
+   "override_share": 0.001765059336037254,
+   "ahus_with_override": 3,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52102|minneapolis_1": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 5,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52102|minneapolis_5": {
+   "override_share": 0.00452155625657203,
+   "ahus_with_override": 2,
+   "n_ahus": 5,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52006|minneapolis_5": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 10,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52006|minneapolis_1": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 10,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52108|minneapolis_5": {
+   "override_share": 0.15863001351960343,
+   "ahus_with_override": 4,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52003|minneapolis_1": {
+   "override_share": 0.05502577319587629,
+   "ahus_with_override": 3,
+   "n_ahus": 4,
+   "frozen_ahus": [],
+   "unresponsive_zones": 4
+  },
+  "building_52003|minneapolis_5": {
+   "override_share": 0.3495005257623554,
+   "ahus_with_override": 4,
+   "n_ahus": 4,
+   "frozen_ahus": [],
+   "unresponsive_zones": 2
+  },
+  "building_52108|minneapolis_1": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  }
+ },
+ "rule": {
+  "composite_pooled_lt_0": true,
+  "composite_better_ge_3_of_4": false,
+  "no_architecture_worse_than_2pct": true
+ },
+ "TR_PASSES_HELDOUT": false
+}

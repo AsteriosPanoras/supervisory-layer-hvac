@@ -1,0 +1,17 @@
+{
+ "tag": "K07_G30_SUPW2",
+ "family": "k07",
+ "policy": "K07 G30 + supervisor (ROS + TR) + weather clustering v2 (long-lead mornings outside the model check)",
+ "kernel": "asteriospanoras/sb26-cmp2-k07-g30-supw2",
+ "kernel_version": 1,
+ "notebook_sha256_prefix": "6ce8018c",
+ "submission_id": "58217111",
+ "submitted": "2026-11-10 23:36:33.587000",
+ "label": "SB26-CMP2-5",
+ "status_at_record": "SubmissionStatus.PENDING",
+ "approval": "authors, chat 11 Nov about 01:05 ('as tis xrisimopoiisoume')",
+ "parity": "official_adapter/dry/PARITY_SUP.txt",
+ "frozen_research_artifact": "k07sup@<G30>;ROS=1,TR=1,GATE_OAT_C=11,DEEP_OAT_C=0,LMAX_DEEP=6,BEYOND_NOCHECK=1 (run_episode_k07_v9supd.py sha f7c7ab72...)",
+ "evidence_before_submission": "runner fidelity ALL PASS (p234); design frozen before any fresh clustering outcome was read; its own development gate and fresh test were still running at submission. Submitted at the authors' request as a leaderboard consistency point.",
+ "expectation_stated_to_owner": "equal to submission 58215633 (the clustering only changes ROS mornings; ROS appears inactive on the leaderboard scene)"
+}

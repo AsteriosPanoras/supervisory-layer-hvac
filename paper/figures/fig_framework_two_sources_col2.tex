@@ -1,0 +1,38 @@
+\begin{tikzpicture}[
+  font=\footnotesize,
+  box/.style={draw=black!60, rounded corners=2pt, align=center, minimum height=9mm, minimum width=33mm, inner sep=2.5pt, fill=white},
+  sup/.style={box, fill=green!6, draw=green!45!black},
+  lrn/.style={box, fill=blue!5, draw=blue!50!black},
+  plant/.style={box, fill=black!4},
+  arr/.style={-{Latex[length=1.8mm]}, thick, black!70},
+  lab/.style={font=\scriptsize, text=black!70, fill=white, inner sep=1pt}
+]
+\node[sup] (cls) at (0,0)   {Regime classifier\\$k_d = r(\bar T_d)\in\{E,C,M,H\}$};
+\node[sup] (sch) at (4.6,0) {Reassignment schedule $\pi$\\{\scriptsize once / daily / persistence / gate}};
+\node[sup] (lib) at (9.2,0) {Frozen profile library\\$\{\theta_E,\theta_C,\theta_M,\theta_H\}$};
+\node[lrn] (st)  at (0,-1.6)   {Learned state $s_t$\\{\scriptsize e.g.\ recovery constant $\tau$}};
+\node[lrn] (rul) at (4.6,-1.6) {Rules fixed in advance\\{\scriptsize when an action is admissible}};
+\node[lrn] (g)   at (9.2,-1.6) {$\theta_t = g(s_t) \in \Theta$\\{\scriptsize within fixed bounds}};
+\begin{scope}[on background layer]
+  \node[draw=green!45!black, dashed, rounded corners=4pt, fit=(cls)(sch)(lib), inner sep=3pt] (pbox) {};
+  \node[draw=blue!50!black, dashed, rounded corners=4pt, fit=(st)(rul)(g), inner sep=3pt] (lbox) {};
+\end{scope}
+\node[font=\scriptsize\bfseries, text=green!35!black, anchor=south] at (pbox.north) {Profile source (one decision per day)};
+\node[font=\scriptsize\bfseries, text=blue!45!black, anchor=south] at (lbox.north) {Learning source (online, from the building's own response)};
+\draw[arr] (cls.east) -- node[lab, above=1pt]{regime} (sch.west);
+\draw[arr] (sch.east) -- node[lab, above=1pt]{adopt?} (lib.west);
+\draw[arr] (st.east) -- (rul.west);
+\draw[arr] (rul.east) -- node[lab, above=1pt]{act?} (g.west);
+\node[plant] (wx)  at (0,-3.45)   {Outdoor weather\\{\scriptsize past observations only}};
+\node[plant] (sim) at (4.6,-3.45) {Building simulator\\{\scriptsize 5-minute steps}};
+\node[plant] (ctl) at (9.2,-3.45) {Rule-based controller\\$u_t = C(x_t,\theta_t)$};
+\draw[arr] (wx.east) -- (sim.west);
+\draw[arr] ([yshift=2mm]ctl.west) -- node[lab, above=1pt]{$u_t$} ([yshift=2mm]sim.east);
+\draw[arr] ([yshift=-2mm]sim.east) -- node[lab, below=1pt]{$x_t$} ([yshift=-2mm]ctl.west);
+\draw[arr] (wx.west) -- ++(-0.35,0) |- node[lab, pos=0.25, left=1pt]{$\bar T_d$} (cls.west);
+\draw[arr] (sim.north) -- ++(0,0.45) -| node[lab, pos=0.25, below=1pt]{zone temperatures, requests} (st.south);
+\coordinate (J) at (11.3,-0.8);
+\draw[thick, black!70] (lib.east) -| (J);
+\draw[thick, black!70] (g.east) -| (J);
+\draw[arr] (J) |- node[lab, pos=0.33, left=2pt, align=right]{$\theta_t$ from one source,\\applied in place} (ctl.east);
+\end{tikzpicture}

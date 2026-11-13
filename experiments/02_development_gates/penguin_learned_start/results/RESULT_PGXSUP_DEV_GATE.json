@@ -1,0 +1,153 @@
+{
+ "split": "dev",
+ "cells": 18,
+ "missing": [],
+ "r_ROSP_vs_V0_pct": {
+  "building_52000": 0.8597155835569303,
+  "building_52004": 2.356061088985739,
+  "building_52005": -0.07635563228295394,
+  "building_52007": 0.9862443368779505,
+  "building_52008": -0.15439208553240658,
+  "building_52010": 0.06455626022254801,
+  "building_52101": 0.4539894652845211,
+  "building_52103": -2.222156924894114,
+  "building_52105": 2.7627813072244933
+ },
+ "per_cell_pct": {
+  "building_52000|denver_1": 1.1950821242558307,
+  "building_52000|fairbanks_6": -0.24512411694415093,
+  "building_52004|atlanta_7": 2.139540134281681,
+  "building_52004|denver_4": 2.563715257030319,
+  "building_52005|denver_4": 0.031932890799724056,
+  "building_52005|singapore_5": -0.12910171928386394,
+  "building_52007|atlanta_4": 0.005963002334352652,
+  "building_52007|fairbanks_3": 2.1112043362855104,
+  "building_52008|phoenix_7": -0.4592275711034488,
+  "building_52008|singapore_2": 0.037325387437947555,
+  "building_52010|phoenix_7": 0.10075808541882836,
+  "building_52010|singapore_5": 0.04157707561496249,
+  "building_52101|atlanta_7": 1.3971216992341384,
+  "building_52101|singapore_2": 0.044734973091875574,
+  "building_52103|fairbanks_3": -2.7330242046807673,
+  "building_52103|phoenix_2": -0.0549532518910989,
+  "building_52105|denver_1": 9.32707159920858,
+  "building_52105|phoenix_2": -0.3638300833550323
+ },
+ "behaviour": {
+  "building_52008|phoenix_7": {
+   "starts": 6,
+   "mean_lead_h": 1.3194444444444444,
+   "tau_final_h": 0.3563842692156805,
+   "frozen": false
+  },
+  "building_52004|denver_4": {
+   "starts": 4,
+   "mean_lead_h": 1.4375,
+   "tau_final_h": 0.5813005649953962,
+   "frozen": false
+  },
+  "building_52103|fairbanks_3": {
+   "starts": 16,
+   "mean_lead_h": 1.515625,
+   "tau_final_h": 0.39918556899568297,
+   "frozen": false
+  },
+  "building_52101|singapore_2": {
+   "starts": 1,
+   "mean_lead_h": 1.25,
+   "tau_final_h": 0.3,
+   "frozen": false
+  },
+  "building_52007|fairbanks_3": {
+   "starts": 8,
+   "mean_lead_h": 1.5,
+   "tau_final_h": 0.38993309303246815,
+   "frozen": false
+  },
+  "building_52007|atlanta_4": {
+   "starts": 2,
+   "mean_lead_h": 1.25,
+   "tau_final_h": 0.3117144183029783,
+   "frozen": false
+  },
+  "building_52008|singapore_2": {
+   "starts": 1,
+   "mean_lead_h": 1.25,
+   "tau_final_h": 0.3,
+   "frozen": false
+  },
+  "building_52101|atlanta_7": {
+   "starts": 3,
+   "mean_lead_h": 1.5000000000000002,
+   "tau_final_h": 0.3525759102381082,
+   "frozen": false
+  },
+  "building_52000|fairbanks_6": {
+   "starts": 2,
+   "mean_lead_h": 1.4583333333333335,
+   "tau_final_h": 1.0580283441222111,
+   "frozen": false
+  },
+  "building_52010|singapore_5": {
+   "starts": 1,
+   "mean_lead_h": 1.25,
+   "tau_final_h": 0.3057311350004567,
+   "frozen": false
+  },
+  "building_52105|denver_1": {
+   "starts": 5,
+   "mean_lead_h": 1.5833333333333333,
+   "tau_final_h": 0.34183901020781315,
+   "frozen": false
+  },
+  "building_52105|phoenix_2": {
+   "starts": 3,
+   "mean_lead_h": 1.1666666666666667,
+   "tau_final_h": 0.3,
+   "frozen": false
+  },
+  "building_52103|phoenix_2": {
+   "starts": 1,
+   "mean_lead_h": 1.083333333333333,
+   "tau_final_h": 0.3368275126474213,
+   "frozen": false
+  },
+  "building_52005|denver_4": {
+   "starts": 1,
+   "mean_lead_h": 1.25,
+   "tau_final_h": 0.3,
+   "frozen": false
+  },
+  "building_52010|phoenix_7": {
+   "starts": 2,
+   "mean_lead_h": 1.1666666666666665,
+   "tau_final_h": 0.4028528247514087,
+   "frozen": false
+  },
+  "building_52004|atlanta_7": {
+   "starts": 4,
+   "mean_lead_h": 1.5625,
+   "tau_final_h": 0.46357999033577957,
+   "frozen": false
+  },
+  "building_52000|denver_1": {
+   "starts": 10,
+   "mean_lead_h": 1.65,
+   "tau_final_h": 0.5076307692108946,
+   "frozen": false
+  },
+  "building_52005|singapore_5": {
+   "starts": 6,
+   "mean_lead_h": 1.902777777777778,
+   "tau_final_h": 0.3,
+   "frozen": false
+  }
+ },
+ "composite_mean_pct": 0.672638258637968,
+ "gate": {
+  "composite_mean_lt_0": false,
+  "every_dev_architecture_le_1pct": false,
+  "all_18_cells": true
+ },
+ "GATE_PASS": false
+}

@@ -1,0 +1,36 @@
+{
+ "note": "post hoc, descriptive; frozen blind runs; completes p267/p268 for the appendix table of v49_51",
+ "cases": {
+  "K07": {
+   "targeted_terms": [
+    "comfort"
+   ],
+   "rho_gain_vs_share": 0.7981981981981981,
+   "rho_without_ratios_dL_vs_targeted_loss": 0.8396396396396397,
+   "loao_rho_min": 0.7670454545454546,
+   "loao_rho_max": 0.8288770053475937,
+   "rho_capture_vs_share": 0.5413127413127413
+  },
+  "ZT": {
+   "targeted_terms": [
+    "comfort"
+   ],
+   "rho_gain_vs_share": 0.9263835263835265,
+   "rho_without_ratios_dL_vs_targeted_loss": 0.9500643500643502,
+   "loao_rho_min": 0.9070855614973262,
+   "loao_rho_max": 0.938836898395722,
+   "rho_capture_vs_share": 0.5961389961389961
+  },
+  "Penguin": {
+   "targeted_terms": [
+    "energy",
+    "carbon"
+   ],
+   "rho_gain_vs_share": 0.684942084942085,
+   "rho_without_ratios_dL_vs_targeted_loss": 0.27722007722007724,
+   "loao_rho_min": 0.6463903743315509,
+   "loao_rho_max": 0.7289438502673797,
+   "rho_capture_vs_share": 0.6846846846846848
+  }
+ }
+}

@@ -1,0 +1,143 @@
+{
+ "runs": {
+  "G30": 36,
+  "SUP": 36,
+  "ZS": 36,
+  "ZB": 36
+ },
+ "ZS_vs_ZB": {
+  "gain_pct": 5.712726798350598,
+  "ci95": [
+   3.9418825510169064,
+   7.140507814673058
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 10,
+  "worst_architecture_gain_pct": 0.009793536869973085,
+  "by_class_gain_pct": {
+   "C": 2.461488142149848,
+   "M": 6.173772074833172,
+   "H": 7.814779767526769
+  },
+  "ood_gain_pct": 7.128834874783896,
+  "per_architecture_gain_pct": {
+   "building_52200": 8.405086213273538,
+   "building_52201": 2.8732512374739616,
+   "building_52203": 11.058996167096735,
+   "building_52205": 8.061631514484835,
+   "building_52206": 0.009793536869973085,
+   "building_52207": 6.225302251416265,
+   "building_52208": 4.963631431628257,
+   "building_52209": 0.030433766613235935,
+   "building_52211": 0.37144340837976797,
+   "building_52212": 5.421883865598353,
+   "building_52300": 8.95857892602373,
+   "building_52301": 1.6529637563453492
+  }
+ },
+ "ZB_vs_G30": {
+  "gain_pct": -41.622397419098874,
+  "ci95": [
+   -62.77948940641234,
+   -24.291611797833898
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 1,
+  "worst_architecture_gain_pct": -125.27235238330823,
+  "by_class_gain_pct": {
+   "C": -0.6751762288864871,
+   "M": -67.46462440577486,
+   "H": -76.80446694315289
+  },
+  "ood_gain_pct": -42.79662795852648,
+  "per_architecture_gain_pct": {
+   "building_52200": -125.27235238330823,
+   "building_52201": -29.70693856802773,
+   "building_52203": -76.04592105815445,
+   "building_52205": -104.90699641861139,
+   "building_52206": -6.24138535093961,
+   "building_52207": -46.51330604346662,
+   "building_52208": -47.99268620614572,
+   "building_52209": -5.047569935950746,
+   "building_52211": 12.609336971301188,
+   "building_52212": -25.83334214017765,
+   "building_52300": -46.65652717815565,
+   "building_52301": -32.37037534129292
+  }
+ },
+ "ZS_vs_SUP": {
+  "gain_pct": -37.40134962404367,
+  "ci95": [
+   -56.86708564197354,
+   -21.030560840837392
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 1,
+  "worst_architecture_gain_pct": -111.09087522970795,
+  "by_class_gain_pct": {
+   "C": -1.3142592699522782,
+   "M": -58.963294097979826,
+   "H": -69.14040850263375
+  },
+  "ood_gain_pct": -35.51117952448746,
+  "per_architecture_gain_pct": {
+   "building_52200": -111.09087522970795,
+   "building_52201": -27.992839142039315,
+   "building_52203": -60.04166312274375,
+   "building_52205": -101.88928782779323,
+   "building_52206": -6.251079021028505,
+   "building_52207": -41.39710183789349,
+   "building_52208": -46.646087860235895,
+   "building_52209": -5.014471462131853,
+   "building_52211": 12.449439007918006,
+   "building_52212": -24.44490911651631,
+   "building_52300": -37.26062234780161,
+   "building_52301": -30.88950620766113
+  }
+ },
+ "SUP_vs_G30_same_cells": {
+  "gain_pct": 2.816168010983744,
+  "ci95": [
+   1.5344757794394703,
+   3.7348877502222266
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 9,
+  "worst_architecture_gain_pct": -0.0010746533653849255,
+  "by_class_gain_pct": {
+   "C": 3.0767540408330185,
+   "M": 1.1559611414823534,
+   "H": 3.6377003725529655
+  },
+  "ood_gain_pct": 2.1358292282894764,
+  "per_architecture_gain_pct": {
+   "building_52200": 2.2515697439380533,
+   "building_52201": 1.5725151539715765,
+   "building_52203": 2.1648448654795316,
+   "building_52205": 6.687397114088133,
+   "building_52206": 0.01891600491926715,
+   "building_52207": 2.8322305635135603,
+   "building_52208": 4.090946598484846,
+   "building_52209": -0.0010746533653849255,
+   "building_52211": 0.5534000185178467,
+   "building_52212": 4.366674932674219,
+   "building_52300": 2.7265182417602674,
+   "building_52301": 0.5402764632453594
+  }
+ },
+ "rule_keeps_gain": {
+  "composite_pooled_gain_gt_0": true,
+  "majority_of_changed_better": true,
+  "no_architecture_worse_than_1pct": true
+ },
+ "KEEPS_GAIN": true,
+ "component_change_pct_of_ZB_loss": {
+  "energy": 0.6237322615446733,
+  "carbon": 0.28330842287033625,
+  "comfort": -6.61976746814265
+ },
+ "supervisor_activity": {
+  "LOS_need_extensions_total": 95,
+  "TR_override_share_mean": 0.11438729576185169
+ }
+}

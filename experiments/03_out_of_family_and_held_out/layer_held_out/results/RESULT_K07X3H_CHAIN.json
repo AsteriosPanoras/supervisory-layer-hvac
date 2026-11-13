@@ -1,0 +1,133 @@
+{
+ "runs": {
+  "B": 36,
+  "G30": 36,
+  "ROSFIX": 36,
+  "ROS": 36,
+  "SUP": 36
+ },
+ "G30_vs_B": {
+  "composite_pooled_pct": -8.616515866742125,
+  "ood_pooled_pct": -7.975029590765493,
+  "composite_better": 10,
+  "by_day1_class_pct": {
+   "C": -1.8056175779694872,
+   "M": -10.520912985286968,
+   "H": -13.882456450317527
+  },
+  "worst_architecture_pct": -0.8243063554960628,
+  "per_architecture_pct": {
+   "building_52200": -15.400842085876999,
+   "building_52201": -6.182835299553668,
+   "building_52203": -14.183502796392277,
+   "building_52205": -13.700441292294496,
+   "building_52206": -0.8243063554960628,
+   "building_52207": -10.328727453481735,
+   "building_52208": -12.574028674702708,
+   "building_52209": -2.2658690481973665,
+   "building_52211": -3.0131309838111964,
+   "building_52212": -6.464873763002032,
+   "building_52300": -8.786924467572653,
+   "building_52301": -5.707932404680216
+  },
+  "rule": {
+   "composite_pooled_lt_0": true,
+   "composite_better_ge_6": true,
+   "no_architecture_worse_than_2pct": true
+  },
+  "PASS": true
+ },
+ "SUP_vs_B": {
+  "composite_pooled_pct": -11.190028314225342,
+  "ood_pooled_pct": -9.940525806090672,
+  "composite_better": 10,
+  "by_day1_class_pct": {
+   "C": -4.428351369507499,
+   "M": -11.583510268037422,
+   "H": -17.040702815973784
+  },
+  "worst_architecture_pct": -0.8430664345845829,
+  "per_architecture_pct": {
+   "building_52200": -17.305651129097765,
+   "building_52201": -7.658124431494651,
+   "building_52203": -16.04129682983896,
+   "building_52205": -19.47163549078439,
+   "building_52206": -0.8430664345845829,
+   "building_52207": -12.868424641235766,
+   "building_52208": -16.15057847482729,
+   "building_52209": -2.264818745069963,
+   "building_52211": -3.5498563349066647,
+   "building_52212": -10.549248673638212,
+   "building_52300": -11.273865610834866,
+   "building_52301": -6.217370252605137
+  },
+  "rule": {
+   "composite_pooled_lt_0": true,
+   "composite_better_ge_6": true,
+   "no_architecture_worse_than_2pct": true
+  },
+  "PASS": true
+ },
+ "ROSFIX_vs_G30": {
+  "composite_pooled_pct": -0.30997276263879936,
+  "ood_pooled_pct": -0.1351767468620091,
+  "composite_better": 8,
+  "by_day1_class_pct": {
+   "C": -0.6861973781680852,
+   "M": 0.00822713697439248,
+   "H": 0.0
+  },
+  "worst_architecture_pct": 0.031071151847505973,
+  "per_architecture_pct": {
+   "building_52200": -0.353678843286942,
+   "building_52201": -0.8082708983397913,
+   "building_52203": -0.455650055352419,
+   "building_52205": -0.13485331025011593,
+   "building_52206": -0.005945379015215302,
+   "building_52207": 0.031071151847505973,
+   "building_52208": -0.021271058730998327,
+   "building_52209": 0.00893116407583161,
+   "building_52211": -1.0364516542265556,
+   "building_52212": -0.07020439052526362,
+   "building_52300": -0.015164728790739712,
+   "building_52301": -0.45934987841725894
+  },
+  "rule": {
+   "composite_pooled_lt_0": true,
+   "composite_better_ge_6": true,
+   "no_architecture_worse_than_2pct": true
+  },
+  "PASS": true
+ },
+ "ROS_vs_ROSFIX": {
+  "composite_pooled_pct": -0.9462491188422573,
+  "ood_pooled_pct": 0.13457127298959204,
+  "composite_better": 8,
+  "by_day1_class_pct": {
+   "C": -1.7920405500899683,
+   "M": -0.008671515905744887,
+   "H": -0.05319198923230406
+  },
+  "worst_architecture_pct": 0.4884017425937248,
+  "per_architecture_pct": {
+   "building_52200": -0.5694075982383806,
+   "building_52201": -0.7696478880206525,
+   "building_52203": -1.0645961037161866,
+   "building_52205": -4.522316412563477,
+   "building_52206": -0.012971397102778948,
+   "building_52207": 0.004245563546856346,
+   "building_52208": -0.0015543891317082448,
+   "building_52209": -0.0036288538714956964,
+   "building_52211": 0.4884017425937248,
+   "building_52212": -1.6881719003249196,
+   "building_52300": 0.17165645174570532,
+   "building_52301": 0.03395080870933764
+  },
+  "rule": {
+   "composite_pooled_lt_0": true,
+   "composite_better_ge_6": true,
+   "no_architecture_worse_than_2pct": true
+  },
+  "PASS": true
+ }
+}

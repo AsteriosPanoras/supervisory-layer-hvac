@@ -1,0 +1,176 @@
+{
+ "runs": {
+  "G30": 36,
+  "SUP": 36,
+  "ZS": 36,
+  "ZB": 36,
+  "AXS": 36,
+  "AX": 36
+ },
+ "AXS_vs_AX": {
+  "gain_pct": 3.365982443024196,
+  "ci95": [
+   1.9085743055032667,
+   4.821979961242018
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 8,
+  "worst_architecture_gain_pct": -1.3542859775051541,
+  "by_class_gain_pct": {
+   "C": 3.2530789402102855,
+   "M": 2.7045480932701427,
+   "H": 3.9324930776452605
+  },
+  "ood_gain_pct": 5.576912608656459,
+  "per_architecture_gain_pct": {
+   "building_52200": 6.053038591804194,
+   "building_52201": 1.7259370135165208,
+   "building_52203": 4.1755162951833675,
+   "building_52205": 4.466874629866135,
+   "building_52206": 0.33216738149226543,
+   "building_52207": 7.766493478482928,
+   "building_52208": 6.7793050721891674,
+   "building_52209": -1.3542859775051541,
+   "building_52211": -1.1508366799372505,
+   "building_52212": 2.05574997634288,
+   "building_52300": 6.519009603758108,
+   "building_52301": 2.528667719772326
+  }
+ },
+ "AX_vs_G30": {
+  "gain_pct": 15.748737355271913,
+  "ci95": [
+   9.639654785392004,
+   21.336696309175178
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 8,
+  "worst_architecture_gain_pct": -4.632550765519072,
+  "by_class_gain_pct": {
+   "C": 26.22156746092923,
+   "M": 9.150109660019867,
+   "H": 6.742817040144377
+  },
+  "ood_gain_pct": 11.51896536851692,
+  "per_architecture_gain_pct": {
+   "building_52200": -1.042517256002884,
+   "building_52201": 21.789991758501415,
+   "building_52203": 16.711731621637725,
+   "building_52205": -4.632550765519072,
+   "building_52206": 19.4199961426745,
+   "building_52207": 5.044779585205584,
+   "building_52208": 13.0950154043717,
+   "building_52209": 28.78638423836193,
+   "building_52211": 34.94728445739064,
+   "building_52212": 16.93013265937282,
+   "building_52300": 7.385932512552906,
+   "building_52301": 22.68299898174344
+  }
+ },
+ "AX_vs_ZB": {
+  "gain_pct": 40.50993050526757,
+  "ci95": [
+   35.87105334986996,
+   45.07950466877548
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 10,
+  "worst_architecture_gain_pct": 24.15384683553279,
+  "by_class_gain_pct": {
+   "C": 26.7163611699726,
+   "M": 45.74980198812229,
+   "H": 47.25405722365591
+  },
+  "ood_gain_pct": 38.037027977172336,
+  "per_architecture_gain_pct": {
+   "building_52200": 55.146507688579675,
+   "building_52201": 39.70252547400956,
+   "building_52203": 52.68946427287622,
+   "building_52205": 48.93656507864586,
+   "building_52206": 24.15384683553279,
+   "building_52207": 35.19003633252006,
+   "building_52208": 41.27751389377823,
+   "building_52209": 32.20822166085499,
+   "building_52211": 25.561023010837836,
+   "building_52212": 33.98421600525574,
+   "building_52300": 36.849679131607125,
+   "building_52301": 41.59040433412028
+  }
+ },
+ "SUP_vs_G30_same_cells": {
+  "gain_pct": 2.816168010983744,
+  "ci95": [
+   1.5344757794394703,
+   3.7348877502222266
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 9,
+  "worst_architecture_gain_pct": -0.0010746533653849255,
+  "by_class_gain_pct": {
+   "C": 3.0767540408330185,
+   "M": 1.1559611414823534,
+   "H": 3.6377003725529655
+  },
+  "ood_gain_pct": 2.1358292282894764,
+  "per_architecture_gain_pct": {
+   "building_52200": 2.2515697439380533,
+   "building_52201": 1.5725151539715765,
+   "building_52203": 2.1648448654795316,
+   "building_52205": 6.687397114088133,
+   "building_52206": 0.01891600491926715,
+   "building_52207": 2.8322305635135603,
+   "building_52208": 4.090946598484846,
+   "building_52209": -0.0010746533653849255,
+   "building_52211": 0.5534000185178467,
+   "building_52212": 4.366674932674219,
+   "building_52300": 2.7265182417602674,
+   "building_52301": 0.5402764632453594
+  }
+ },
+ "ZS_vs_ZB_same_cells": {
+  "gain_pct": 5.712726798350598,
+  "ci95": [
+   3.9418825510169064,
+   7.140507814673058
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 10,
+  "worst_architecture_gain_pct": 0.009793536869973085,
+  "by_class_gain_pct": {
+   "C": 2.461488142149848,
+   "M": 6.173772074833172,
+   "H": 7.814779767526769
+  },
+  "ood_gain_pct": 7.128834874783896,
+  "per_architecture_gain_pct": {
+   "building_52200": 8.405086213273538,
+   "building_52201": 2.8732512374739616,
+   "building_52203": 11.058996167096735,
+   "building_52205": 8.061631514484835,
+   "building_52206": 0.009793536869973085,
+   "building_52207": 6.225302251416265,
+   "building_52208": 4.963631431628257,
+   "building_52209": 0.030433766613235935,
+   "building_52211": 0.37144340837976797,
+   "building_52212": 5.421883865598353,
+   "building_52300": 8.95857892602373,
+   "building_52301": 1.6529637563453492
+  }
+ },
+ "rule_layer_helps": {
+  "composite_pooled_gain_gt_0": true,
+  "majority_of_changed_better": true,
+  "no_architecture_worse_than_1pct": false
+ },
+ "LAYER_HELPS": false,
+ "component_change_pct_of_AX_loss": {
+  "energy": 0.6079500884564496,
+  "carbon": 0.7307790815278455,
+  "comfort": -4.704711602974814
+ },
+ "AX_comfort_share_composite": 0.22415045986395227,
+ "supervisor_activity": {
+  "LOS_need_extensions_total": 162,
+  "TR_override_share_mean": 0.07794240471507605
+ }
+}

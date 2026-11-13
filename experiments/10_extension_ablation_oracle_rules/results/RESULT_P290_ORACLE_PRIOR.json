@@ -1,0 +1,117 @@
+{
+ "status": "OK",
+ "repro_scenes": {
+  "building_52206|omaha22_w1016": true,
+  "building_52207|seattle22_w0102": true,
+  "building_52209|chicago22_w0417": true,
+  "building_52211|billings22_w0206": true
+ },
+ "REPRO_OK": true,
+ "reference": "SUP",
+ "OR_vs_ref": {
+  "gain_pct": 0.024419059386959763,
+  "ci95": [
+   -0.0029989342407499286,
+   0.05706591838357034
+  ],
+  "composite_changed": 9,
+  "composite_changed_better": 6,
+  "worst_architecture_gain_pct": -0.019905188608015933,
+  "ood_gain_pct": 0.0076517850782442665,
+  "per_architecture_gain_pct": {
+   "building_52200": -0.01953270131449525,
+   "building_52201": -0.019905188608015933,
+   "building_52203": 0.0311345328834145,
+   "building_52205": 0.16651474278535083,
+   "building_52206": 0.0,
+   "building_52207": 0.006948450616939272,
+   "building_52208": 0.0049070161448616645,
+   "building_52209": 0.012766017769305638,
+   "building_52211": -0.006159711954567548,
+   "building_52212": 0.04107454313545533,
+   "building_52300": 0.009104829461870079,
+   "building_52301": 0.0038131363574001043
+  }
+ },
+ "OR_vs_G30": {
+  "gain_pct": 2.8398993886316615,
+  "ci95": [
+   1.4747426222691737,
+   3.9936029969437348
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 10,
+  "worst_architecture_gain_pct": 0.0116915015943575,
+  "ood_gain_pct": 2.1433175843055374,
+  "per_architecture_gain_pct": {
+   "building_52200": 2.232476835016528,
+   "building_52201": 1.5529229774708386,
+   "building_52203": 2.1953053840264247,
+   "building_52205": 6.842776354769919,
+   "building_52206": 0.01891600491926715,
+   "building_52207": 2.8389822179884394,
+   "building_52208": 4.095652871219646,
+   "building_52209": 0.0116915015943575,
+   "building_52211": 0.5472743944103797,
+   "building_52212": 4.405955884030877,
+   "building_52300": 2.7353748263859834,
+   "building_52301": 0.5440689981245028
+  }
+ },
+ "ref_vs_G30": {
+  "gain_pct": 2.816168010983744,
+  "ci95": [
+   1.475885980281452,
+   3.936424824074959
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 9,
+  "worst_architecture_gain_pct": -0.0010746533653849255,
+  "ood_gain_pct": 2.1358292282894764,
+  "per_architecture_gain_pct": {
+   "building_52200": 2.2515697439380533,
+   "building_52201": 1.5725151539715765,
+   "building_52203": 2.1648448654795316,
+   "building_52205": 6.687397114088133,
+   "building_52206": 0.01891600491926715,
+   "building_52207": 2.8322305635135603,
+   "building_52208": 4.090946598484846,
+   "building_52209": -0.0010746533653849255,
+   "building_52211": 0.5534000185178467,
+   "building_52212": 4.366674932674219,
+   "building_52300": 2.7265182417602674,
+   "building_52301": 0.5402764632453594
+  }
+ },
+ "ROS_vs_G30": {
+  "gain_pct": 1.2532887669459258,
+  "ci95": [
+   0.480558704950971,
+   2.0880049157157563
+  ],
+  "composite_changed": 10,
+  "composite_changed_better": 8,
+  "worst_architecture_gain_pct": -0.15646569171960945,
+  "ood_gain_pct": 0.0007873829414473121,
+  "per_architecture_gain_pct": {
+   "building_52200": 0.9210725673182818,
+   "building_52201": 1.5716979464618919,
+   "building_52203": 1.5153953263327469,
+   "building_52205": 4.6510712294312695,
+   "building_52206": 0.01891600491926715,
+   "building_52207": -0.03531803453986626,
+   "building_52208": 0.022825117227676106,
+   "building_52209": -0.005301986105443746,
+   "building_52211": 0.5531119595732159,
+   "building_52212": 1.7571911200565338,
+   "building_52300": -0.15646569171960945,
+   "building_52301": 0.4255550227064475
+  }
+ },
+ "gain_days1_14_pct": 0.043659833470466314,
+ "gain_days15_30_pct": 0.010338306751489501,
+ "predictions": {
+  "B1_or_beats_ref": true,
+  "B2_early_gain_exceeds_late_gain": true
+ }
+}

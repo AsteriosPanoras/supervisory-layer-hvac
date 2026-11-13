@@ -1,0 +1,519 @@
+\documentclass{article}
+\PassOptionsToPackage{numbers,sort&compress}{natbib}
+\usepackage[main,final]{neurips_2026}
+\usepackage[utf8]{inputenc}
+\usepackage{url}
+\usepackage{nicefrac}
+\usepackage{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage[ruled,linesnumbered,vlined]{algorithm2e}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,fit,backgrounds,calc,decorations.pathreplacing}
+\providecommand{\pending}[1]{\textcolor{red}{[#1]}}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{pdftitle={Re-select or Learn? A Supervisory Layer for Rule-Based HVAC Control}, pdfauthor={Asterios Panoras, Apostolos Tsiakalos}}
+\usepackage[capitalise,noabbrev]{cleveref}
+\captionsetup{font=small,labelfont=bf}
+\setlist{itemsep=2pt,topsep=3pt}
+\newcommand{\pp}{\,pp}
+\usepackage{amsthm}
+\newtheorem{proposition}{Proposition}
+
+\title{Re-select or Learn? A Supervisory Layer for Rule-Based HVAC Control}
+\author{%
+  Asterios Panoras \qquad Apostolos Tsiakalos\\
+  School of Informatics, Aristotle University of Thessaloniki, Greece\\
+  \texttt{apanoraa@csd.auth.gr}, \texttt{atsiakalos@csd.auth.gr}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Rule-based HVAC controllers remain widely deployed, and a supervisory layer that adapts their exposed
+parameters without modifying them is a low-cost way to improve them, but it is unclear when such adaptation
+helps. We study two sources of values for such a layer, each evaluated separately on matched 30-day episodes
+of the Smart Buildings Challenge simulator with pre-specified tests: re-selection from a library of
+weather-conditioned profiles, and bounded online estimation and feedback rules. Within the building families
+the profiles were tuned on, a one-time gate that re-selects daily only after mild starts outperformed
+persistence-based re-selection by 0.504 percentage points (95\% station-cluster interval [0.337, 0.704]; 98
+episodes), but a registered replication on 40 new episodes was inconclusive, and the profiles did not transfer
+to new architectures. On a blind test of unseen architectures, a learned optimal start and a duct
+static-pressure reset, a few bounded rules with no offline training, reduced the loss of a tuned fixed
+controller by 2.82\% over its 10 composite architectures (95\% architecture-cluster interval [1.48, 3.94]), improving 11 of all 12.
+Unchanged, the layer reduced loss by 5.71\% on a later version of the controller and by 3.37\% on a trained
+neural controller, where its pre-specified per-architecture criterion failed; an energy-targeted rule reduced
+the loss of a model-based controller by 1.88\%. On the competition leaderboard the comfort rules gave no gain
+or a loss. An exact decomposition bounds a rule's benefit by the share of the controller's loss in the term it
+targets; post hoc, gains followed this share (Spearman $\rho = 0.80$), and five of seven predictions
+registered from it held. In simulation, these results support targeting supervisory rules to what a controller
+leaves uncorrected rather than applying them by default.
+\end{abstract}
+
+%======================================================================
+\section{Introduction}
+Heating, ventilation and air-conditioning (HVAC) systems must balance occupant comfort against energy cost and carbon
+emissions as conditions change. Model predictive control and reinforcement learning exploit this variability but
+may need models or long training and can be hard to deploy and transfer across buildings~\cite{drgona2020mpc,wang2020rl};
+many installed systems still run rule-based logic.
+
+A middle ground keeps the controller and lets a supervisory layer adapt its parameters during operation, using a small
+library of weather-conditioned profiles tuned in advance or values estimated online from the building, with feedback, within fixed bounds.
+With a library, timing matters: re-selecting often tracks the weather but may switch profiles for little benefit, and
+since profile effects accumulate over days, they must be judged over long horizons.
+
+We ask when profiles should be re-selected, when the layer should learn instead, and when it helps at all; we study
+the two sources separately and propose no rule that chooses between them. Using a public
+rule-based controller~\cite{malyshev2026k07} in the Smart Buildings simulator~\cite{goldfeder2024suite,goldfeder2026challenge},
+we compare policies on matched 30-day episodes and test each source on sets frozen in advance: the profiles on their own
+building families, and learning on new architectures and three further controllers. Our contributions are (i) a supervisory layer over an unmodified rule-based controller with two sources of values,
+profiles, whose \emph{selection} we separate from reassignment \emph{timing}, and online adaptation of
+building-specific quantities by bounded rules (\cref{sec:method}); (ii) a matched evaluation of reassignment
+schedules over three weather years, in which frequent reassignment paid mainly after mild starts, and a one-time gate
+built on this pattern modestly beat persistence in a pre-specified test (\cref{sec:reselect}); (iii) out-of-family
+and blind tests: the frozen profiles did not transfer, while online estimation with feedback did, in pooled gain, on unseen architectures, unchanged on a
+later version of the controller and on a neural one, and retargeted to energy on a model-based one (\cref{sec:learn}); and (iv) an account of when such a layer helps: its gain is the benefit in
+the term it targets, bounded by that term's share of the controller's loss, minus its cost in the others, which, found post hoc,
+fits its gains on four controllers; on shared scenes, five of the seven
+predictions registered for it held (\cref{sec:when}).
+
+%======================================================================
+\section{Related work}\label{sec:related}
+\paragraph{Building control.}
+Benchmarks such as BOPTEST~\cite{blum2021boptest}, Sinergym~\cite{jimenez2021sinergym}, CityLearn~\cite{vazquez2019citylearn}
+and the Smart Buildings Control Suite~\cite{goldfeder2024suite} make controllers comparable across buildings and weather,
+the Smart Buildings Challenge~\cite{goldfeder2026challenge} scores them on hidden scenarios, and
+Building2Building~\cite{taboga2026b2b} targets transfer across buildings. Besides model predictive control
+(MPC)~\cite{drgona2020mpc} and reinforcement learning~\cite{wang2020rl}, residual policy learning keeps an existing
+controller and learns a correction to its actions~\cite{silver2018residual,johannink2019residual}; we keep the controller
+without learning a policy, adapting its exposed parameters or bounding one command, and ask how much this can add, given
+what the controller leaves uncorrected (\cref{sec:when}).
+
+\paragraph{Adapting rule-based controllers.}
+Control has long been adapted to conditions, from gain scheduling~\cite{rugh2000gain} to supply-temperature
+reset~\cite{raftery2018reset} and optimal start, which learns from past recoveries when to
+start~\cite{seem2016return,kim2024optimalstart}. Contextual Bayesian optimisation tunes parameters to the context under
+constraints~\cite{fiducioso2019safe,xu2024primaldual}; our rules are bounded, with no online black-box optimisation.
+Distribution tuning of rule-based HVAC constants~\cite{pacheco2026distribution} argues for comparing adaptive schemes
+with tuned static ones. Timing is a design choice too: event-triggered MPC re-optimises only when
+needed~\cite{yang2023event}, and we compare schedules that re-select profiles from a fixed library on matched episodes.
+The layer's main rules are a recovery-based optimal start and the duct static-pressure trim-and-respond of
+Guideline~36~\cite{ashrae2021g36}; we contribute evidence on when they help, not new mechanisms. Because choosing
+configurations or rules after seeing outcomes is optimistic~\cite{cawley2010overfitting}, we separate development from
+frozen evaluation, as in pre-registration~\cite{nosek2018prereg}, and test where a lack of transfer would stay
+hidden.
+
+%======================================================================
+\section{Method}\label{sec:method}
+%======================================================================
+\subsection{Problem formulation}\label{sec:problem}
+\paragraph{Controller and layer.}
+A stateful rule-based controller maps observations $x_t$ and parameters $\theta_t$ to actions $u_t = C(x_t, \theta_t)$; $B$
+denotes the fixed baseline configuration. A supervisory layer sets $\theta_t$ during operation without
+modifying $C$, from one of two sources (\cref{fig:framework}): a profile library $\Phi$ whose entries a schedule $\pi$
+selects at daily decision points (\cref{sec:profilesource}), or a state $\xi_t$ updated from the building's
+response, with $\theta_t = g(\xi_t) \in \Theta$, where $\Theta$ contains only quantities the controller already exposes, within
+bounds fixed in advance; this source may also floor the static-pressure command of each air handler $a$, $u_{t,a} \leftarrow \max(u_{t,a}, f_{t,a})$
+once requests have raised $f_{t,a}$ above its minimum (\cref{sec:learning}). For profiles the weather regime proposes a profile and the schedule decides whether to adopt it;
+for learning a rule fixed in advance determines whether to act and the building's response how much. At runtime neither
+source uses future weather or the reward, and the learning state is reset to fixed values every episode.
+
+\begin{figure}[t]
+\centering
+\resizebox{\linewidth}{!}{\input{figures/fig_framework_two_sources_col3.tex}}
+\caption{The supervisory layer sets the values $\theta_t$ of an unmodified rule-based controller in place, preserving its
+integrators and the plant state, from a frozen profile that a schedule selects daily from the weather regime (top,
+\cref{sec:profilesource}) or from a state updated online from the building's response, within fixed bounds, when a
+rule fixed in advance admits an action (middle, \cref{sec:learning}); this source can also floor one command at $f_{t,a}$.}
+\label{fig:framework}
+\end{figure}
+
+\paragraph{Objective.}
+The simulator reward is $r_t = -(0.6\,q_t + 0.2\,c_t + 0.2\,e_t)$, with non-negative normalised comfort regret $q_t$, energy
+cost $c_t$ and carbon $e_t$. The loss $\ell(s,\pi)$ of a policy $\pi$ (a configuration, schedule or layer) in episode $s$ is the mean of $-r_t$ over its $|T(s)| = 8{,}640$
+scored steps, and the gain of $\pi$ over a comparator $\pi'$ on a matched set $S$ with weights $w_s$ is the reduction in
+pooled loss
+\begin{equation}
+  G_S(\pi;\pi') = 100\left(1 - \frac{\sum_{s\in S} w_s\,\ell(s,\pi)}{\sum_{s\in S} w_s\,\ell(s,\pi')}\right).
+  \label{eq:gain}
+\end{equation}
+It is not a mean of episode-wise gains. Policies are compared by their difference in gain over $B$,
+\begin{equation}
+  \Delta_S(\pi_1,\pi_2) = G_S(\pi_1;B) - G_S(\pi_2;B)
+  = 100\,\frac{\sum_{s\in S} w_s\,[\ell(s,\pi_2) - \ell(s,\pi_1)]}{\sum_{s\in S} w_s\,\ell(s,B)},
+  \label{eq:delta}
+\end{equation}
+in percentage points (pp) of baseline-referenced gain. The profile source is evaluated against $B$, its
+policies compared by \cref{eq:delta}; the learning source is evaluated against G30, the tuned configuration it runs on
+(\cref{sec:setup}), by \cref{eq:gain} with equal weights.
+
+\subsection{Profile source}\label{sec:profilesource}
+\paragraph{Regimes and decisions.}
+The frozen library $\Phi = \{\theta_E, \theta_C, \theta_M, \theta_H\}$ holds one profile per temperature regime. On day
+$d$ of a 30-day episode a decision point occurs at step $t_d = 228 + 288(d-1)$, and the mean observed outdoor temperature
+$\bar T_d$ over the preceding 228 five-minute steps (19\,h) is mapped to a regime $k_d = r(\bar T_d)$: extreme-cold ($E$) if $\bar T_d < -15\,^\circ$C, cold ($C$) if
+$-15 \le \bar T_d < 11\,^\circ$C, mild ($M$) if $11 \le \bar T_d < 24.5\,^\circ$C, and hot ($H$) otherwise. At each $t_d$ the schedule $\pi$ decides whether to replace the
+active profile by $\theta_{k_d}$. All schedules start under $B$, and profiles are applied in place, keeping the
+controller's integrators and the plant state (\cref{alg:supervisor} in \cref{app:profiles}).
+
+\paragraph{Schedules.}
+All adopt the first decision's profile and differ only in later changes: \textbf{PS5} makes none (select once), \textbf{PD5} may
+reassign daily, \textbf{LIST} and \textbf{WEEK} only on predefined days (sparse), \textbf{TRIG2} only
+after a new class appears in two successive complete windows (persistence), and \textbf{MG}, the one-time gate, follows PD5
+if the first class is mild and PS5 otherwise, a choice it never revisits. Profiles and thresholds were
+fixed in exploratory development, whose results motivated MG (\cref{sec:setup}).
+
+\subsection{Learning source}\label{sec:learning}
+The learning source runs on G30 (\cref{sec:setup}) and sets the controller's pre-start lead
+and a floor $f_{t,a}$ under each air handler's static-pressure command. Its rules draw on optimal
+start~\cite{seem2016return,kim2024optimalstart} and Guideline~36~\cite{ashrae2021g36}; rules and bounds were fixed in advance and never tuned on test data (\cref{app:learning}).
+
+\paragraph{Learned optimal start.}
+With the occupied comfort band $[T^{\mathrm{lo}}, T^{\mathrm{hi}}]$ and the air temperature $T_{z,t}$ of zone
+$z \in \mathcal Z$, the morning deficit
+\begin{equation}
+  D_t = \frac{1}{|\mathcal Z|}\sum_{z\in\mathcal Z} \max\bigl(T^{\mathrm{lo}} - T_{z,t},\; 0,\; T_{z,t} - T^{\mathrm{hi}}\bigr)
+  \label{eq:deficit}
+\end{equation}
+covers warm-up and cool-down alike. Under a first-order recovery $D(t+h) = D(t)\,e^{-h/\tau}$ with effective time constant
+$\tau$, the lead that reaches a residual deficit $D^\star$ at the opening time $t^{\mathrm{o}}$ is
+\begin{equation}
+  \lambda_t = \tau \ln\frac{\max(D_t, D^\star)}{D^\star}.
+  \label{eq:lead}
+\end{equation}
+On weekday mornings, within $t^{\mathrm{o}} - L^{\max} \le t < t^{\mathrm{o}} - L^{\min}$, conditioning starts at the first
+step with $t^{\mathrm{o}} - t \le \lambda_t$; otherwise the controller keeps its own lead $L^{\min}$. The first hour of
+each informative recovery updates a smoothed estimate of $\tau$ within $[\tau^{\min}, \tau^{\max}]$, and two consecutive mornings with a deficit above its
+prediction by a margin return the start to the controller for the episode.
+
+\paragraph{Pressure reset and precooling.}
+During conditioning hours a zone warmer than $T^{\mathrm{hi}}$ with its cooling loop near saturation requests more air, and each
+air-handling unit trims its floor $f_{t,a}$ without requests and raises it with them, within fixed bounds
+(trim-and-respond). For a controller whose loss is mainly energy, a rule of the same form gives
+learned night precooling: on warm nights with cool outdoor air, the layer lowers the unoccupied cooling limit within bounds
+if the zone excess before opening, smoothed over earlier mornings without precooling, is positive (\cref{app:learning}).
+
+\paragraph{A template for rules.}
+Each mechanism is a bounded rule with five parts: the signal it reads, the condition that triggers it, the command it may
+change, the bounds of that change, and the condition that returns control to the controller; \cref{tab:rules} also lists
+what each needs from the controller. The start and precooling learn; the reset is bounded feedback. A new rule is written by hand for the loss term it targets, and \cref{sec:when} indicates
+where it can pay: learned precooling was added this way when the start failed its development gate on Penguin,
+and was then validated on unseen architectures.
+
+%======================================================================
+\section{Experimental setup}\label{sec:setup}
+\paragraph{Simulator and episodes.}
+Experiments use the Smart Buildings Challenge simulator~\cite{goldfeder2024suite,goldfeder2026challenge} at
+five-minute resolution with historical NOAA weather~\cite{smith2011isd}. An \emph{episode} pairs one generated building
+with one weather window over a 30-day scoring horizon (8,640 steps, including unoccupied periods), and all policies of a
+comparison run on the same episodes.
+
+\paragraph{Controllers and comparators.}
+The main controller, K07~\cite{malyshev2026k07}, is public and rule-based; we use two fixed configurations: the baseline
+$B$, tuned during development for a first-workday objective, and G30, a stronger comparator selected from 64 candidates on
+12 development episodes for the 30-day horizon. Profile schedules run $B$ for the first 19\,h, so their contrasts with fixed policies
+include a start-up difference; the learning source runs on G30 from step zero and is also tested on other
+controllers: Penguin~\cite{penguin2026deep}, which learns a zone model online and plans one step ahead; ZT
+Best~\cite{malyshev2026zt}, the K07 author's later version (a maintenance test); Residual PPO~\cite{chilton2026resppo}, a rule-based
+controller with a residual policy trained by reinforcement learning; and a graph network imitating it.
+
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{5pt}
+\begin{threeparttable}
+\caption{Evaluation sets: cohorts of the six building families of the profile library and out-of-family sets of new
+architectures. Counts are not additive within cohorts (arms were added to earlier episodes; stations and variants
+overlap). Weather: year of the windows, or those of the official training scenarios (development) and one January and
+one late-June window (held-out). C/M/H: classes by design; observed ones can differ.}
+\label{tab:cohorts}
+\small
+\begin{tabular}{llrrcl}
+\toprule
+Weather & Role & Episodes & Stations & C/M/H & Weights\\
+\midrule
+\multicolumn{6}{l}{\emph{Profile source: cohorts of the six building families}}\\
+2023 & exploratory: fixed vs.\ adaptive policies & 70 & 30 & 23/24/23 & reference masses\tnote{a}\\
+2022 & frozen schedules, reused stations           & 58 & 27 & 18/23/17 & equal\\
+2022 & frozen schedules, additional stations       & 30 & 13 & 10/12/8  & equal\\
+2021 & \textbf{pre-specified test (primary)}       & 98 & 42 & 30/42/26 & equal\\
+2021 & pre-specified optional extension            & 20 & 17 & 6/9/5    & equal\\
+2021 & registered replication, new episodes        & 40 & 28 & 12/18/10 & equal\\
+\midrule
+\multicolumn{6}{l}{\emph{Learning source: out-of-family sets of new architectures}}\\
+training   & development (9 architectures)          & 18 & 5  & 4/8/6    & equal\\
+Jan., Jun. & held-out (6 architectures)             & 12 & 1  & 6/6/0    & equal\\
+2022       & \textbf{blind test (12 architectures)} & 36 & 28 & 12/12/12 & equal\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item[a] $(W_C,W_M,W_H) = (574,814,467)/1855$: shares of 1,872 starts less 17 extreme-cold
+(\cref{app:cohorts}).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\paragraph{Evaluation sets.}
+Each source was developed on its own sets and tested on sets frozen before they were run (\cref{tab:cohorts}). The profile
+source was developed on cohorts of its library's six building families (\cref{app:cohorts}; chronology in
+\cref{fig:timeline}); the mild-start pattern of the 2022 results motivated the gate, whose test on new 2021 episodes
+was fixed in an internal protocol before any 2021 outcome was seen. The learning source was
+developed on new architectures from the official scenario generator, checked once per mechanism on a held-out set,
+and tested on a blind set first run after its rules and analyses were frozen; later tests and variants on its
+scenes are marked as such (\cref{app:sets,app:moreresults}); ten blind architectures have composite floor plans and two out-of-distribution (OOD) shapes. Six
+official training scenes serve for diagnosis; the Kaggle leaderboard scores hidden scenes.
+
+\paragraph{Statistical analysis.}
+Intervals are 95\% percentile intervals from 3,000 cluster-bootstrap resamples of the stations of a cohort or the
+architectures of an out-of-family set (\cref{app:inference}). The single pre-specified primary estimand of the profile source is
+$\Delta_S(\mathrm{MG},\mathrm{TRIG2})$ on the 98 main 2021 episodes (\cref{eq:delta}), with success defined as a positive
+estimate whose interval excludes zero; secondary contrasts are Holm-adjusted~\cite{holm1979}. Gains of the learning
+source are pooled over the composite architectures (\cref{eq:gain}), with OOD reported separately; exact Wilcoxon tests check the ten blind ones (\cref{app:moreresults}). Each learning
+mechanism had to pass a pre-specified development gate, and every pre-specified or registered test was frozen in a
+protocol before its runs (\cref{tab:registry}).
+
+%======================================================================
+\section{Results}\label{sec:results}
+%======================================================================
+\subsection{When to re-select profiles?}\label{sec:reselect}
+\paragraph{The gate passed its pre-specified test.}
+
+\begin{table}[t]
+\centering
+\begin{threeparttable}
+\caption{The gate gained most and passed the pre-specified test (98 matched 2021 episodes). Top: gain versus $B$ with 95\%
+station-cluster intervals, not independent across policies (shared episodes);
+changes: mean post-initial profile changes per episode; \emph{Worse}: share of episodes with over 1\%
+higher loss than $B$. Bottom: the primary contrast in pp of baseline-referenced gain (\cref{eq:delta});
+secondary contrasts in \cref{tab:secondary}.}
+\label{tab:main}
+\small
+\begin{tabular}{lrcrr}
+\toprule
+Policy & Gain (\%) & 95\% interval & Changes & Worse (\%)\\
+\midrule
+$B$ (fixed baseline)   & 0        & ---                & 0    & ---  \\
+G30 (tuned fixed)      & $+3.24$  & $[+2.46, +4.11]$   & 0    & 2.0  \\
+PS5 (select once)      & $+3.69$  & $[+2.56, +4.84]$   & 0    & 10.2 \\
+TRIG2 (persistence)    & $+3.96$  & $[+2.87, +5.20]$   & 2.33 & 7.1  \\
+PD5 (daily)            & $+4.13$  & $[+3.02, +5.38]$   & 4.72 & 5.1  \\
+MG (one-time gate)     & $+4.47$ & $[+3.32, +5.71]$ & 2.19 & 3.1 \\
+\midrule
+Contrast & $\Delta$ (pp) & 95\% interval & & \\
+\midrule
+\textbf{MG $-$ TRIG2 (primary)} & $\mathbf{+0.504}$ & $[+0.337, +0.704]$ & & \\
+\bottomrule
+\end{tabular}
+\end{threeparttable}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_profiles_col3.pdf}
+\caption{Re-selection pays mainly after mild starts: gain versus $B$ by initial weather class on the library's building
+families, (a) 2023 weather (reference-weighted within class) and (b) 2021 weather (equal cell weights; classes by design, of which three differ from the observed ones; counts in
+\cref{tab:cohorts}).}
+\label{fig:main}\label{fig:regimes}
+\end{figure}
+
+On the 98 main 2021 episodes all five alternatives reduced loss relative to $B$ (\cref{tab:main}), the gate most, by 4.47\%
+against 3.96\% for persistence-based reassignment, and the pre-specified primary contrast, $\Delta = +0.504$\pp{}
+(95\% station-cluster interval $[+0.337, +0.704]$), met its success criterion; the difference is modest, about a ninth of the gate's gain over $B$. The gate made
+about as many profile changes as persistence, fewer than half those of daily reassignment, and had the lowest share of
+episodes more than 1\% worse than $B$ among the adaptive schedules. The secondary \mbox{contrasts} agree; those against G30
+and between daily and select-once have wide intervals and Holm-adjusted $p$-values
+near 0.05 (\cref{tab:secondary}).
+
+\paragraph{Re-selection paid mainly after mild starts.}\label{sec:regime}
+On 2021 weather (\cref{fig:main}b), daily re-selection
+beat select-once by 2.59\pp{} after mild starts (4.40\% versus 1.81\%) but was slightly worse after cold and hot starts,
+and the gate, following its fixed mild-start rule, improved on $B$ in every class. This mild-start advantage had appeared in development, on 2023
+weather, where daily re-selection was also slightly better after cold and hot starts (\cref{fig:main}a), and in both 2022 cohorts (\cref{tab:2022}). By branch, the gate gained by avoiding persistence-triggered switches after cold and
+hot starts and by reacting faster after mild starts (\cref{app:inference}). The explanatory model of \cref{app:theory}
+assumes longer spells after mild starts, which the 2021 weather does not support; post hoc, re-selection gained on cold or hot
+days that left the mild profile and lost on mild days after cold or hot starts (\cref{tab:direction}).
+
+\paragraph{Sensitivity checks held; replication inconclusive.}
+The primary contrast survived re-weighting, subsets of building variants, another source of class labels and leaving out
+one station or family (\cref{fig:contrasts}). The 20-episode extension was inconclusive ($-0.004$\pp, post hoc interval $[-0.45, +0.71]$); a registered replication
+on 40 new episodes gave $+0.255$\pp{} ($[-0.037, +0.709]$), missing
+its criterion of a lower bound above zero, so it stays inconclusive even though all 158 episodes, a registered secondary analysis, gave $+0.366$\pp{} ($[+0.206, +0.535]$;
+\cref{app:inference,app:extended}).
+
+\subsection{When to learn instead?}\label{sec:learn}
+
+\paragraph{Profiles failed the out-of-family tests.}\label{sec:outoffamily}
+On the out-of-family development architectures the gate lost to G30 by 6.8\pp; on the
+held-out architectures G30 gained 4.1\% over $B$ while the gate lost 0.9\%; on the leaderboard it scored worse than $B$
+(\cref{tab:lb}). The non-mild profiles change eleven settings of $B$ each, so outside their families they transplant
+configurations tuned elsewhere.
+
+\paragraph{The learning source gained on unseen architectures.}\label{sec:learningresults}
+\begin{table}[b]
+\centering
+\begin{threeparttable}
+\caption{Pooled gains of the learning source on unseen architectures and other controllers. Blind set (12
+unseen architectures $\times$ 3 weather windows): gain (\cref{eq:gain}) pooled over the 10 composite
+architectures, with 95\% architecture-cluster intervals, bootstrap $p$-values and the number of composite
+architectures improved; the two OOD architectures are reported in the text and in \cref{app:moreresults}.}
+\label{tab:learning}
+\small
+\begin{tabular}{lrccc}
+\toprule
+Contrast & Gain (\%) & 95\% interval & $p$\tnote{a} & Better (of 10)\\
+\midrule
+Tuning: G30 vs.\ $B$ & $+8.62$ & $[+6.01, +11.41]$ & $<0.001$ & 10\\
+\textbf{Method: G30 + layer vs.\ G30 (primary)} & $\mathbf{+2.82}$ & $[+1.48, +3.94]$ & $<0.001$ & 9\\
+Combination: G30 + layer vs.\ $B$ & $+11.19$ & $[+7.78, +14.52]$ & $<0.001$ & 10\\
+Learning: learned vs.\ fixed start, no reset & $+0.95$ & $[+0.11, +1.82]$ & $0.023$$^{\dagger}$ & 8\\
+Pressure reset over learned start & $+1.58$ & $[+0.58, +2.48]$ & $<0.001$$^{\dagger}$ & 9\\
+Penguin + learned precooling vs.\ Penguin & $+1.88$ & $[+1.12, +3.07]$ & $<0.001$$^{\dagger}$ & 10\\
+ZT Best + layer vs.\ ZT Best & $+5.71$ & $[+3.64, +7.55]$ & ---$^{\ddagger}$ & 10\\
+Residual PPO + layer vs.\ Residual PPO & $+3.37$ & $[+1.57, +5.22]$ & ---$^{\ddagger}$ & 8\\
+Graph network + layer vs.\ graph network & $+3.55$ & $[+1.82, +5.40]$ & ---$^{\ddagger}$ & 8\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}\footnotesize
+\item[a] Architecture-cluster bootstrap (approximate with 10 clusters; exact Wilcoxon $p$ in \cref{tab:tests});
+$^\dagger$Holm-adjusted over the six secondary contrasts of \cref{app:moreresults}. $^\ddagger$The layer's
+pre-specified rule (positive pooled gain, most changed architectures better, none more than 1\% worse) held on ZT Best, not on
+Residual PPO or the graph network.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+The layer keeps G30 and adapts its start and pressure command online (\cref{tab:learning}). G30
+reduced the loss of $B$ by 8.62\%, and the layer a further
+2.82\% (Wilcoxon $p = 0.004$),
+improving 9 of the 10 composite and both OOD architectures; on the held-out set it gained 3.9\%, but only two of four
+composite architectures improved, so the rule failed (\cref{tab:evidence}). Learning the time constant added 0.94\% inside the full layer, as
+registered ($[0.10, 1.82]$, 7 of 10; exact Wilcoxon $p = 0.084$), and 0.95\% without the reset (8 of 10; Holm-adjusted $p = 0.023$ by bootstrap, $0.098$ by exact Wilcoxon); frozen at
+1\,h, the start kept only a quarter of its gain. Its advantage built up over two weeks while the
+pressure reset paid at once (\cref{fig:timetovalue}).
+
+\paragraph{Other controllers also gained.}\label{sec:second}\label{sec:maintenance}
+Penguin's~\cite{penguin2026deep} loss is 36\% lower than K07-G30's and 97\% energy and carbon; the K07 start
+failed its development gate there, whereas learned night precooling, aimed at energy, reduced its loss by 1.88\% and
+improved all 12 architectures. On ZT Best~\cite{malyshev2026zt}, the K07 author's later version, on the same blind scenes, the unchanged layer
+gained 5.71\% ($[3.64, 7.55]$; all 12 improved), and its pre-specified maintenance rule held. On a trained neural
+controller~\cite{chilton2026resppo}, itself better than K07-G30, it gained 3.37\%, 4.70 points less comfort loss
+for 1.34 more in energy and carbon, and 3.55\% ($[1.82, 5.40]$) on a graph network imitating it, but the rule failed on both, with one or two architectures
+more than 1\% worse. Alone, as registered, the pressure reset gained 2.99\% on the neural controller ($[1.60, 4.53]$, all 10
+better) and the learned start 0.49\%, which caused both losses there (1.35, 1.15\%); the reset alone would have passed
+the rule (\cref{app:moreresults}).
+
+\subsection{When does the layer help?}\label{sec:when}
+\paragraph{Largest gains on extreme days, losses on holidays.}\label{sec:erroranalysis}
+Post hoc, the layer gained 4.1 and 4.2\% on the coldest and hottest tenth of days against 2.1\% otherwise, and slightly
+more on Mondays than on other weekdays (3.1 against 2.8\%); six of its ten worst days were public holidays, unoccupied in the simulator but unknown to the controller, so its earlier start bought no comfort (\cref{fig:error}).
+
+\paragraph{The gain followed the comfort share of the loss (post hoc).}\label{sec:depends}
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.80\linewidth]{figures/fig_when_col4.pdf}
+\caption{The gain follows the comfort share of the controller's loss (post hoc for K07-G30). (a) Gain of the layer per blind episode against the comfort share of the
+controller's loss: K07-G30 (circles; squares: OOD) and, in the registered tests, ZT Best (triangles) and Residual PPO
+(diamonds); segments: pooled gain of each third (K07-G30: $+0.03$, $+2.29$, $+4.00$\%; ZT Best, dashed: $+0.78$, $+3.07$,
+$+9.96$\%; Residual PPO, dotted: $+0.70$, $+2.41$, $+6.97$\%); grey band: K07-G30 on the official training scenes; green
+triangle: Penguin's mean share. (b) The same runs re-weighted with comfort weight $w$; dotted line: competition weights.}
+\label{fig:when}
+\end{figure}
+
+Across the 36 blind episodes of G30, Spearman $\rho = 0.80$ ($[0.57, 0.89]$
+by architecture; thirds in \cref{fig:when}a), and $\rho = 0.78$ across architectures, whereas their shared denominator
+alone gives a mean $\rho$ of $-0.09$ when the loss reductions are permuted. By construction, the gain is the share times the part of the
+targeted loss removed, 15--24\% on all three comfort controllers, minus the cost in the other terms
+(\cref{eq:headroom}, \cref{tab:headroom}). The share thus bounds the
+benefit, and the net gain unless the other terms improve; it measures the headroom rather than predicting the gain, though its first-week value ranked
+the later gain ($\rho = 0.72$; exploratory, \cref{tab:earlyind}). On Penguin the
+mean comfort share is 2.2\%, and learned precooling, aimed at energy and carbon, removed 1.82 points without costing
+comfort. Comfort's 60\% weight matters: with equal weights the K07 layer would gain only 0.26\% (\cref{fig:when}b).
+
+\paragraph{Five of seven registered predictions held.}
+Before the ZT Best runs on the same scenes we registered three predictions: the gain rises with the comfort
+share (held, $\rho = 0.93$), exceeds G30's gain as ZT Best's mean share does (held: 5.97\% against 2.69\% on all 36
+episodes), and stays within $\pm 0.5\%$ in the lowest-share third (failed: 0.78\%). For the neural
+controller three of four held (the lowest third: 0.70\%), and all four for the graph network imitating it, not an independent check (\cref{app:moreresults}).
+
+\subsection{The leaderboard and an unoccupied setup}\label{sec:lb}
+
+Tuning improved K07's Kaggle score by 2.6\%, to 0.01477; the learning source left it unchanged but made the neural controller's
+1.0\% worse, against a registered prediction of no change (\cref{tab:lb}). A diagnosis of the official training scenes led to a Guideline~36 unoccupied cooling
+setpoint that passed its development gate (\cref{tab:uns}) and scored 4.3\% below G30; on the blind set it lost 0.62\%,
+and with the learned start gained 1.27\% over G30 but failed its pre-specified rule. As an untuned
+third rule of the layer it added 0.38\%, with an interval spanning zero ($[-0.45, +1.49]$; \cref{app:moreresults}).
+
+%======================================================================
+\section{Discussion and limitations}\label{sec:discussion}
+%======================================================================
+\paragraph{Which source, when.}
+Neither source wins by default (\cref{tab:when}). Profiles paid only on buildings like those they were tuned
+on; on new buildings a learning rule paid where the controller left loss in the term the rule targets and
+added little elsewhere. This gives a check that needs no new experiment: before attaching a rule, measure the
+share of the controller's loss in the term it targets. Unless the other terms improve, the rule cannot gain
+more than this share, and our comfort rules removed 15--24\% of the targeted loss (\cref{sec:when}); on the
+official training scenes, where K07 and the neural controller leave 0.2--4.6\% and 2.5\% of their loss in
+comfort, this leaves about 1\% or less, which fits their flat or negative leaderboard results, though the
+hidden scenes' losses are unknown. The account is post hoc and only partly confirmed by registered
+predictions, and gains chosen on a leaderboard need not transfer, as the unoccupied setup showed.
+
+\paragraph{Limitations.}
+The two sources were tested on different sets, not head-to-head on matched episodes, and were not combined. The evidence is limited (\cref{tab:evidence}): the blind intervals rest on 10 composite
+architectures from one generator; the layer's pre-specified rule failed on the held-out set, the neural controller and its
+imitation (\cref{sec:learn}); the account of \cref{sec:when} was tested across controllers on the same scenes
+rather than on new buildings; the gate was formulated after inspecting
+earlier results and frozen internally, its extension and its registered replication were inconclusive, its intervals
+ignore the shared building families, and loss components were not archived for its later cohorts. The layer's value also depends on the objective weights (\cref{sec:when}); it never ran on an
+untuned controller, and G30 came from a budget-limited search. Longer leads in deep cold triggered the safety freeze in
+slow buildings; the start rule acts on the mean zone, which can hide the cost in a few zones, and its time constant also
+absorbs outdoor temperature and season (\cref{app:moreresults}).
+
+\paragraph{Future work.}
+Decomposing the controller's loss by term and hour and attaching the mechanism aimed at the largest term, as we did by
+hand for Penguin and the unoccupied setup, would systematise transfer; a start rule weighing its night-time cost
+against the expected comfort deficit would limit the losses above, and stopping it would need a runtime proxy of its
+gain. Decisions per zone, a holiday calendar and real buildings come next, where bounds and freezes are no safety guarantee.
+
+%======================================================================
+\section{Conclusion}\label{sec:conclusion}
+%======================================================================
+We studied two sources of values for a bounded supervisory layer over an unmodified rule-based HVAC
+controller: re-selection from a weather-conditioned profile library and online estimation with feedback.
+Within the library's building families, a one-time gate that re-selects daily only after mild starts modestly
+beat persistence in a pre-specified test, but its registered replication was inconclusive, and outside those
+families the frozen profiles did not transfer. On unseen architectures, a learned start with a pressure reset,
+a few bounded rules with no offline training, reduced the loss of a tuned fixed controller by 2.82\%;
+unchanged, the layer also reduced pooled loss on a later version of the controller and on a trained neural
+controller, where its per-architecture criterion failed, and an energy-targeted rule helped a model-based
+controller. The gains are modest and not universal: on the competition leaderboard the comfort rules gave no
+gain or a loss. An exact decomposition bounds a rule's benefit by the share of the controller's loss in the
+term it targets; post hoc, gains followed this share, and registered predictions on shared scenes partly
+confirmed it. This points to selective, controller-aware supervision: measuring where a controller loses
+before attaching a rule. The study gives no rule for choosing between the two sources and no safety guarantee,
+and all results come from simulation. Our code, episode definitions and per-episode results are available at
+\mbox{\url{https://github.com/AsteriosPanoras/supervisory-layer-hvac}}.
+
+
+\bibliographystyle{unsrtnat}
+\bibliography{refs}
+
+\appendix
+\section*{Use of large language models}
+Large language models assisted with code development, with running and monitoring experiments, with checking numerical
+results against their sources, and with drafting, editing and reviewing the manuscript. No LLM was part of any
+evaluated controller or generated its control actions. Reported simulation metrics and uncertainty estimates were computed by
+analysis scripts from recorded per-episode results; leaderboard scores came from the competition platform. The authors
+reviewed the AI-assisted outputs and take full responsibility for the accuracy, originality and integrity of the work.
+
+\input{appendices}
+
+\end{document}

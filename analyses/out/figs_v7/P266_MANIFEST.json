@@ -1,0 +1,19 @@
+{
+ "inputs": {
+  "make_figures.py": "1795d1c48cfd2e5ca33f2288721ba913ced4d71a735942c14c09e7f32da4cb7d",
+  "PAPER_ANALYSES_2.json": "ca4cdfb4b0edba4b40a25d277763d596e4f3a8f1a827fca666c314a5cc1e0644",
+  "PAPER_ERROR_ANALYSIS.json": "d1cf245bab753e507ac673dbff2df002ba91d97fd6df36312eb7b117f4b24df9"
+ },
+ "n_points": {
+  "decisions": 122,
+  "learned_episodes": 36,
+  "contrast_rows": 11
+ },
+ "outputs": {
+  "fig_case_col.pdf": "7fbfaaca448b73bd521ff3cce717f3e773b37ce743c97c3c08a6ca744c5032af",
+  "fig_contrasts_col.pdf": "48958297d1261b553383fc0f7f443d055499da0b72efb61f3c9544440c556910",
+  "fig_decisions_col.pdf": "a401923f38edabc4ecab50d0f2bf33967630600f76f65c5ee7416b4c93096f95",
+  "fig_extremes_col.pdf": "3f53ec11f492a2f94aea711b5366b64c64eae880730e2aa30d94835c8114e24f",
+  "fig_learned_col.pdf": "f2b313bfd149aadddb913046d284994acbdf6998457e5ad42d521246cdb3474b"
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "tag": "K07_G30_SUPW",
+ "family": "k07",
+ "policy": "K07 G30 + supervisor (ROS + TR) + weather clustering v1",
+ "kernel": "asteriospanoras/sb26-cmp2-k07-g30-supw",
+ "kernel_version": 1,
+ "notebook_sha256_prefix": "0cbda4e0f9fe9e35",
+ "submission_id": "58217066",
+ "submitted": "2026-11-10 23:33:16.820000",
+ "label": "SB26-CMP2-4",
+ "status_at_record": "SubmissionStatus.PENDING",
+ "approval": "authors, chat 11 Nov about 01:05 ('as tis xrisimopoiisoume')",
+ "parity": "official_adapter/dry/PARITY_SUP.txt",
+ "frozen_research_artifact": "k07sup@<G30>;ROS=1,TR=1,GATE_OAT_C=11,DEEP_OAT_C=0,LMAX_DEEP=6 (run_episode_k07_v9supc.py sha aedb278b...)",
+ "evidence_before_submission": "development gate PASS (-1.99 % vs G30); vs SUP: development -0.21 %, held-out +1.59 %, fresh +0.36 % (rule FAIL; cause: safety-check freeze in deep cold). Submitted at the authors' request as a leaderboard consistency point.",
+ "expectation_stated_to_owner": "equal to submission 58215633 (the clustering only changes ROS mornings; ROS appears inactive on the leaderboard scene)"
+}

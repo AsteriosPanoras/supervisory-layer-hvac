@@ -1,0 +1,64 @@
+{
+ "F1_G30_new_vs_old": {
+  "arrays": 16,
+  "differing": [],
+  "status_ok": true,
+  "pass": true
+ },
+ "F2_ros_empty_window_vs_G30": {
+  "arrays": 16,
+  "differing": [],
+  "status_ok": true,
+  "pass": true
+ },
+ "F3_equal_until_first_change": {
+  "first_change_step": 252,
+  "prefix_equal_all": true,
+  "n_arrays": 15,
+  "starts": [
+   [
+    252,
+    3.0,
+    7.394,
+    1.0,
+    3,
+    "need"
+   ],
+   [
+    540,
+    3.0,
+    5.145,
+    1.181,
+    3,
+    "need"
+   ],
+   [
+    818,
+    2.167,
+    5.935,
+    1.314,
+    4,
+    "need"
+   ]
+  ],
+  "pi_on_at_start_steps": true,
+  "max_abs_D_log_vs_recomputed": 1.1589792059396586e-07,
+  "n_updates": 3,
+  "frozen": false
+ },
+ "F4_time_offset_h": 0.08333333333333348,
+ "F4_decisions": {
+  "need_starts_checked": 3,
+  "first_crossing_equals_logged": "True",
+  "base_prestart_changes": [
+   252,
+   360,
+   540,
+   648,
+   818
+  ],
+  "only_at_starts_or_noon": true,
+  "note": "tod from the npz timestamps; a start is the first window step where the rule fires"
+ },
+ "VERDICT": "PASS"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "asteriospanoras/sb26-cmp2-k07-g30-supw",
+  "title": "SB26 CMP2 K07 G30 SUPW",
+  "code_file": "sb26-cmp2-k07-g30-supw.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [],
+  "competition_sources": [
+    "neurips-2026-smart-buildings"
+  ],
+  "kernel_sources": [],
+  "model_sources": []
+}

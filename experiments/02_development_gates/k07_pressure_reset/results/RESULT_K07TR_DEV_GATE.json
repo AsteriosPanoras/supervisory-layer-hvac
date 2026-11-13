@@ -1,0 +1,172 @@
+{
+ "cells": 18,
+ "missing": [],
+ "r_TR_vs_G30_pct": {
+  "building_52000": -1.4504074922317645,
+  "building_52004": -1.2481192423841603,
+  "building_52005": -0.8190437556929608,
+  "building_52007": -0.27419235877710335,
+  "building_52008": 0.0,
+  "building_52010": -4.179576422436348,
+  "building_52101": 0.00033742688567706125,
+  "building_52103": -0.6494458948165138,
+  "building_52105": 0.0
+ },
+ "composite_mean_pct": -1.328556545253723,
+ "per_cell_pct": {
+  "building_52000|denver_1": -0.36643555855596643,
+  "building_52000|fairbanks_6": -3.84937160328489,
+  "building_52004|atlanta_7": -2.2269627217413546,
+  "building_52004|denver_4": -0.2693840056967933,
+  "building_52005|denver_4": -0.8092848742880854,
+  "building_52005|singapore_5": -0.8251112709731334,
+  "building_52007|atlanta_4": -0.5496927045211208,
+  "building_52007|fairbanks_3": -0.057111861097469685,
+  "building_52008|phoenix_7": 0.0,
+  "building_52008|singapore_2": 0.0,
+  "building_52010|phoenix_7": -4.890651520990752,
+  "building_52010|singapore_5": -3.6929332228155087,
+  "building_52101|atlanta_7": 0.0008768821340376931,
+  "building_52101|singapore_2": 0.0,
+  "building_52103|fairbanks_3": -0.017149147133255216,
+  "building_52103|phoenix_2": -3.456519409331249,
+  "building_52105|denver_1": 0.0,
+  "building_52105|phoenix_2": 0.0
+ },
+ "tr_behaviour": {
+  "building_52005|denver_4": {
+   "override_share": 0.04232386961093586,
+   "ahus_with_override": 3,
+   "n_ahus": 6,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52005|singapore_5": {
+   "override_share": 0.053934454959691555,
+   "ahus_with_override": 2,
+   "n_ahus": 6,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52105|denver_1": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 18,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52105|phoenix_2": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 18,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52101|atlanta_7": {
+   "override_share": 0.0008074207601021481,
+   "ahus_with_override": 1,
+   "n_ahus": 14,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52101|singapore_2": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 14,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52008|phoenix_7": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 17,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52008|singapore_2": {
+   "override_share": 0.0,
+   "ahus_with_override": 0,
+   "n_ahus": 17,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52007|fairbanks_3": {
+   "override_share": 0.0037410013750707755,
+   "ahus_with_override": 4,
+   "n_ahus": 13,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52007|atlanta_4": {
+   "override_share": 0.02612634473833212,
+   "ahus_with_override": 4,
+   "n_ahus": 13,
+   "frozen_ahus": [],
+   "unresponsive_zones": 1
+  },
+  "building_52103|fairbanks_3": {
+   "override_share": 0.007811326423313805,
+   "ahus_with_override": 2,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52004|denver_4": {
+   "override_share": 0.10896424815983176,
+   "ahus_with_override": 6,
+   "n_ahus": 6,
+   "frozen_ahus": [],
+   "unresponsive_zones": 3
+  },
+  "building_52000|denver_1": {
+   "override_share": 0.10572204696810375,
+   "ahus_with_override": 5,
+   "n_ahus": 6,
+   "frozen_ahus": [],
+   "unresponsive_zones": 3
+  },
+  "building_52103|phoenix_2": {
+   "override_share": 0.03492564218116269,
+   "ahus_with_override": 2,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52010|phoenix_7": {
+   "override_share": 0.07800060087126333,
+   "ahus_with_override": 2,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 0
+  },
+  "building_52010|singapore_5": {
+   "override_share": 0.07694907616043263,
+   "ahus_with_override": 4,
+   "n_ahus": 7,
+   "frozen_ahus": [],
+   "unresponsive_zones": 2
+  },
+  "building_52000|fairbanks_6": {
+   "override_share": 0.10353137048720645,
+   "ahus_with_override": 6,
+   "n_ahus": 6,
+   "frozen_ahus": [],
+   "unresponsive_zones": 3
+  },
+  "building_52004|atlanta_7": {
+   "override_share": 0.14664388363126535,
+   "ahus_with_override": 6,
+   "n_ahus": 6,
+   "frozen_ahus": [],
+   "unresponsive_zones": 4
+  }
+ },
+ "gate": {
+  "composite_mean_lt_0": true,
+  "every_dev_architecture_le_1pct": true,
+  "all_18_cells": true
+ },
+ "GATE_PASS": true,
+ "selection_stdout": "S = TR | GO = True {'S_not_ref': True, 'CV_mean_lt_0': True, 'folds_negative_ge_4': True, 'CV_worst_le_2pct': True, 'stability_ge_4': True, 'ood_guard': True}",
+ "selection_rc": 0
+}

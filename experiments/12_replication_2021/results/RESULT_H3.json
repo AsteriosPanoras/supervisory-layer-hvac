@@ -1,0 +1,101 @@
+{
+ "n_design": 40,
+ "n_complete": 40,
+ "incomplete": [],
+ "stations": 28,
+ "gain_vs_B": {
+  "TRIG2": {
+   "gain": 3.809,
+   "ci": [
+    2.314,
+    5.451
+   ]
+  },
+  "MG": {
+   "gain": 4.064,
+   "ci": [
+    2.601,
+    5.716
+   ]
+  }
+ },
+ "PRIMARY_MG_minus_TRIG2": {
+  "points": 0.255,
+  "ci": [
+   -0.037,
+   0.709
+  ]
+ },
+ "DECISION": "INCONCLUSIVE",
+ "S1_per_cell_mean": {
+  "points": 0.517,
+  "ci": [
+   0.076,
+   1.125
+  ],
+  "MG_better": 16,
+  "equal": 18,
+  "MG_worse": 6
+ },
+ "S2_by_class": {
+  "C": {
+   "n": 12,
+   "MG_minus_TRIG2": 0.199
+  },
+  "M": {
+   "n": 18,
+   "MG_minus_TRIG2": 0.25
+  },
+  "H": {
+   "n": 10,
+   "MG_minus_TRIG2": 0.41
+  }
+ },
+ "S2_by_generator": {
+  "gen12": {
+   "n": 20,
+   "MG_minus_TRIG2": 0.359,
+   "ci": [
+    -0.198,
+    1.387
+   ]
+  },
+  "gen14": {
+   "n": 20,
+   "MG_minus_TRIG2": 0.144,
+   "ci": [
+    0.0,
+    0.339
+   ]
+  }
+ },
+ "S3_influence": {
+  "largest_share_pct": 12.16,
+  "cell": [
+   "b2_47003",
+   "anchorage21_w0207",
+   "C"
+  ],
+  "primary_without_it": 0.291
+ },
+ "S5_gate": {
+  "share_flagged_M": 0.475,
+  "design_class_M_share": 0.45,
+  "observed_class_differs_from_design": 1
+ },
+ "S4_check_H2_all_reproduced": {
+  "n": 118,
+  "points": 0.407,
+  "registered": 0.407,
+  "ok": true
+ },
+ "S4_pooled_H2_and_H3": {
+  "n": 158,
+  "stations": 42,
+  "points": 0.366,
+  "ci": [
+   0.206,
+   0.535
+  ]
+ }
+}

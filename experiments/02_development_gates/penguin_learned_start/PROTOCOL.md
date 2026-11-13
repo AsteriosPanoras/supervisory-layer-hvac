@@ -1,0 +1,21 @@
+# PREREG_PGXSUP_v1 — the same recovery-learning optimal start on the Penguin controller (written 2026-11-10 15:33:01 from `date`; before any run of more than 864 steps)
+- **Mechanism:** ROS (the K07 rule and frozen defaults: D* 0.3 K, tau0 1 h, a 0.5, tau in [0.3, 3] h, the capped-morning rule, the model-check fallback).
+  - Actuator: Penguin's standby band, key `pgx@sup@ROS=1,TR=0,ACT=standby`.
+  - At the fired step the standby band becomes the comfort band and precondition_hours becomes 24 h. The native values return at noon.
+  - LMIN 1 h = Penguin's own start (its 60-min soon hour); LMAX 4 h; LMAX_ID 2 h.
+  - Runner run_episode_penguin_v3sup.py: the design file (ACT=ph) plus the experimenter's standby actuator.
+  - The pressure mechanism is not used: Penguin already resets duct pressure by need (design note).
+- **Fidelity:** p221 (ACT=ph) 23 PASS / 0 FAIL. p223 (ACT=standby) PASS:
+  - the do-nothing key equals native;
+  - the active key equals native until its first change;
+  - every start is recomputed from the logged signals.
+- **Runs (local, after the K07 pressure runs on each host):**
+  - ROS-P on the 30 K07-X v2 scenes;
+  - native pgx@static@ on the 7 development scenes that lack it (the Penguin-X cells stopped at 12:25).
+  - The other 23 native runs come from the frozen Penguin-X results (results_pgx).
+- **Gate (as K07):** development composite mean ROS-P − native < 0, and no development architecture worse than +1 %.
+  - Only then is the held-out analysis run: composite pooled < 0, ≥ 3 of 4 composite architectures better, none worse than +2 %.
+  - The native held-out runs of Penguin-X are read ONLY in that step.
+- **Labels:**
+  - The same mechanism, on a second controller.
+  - Non-optimised.

@@ -1,0 +1,33 @@
+[
+ {
+  "tag": "K07_G30",
+  "family": "k07",
+  "policy": "K07 G30 robust base (cross-architecture selection)",
+  "kernel": "asteriospanoras/sb26-cmp2-k07-g30",
+  "kernel_version": 1,
+  "notebook_sha256": "4058451602ee753152a791d7d8688f81a52d08affebb94215141ca03eb5598ba",
+  "submission_id": "58202923",
+  "submitted_utc": "2026-11-10 13:44:49 UTC",
+  "label": "SB26-CMP2-1",
+  "status_at_submission": "PENDING",
+  "frozen_research_artifact": "k07@RAMP=0.3548,...,MIN_DAMPER=0.0 (G30); official parity bit-identical on building_train_1/denver_7 and building_train_8/denver_6 (1800 steps, 8 Nov)",
+  "commit_run": "COMPLETE, about 740 s, no traceback",
+  "approval": "authors, chat 10 Nov about 15:10 ('we have 5 submits a day, let's do it' + 'let's also upload g30')"
+ },
+ {
+  "tag": "K07_G30_ROS",
+  "family": "k07",
+  "policy": "K07 G30 + recovery-learning optimal start (ROS)",
+  "kernel": "asteriospanoras/sb26-cmp2-k07-g30-ros",
+  "kernel_version": 1,
+  "notebook_sha256": "12424ed5a9bde510dcf29fc0f34ae070ad2ac01cf69f85b0ce7a8dcd723251b4",
+  "submission_id": "58203100",
+  "submitted_utc": "2026-11-10 13:50:31 UTC",
+  "label": "SB26-CMP2-2",
+  "status_at_submission": "PENDING",
+  "frozen_research_artifact": "k07ros@<G30> (run_episode_k07_v9ros.py sha 1d4ff04e...); official parity bit-identical on building_train_1/fairbanks_1 (2880 steps, 6 identical starts)",
+  "commit_run": "COMPLETE, about 825 s, no traceback",
+  "approval": "authors, chat 10 Nov about 15:10 ('we have 5 submits a day, let's do it')",
+  "evidence_before_submission": "development gate PASS (composite -0.52 %); held-out composite pooled -2.21 %, 2 of 4 composite better (strict rule not met), no architecture worse than +0.27 %"
+ }
+]

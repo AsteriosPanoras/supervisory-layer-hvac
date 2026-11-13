@@ -1,0 +1,18 @@
+{
+ "read_at": "2026-11-11 07:53:39",
+ "submissions": [
+  {
+   "id": 58217111,
+   "status": "SubmissionStatus.COMPLETE",
+   "public_score": 0.01477,
+   "line": "58217111  submission.parquet  2026-11-10 23:36:33.587000  SB26-CMP2-5 K07 G30 + supervisor + weather clustering v2 (frozen; notebook 6ce8018c)                  SubmissionStatus.COMPLETE  0.01477"
+  },
+  {
+   "id": 58217066,
+   "status": "SubmissionStatus.COMPLETE",
+   "public_score": 0.01477,
+   "line": "58217066  submission.parquet  2026-11-10 23:33:16.820000  SB26-CMP2-4 K07 G30 + supervisor + weather clustering v1 (frozen; notebook 0cbda4e0)                  SubmissionStatus.COMPLETE  0.01477"
+  }
+ ],
+ "note": "clustering v1 (58217066) and v2 (58217111); reported as consistency checks, never used to choose a policy"
+}

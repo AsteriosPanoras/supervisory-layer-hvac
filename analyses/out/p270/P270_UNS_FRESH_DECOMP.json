@@ -1,0 +1,125 @@
+{
+ "note": "post hoc, descriptive; fresh blind set, composite; % of the comparator's pooled loss (positive = worse)",
+ "contrasts": {
+  "U_vs_G30": {
+   "composite": {
+    "energy_occupied": 1.1117564256668702,
+    "energy_unoccupied": -2.289763738927048,
+    "carbon_occupied": 0.24993827383162245,
+    "carbon_unoccupied": -0.5438792623790357,
+    "comfort_occupied": 2.0889142831541894,
+    "comfort_unoccupied": 0.0,
+    "total": 0.6169659853248577
+   },
+   "by_class": {
+    "C": {
+     "energy_occupied": 0.027647921273572105,
+     "energy_unoccupied": -0.029870180915691106,
+     "carbon_occupied": 0.003946785985520675,
+     "carbon_unoccupied": -0.008041852519733187,
+     "comfort_occupied": 0.01642024326601873,
+     "comfort_unoccupied": 0.0,
+     "total": 0.010102922211663312
+    },
+    "M": {
+     "energy_occupied": 1.2158768272673228,
+     "energy_unoccupied": -2.5376445810791743,
+     "carbon_occupied": 0.2663154706606102,
+     "carbon_unoccupied": -0.6030382475858289,
+     "comfort_occupied": 2.0859742182858763,
+     "comfort_unoccupied": 0.0,
+     "total": 0.42748367585097036
+    },
+    "H": {
+     "energy_occupied": 2.4486602314350976,
+     "energy_unoccupied": -5.0550735112850065,
+     "carbon_occupied": 0.5583568775649504,
+     "carbon_unoccupied": -1.1992857616789325,
+     "comfort_occupied": 4.785853846192517,
+     "comfort_unoccupied": 0.0,
+     "total": 1.5385116956763145
+    }
+   }
+  },
+  "UR_vs_U": {
+   "composite": {
+    "energy_occupied": -0.6801023785465,
+    "energy_unoccupied": 0.7731426570560606,
+    "carbon_occupied": -0.8498337998869174,
+    "carbon_unoccupied": 1.3631681373261268,
+    "comfort_occupied": -2.4788677010739457,
+    "comfort_unoccupied": 0.0,
+    "total": -1.872493070942849
+   },
+   "by_class": {
+    "C": {
+     "energy_occupied": -0.9015685181981196,
+     "energy_unoccupied": 1.2425719672006466,
+     "carbon_occupied": -1.813581562257247,
+     "carbon_unoccupied": 3.038826846769892,
+     "comfort_occupied": -4.412641373006352,
+     "comfort_unoccupied": 0.0,
+     "total": -2.8463926154390085
+    },
+    "M": {
+     "energy_occupied": -0.27821744307606144,
+     "energy_unoccupied": 0.234398657560873,
+     "carbon_occupied": -0.06906231824575924,
+     "carbon_unoccupied": 0.06051210037929974,
+     "comfort_occupied": -0.6976740520008734,
+     "comfort_unoccupied": 0.0,
+     "total": -0.7500430409961623
+    },
+    "H": {
+     "energy_occupied": -0.6742800293992279,
+     "energy_unoccupied": 0.5443534823046369,
+     "carbon_occupied": -0.15526294806347796,
+     "carbon_unoccupied": 0.11759819328457408,
+     "comfort_occupied": -1.2335268461536548,
+     "comfort_unoccupied": 0.0,
+     "total": -1.4011181466265898
+    }
+   }
+  },
+  "UR_vs_G30": {
+   "composite": {
+    "energy_occupied": 0.427458046779353,
+    "energy_unoccupied": -1.511851054658915,
+    "carbon_occupied": -0.605138711532391,
+    "carbon_unoccupied": 0.8276991586771799,
+    "comfort_occupied": -0.40524718845658675,
+    "comfort_unoccupied": 0.0,
+    "total": -1.2670797309432769
+   },
+   "by_class": {
+    "C": {
+     "energy_occupied": -0.8740116816906258,
+     "energy_unoccupied": 1.2128273223642256,
+     "carbon_occupied": -1.8098180010062062,
+     "carbon_unoccupied": 3.031092004562635,
+     "comfort_occupied": -4.396666935465728,
+     "comfort_unoccupied": 0.0,
+     "total": -2.8365772620591256
+    },
+    "M": {
+     "energy_occupied": 0.9364700500387412,
+     "energy_unoccupied": -2.3022439075208148,
+     "carbon_occupied": 0.19695792227818607,
+     "carbon_unoccupied": -0.5422674678554931,
+     "comfort_occupied": 1.3853177236020513,
+     "comfort_unoccupied": 0.0,
+     "total": -0.3257656767073014
+    },
+    "H": {
+     "energy_occupied": 1.7640063249219526,
+     "energy_unoccupied": -4.502345086989292,
+     "carbon_occupied": 0.40070519088646406,
+     "carbon_unoccupied": -1.0798783064367712,
+     "comfort_occupied": 3.533349045241481,
+     "comfort_unoccupied": 0.0,
+     "total": 0.11583718249363884
+    }
+   }
+  }
+ }
+}

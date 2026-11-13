@@ -1,0 +1,102 @@
+{
+ "note": "post hoc, descriptive; 2021 cohort (H2); classes as observed by the controller (unif log); invalid days keep the previous class",
+ "episodes_main": 98,
+ "episodes_extension": 20,
+ "arms_per_episode_checked_identical": true,
+ "main": {
+  "C": {
+   "episodes": 29,
+   "class_changes_mean": 4.344827586206897,
+   "first_spell_mean_days": 14.241379310344827,
+   "first_spell_median_days": 12,
+   "share_days_in_first_class": 0.7954022988505747,
+   "later_spells_in_other_classes_mean_days": 2.579710144927536,
+   "later_spells_in_other_classes_median_days": 2,
+   "n_later_spells": 69,
+   "episodes_never_leaving": 5,
+   "design_class_agreement": null
+  },
+  "H": {
+   "episodes": 26,
+   "class_changes_mean": 4.6923076923076925,
+   "first_spell_mean_days": 9.23076923076923,
+   "first_spell_median_days": 4.5,
+   "share_days_in_first_class": 0.6371794871794871,
+   "later_spells_in_other_classes_mean_days": 4.223880597014926,
+   "later_spells_in_other_classes_median_days": 2,
+   "n_later_spells": 67,
+   "episodes_never_leaving": 3,
+   "design_class_agreement": null
+  },
+  "M": {
+   "episodes": 43,
+   "class_changes_mean": 5,
+   "first_spell_mean_days": 10.465116279069768,
+   "first_spell_median_days": 5,
+   "share_days_in_first_class": 0.696124031007752,
+   "later_spells_in_other_classes_mean_days": 3.408695652173913,
+   "later_spells_in_other_classes_median_days": 2,
+   "n_later_spells": 115,
+   "episodes_never_leaving": 6,
+   "design_class_agreement": null
+  },
+  "persistence_P_kk": {
+   "C": 0.8523002421307506,
+   "E": 0.4166666666666667,
+   "H": 0.8403954802259888,
+   "M": 0.8294753086419753
+  }
+ },
+ "extension": {
+  "C": {
+   "episodes": 6,
+   "class_changes_mean": 5.333333333333333,
+   "first_spell_mean_days": 11.5,
+   "first_spell_median_days": 11.0,
+   "share_days_in_first_class": 0.8222222222222222,
+   "later_spells_in_other_classes_mean_days": 1.8823529411764706,
+   "later_spells_in_other_classes_median_days": 1,
+   "n_later_spells": 17,
+   "episodes_never_leaving": 0,
+   "design_class_agreement": null
+  },
+  "H": {
+   "episodes": 5,
+   "class_changes_mean": 4.2,
+   "first_spell_mean_days": 11.6,
+   "first_spell_median_days": 9,
+   "share_days_in_first_class": 0.6066666666666667,
+   "later_spells_in_other_classes_mean_days": 4.916666666666667,
+   "later_spells_in_other_classes_median_days": 4.0,
+   "n_later_spells": 12,
+   "episodes_never_leaving": 1,
+   "design_class_agreement": null
+  },
+  "M": {
+   "episodes": 9,
+   "class_changes_mean": 7.111111111111111,
+   "first_spell_mean_days": 7,
+   "first_spell_median_days": 2,
+   "share_days_in_first_class": 0.6444444444444445,
+   "later_spells_in_other_classes_mean_days": 2.823529411764706,
+   "later_spells_in_other_classes_median_days": 2.0,
+   "n_later_spells": 34,
+   "episodes_never_leaving": 0,
+   "design_class_agreement": null
+  },
+  "persistence_P_kk": {
+   "C": 0.8074866310160428,
+   "E": 0.8,
+   "H": 0.8333333333333334,
+   "M": 0.772
+  }
+ },
+ "first_class_vs_design_class_main": {
+  "M->M": 41,
+  "H->H": 25,
+  "C->C": 29,
+  "H->M": 1,
+  "C->M": 1,
+  "M->H": 1
+ }
+}
